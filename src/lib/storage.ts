@@ -1,4 +1,4 @@
-import { MistakeEntry, TopicMasteryState } from '@/types/academic';
+import { MistakeEntry, MockExamAttempt, TopicMasteryState } from '@/types/academic';
 
 export interface StudentProgressState {
   topicStates: Record<string, TopicMasteryState>;
@@ -14,6 +14,7 @@ export interface StudentProgressState {
     mode: string;
     timestamp: string;
   }>;
+  mockAttempts?: MockExamAttempt[];
   theme: 'light' | 'dark';
   lastOpenedTopicId?: string;
 }
@@ -27,6 +28,7 @@ export const DEFAULT_PROGRESS_STATE: StudentProgressState = {
   mistakes: [],
   watchedVideos: {},
   quizScores: [],
+  mockAttempts: [],
   theme: 'light',
 };
 

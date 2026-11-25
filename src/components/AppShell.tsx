@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import {
+  Award,
   BarChart3,
   Bell,
   BookOpen,
@@ -32,6 +33,7 @@ import { CheatSheetsView } from '@/components/CheatSheetsView';
 import { DateSheetsView } from '@/components/DateSheetsView';
 import { LpWorkbenchView } from '@/components/LpWorkbenchView';
 import { QuizPyqView } from '@/components/QuizPyqView';
+import { MockExamsView } from '@/components/MockExamsView';
 import {
   PracticalsView,
   ResourcesView,
@@ -56,6 +58,7 @@ const NAV_GROUPS: Array<{
       { id: 'cheatsheets', label: 'Cheat Sheets', icon: Zap },
       { id: 'datesheets', label: 'Schedule', icon: Calendar },
       { id: 'pyqs', label: 'Question Bank', icon: CheckCircle2 },
+      { id: 'mocks', label: 'Mock Exams', icon: Award },
     ],
   },
   {
@@ -86,6 +89,7 @@ const SECTION_TITLES: Record<NavSection, string> = {
   cheatsheets: 'Cheat Sheets & Formula Sheets',
   datesheets: 'Examination Schedule',
   pyqs: 'Question Bank & Practice',
+  mocks: 'Mock Examination Centre',
   resources: 'Notes & Google Drive',
   revision: 'Revision Centre',
   practicals: 'Practical Preparation',
@@ -277,6 +281,7 @@ export function AppShell() {
           {activeSection === 'cheatsheets' && <CheatSheetsView />}
           {activeSection === 'datesheets' && <DateSheetsView />}
           {activeSection === 'pyqs' && <QuizPyqView />}
+          {activeSection === 'mocks' && <MockExamsView />}
           {activeSection === 'resources' && <ResourcesView />}
           {activeSection === 'tutor' && <TutorView />}
           {activeSection === 'practicals' && <PracticalsView />}

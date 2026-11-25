@@ -113,7 +113,17 @@ export interface LppLecture {
   sourceAttribution: string;
 }
 
-export type QuestionType = 'mcq' | 'numerical' | 'short_answer' | 'true_false' | 'derivation' | 'proof';
+export type QuestionType =
+  | 'mcq'
+  | 'numerical'
+  | 'short_answer'
+  | 'true_false'
+  | 'derivation'
+  | 'proof'
+  | 'subjective'
+  | 'code'
+  | 'sql'
+  | 'case_study';
 
 export interface Question {
   id: string;
@@ -134,6 +144,46 @@ export interface Question {
   examSession?: string; // e.g. Sessional I, Sessional II, End-Semester
   questionNumber?: string; // e.g. Q1(a), Q3(b)
   pageNumber?: number;
+  // Subjective & Self-Evaluation enhancements
+  modelAnswer?: string;
+  keyMarkingPoints?: string[];
+  codeSnippet?: string;
+  expectedOutput?: string;
+  isSubjective?: boolean;
+}
+
+export interface MockExamSection {
+  id: string;
+  title: string;
+  instructions: string;
+  compulsory: boolean;
+  totalQuestionsToAttempt?: number;
+  questions: Question[];
+}
+
+export interface MockExamPaper {
+  id: string;
+  subjectId: string;
+  title: string;
+  code: string;
+  academicYear: string;
+  sessionType: 'End-Semester' | 'Mid-Term / Sessional' | 'Special Unit Mock';
+  durationMinutes: number;
+  totalMarks: number;
+  instructions: string[];
+  sections: MockExamSection[];
+}
+
+export interface MockExamAttempt {
+  id: string;
+  paperId: string;
+  subjectId: string;
+  timestamp: string;
+  durationSecondsTaken: number;
+  totalScore: number;
+  maxScore: number;
+  answers: Record<string, string>;
+  selfEvaluations: Record<string, 'correct' | 'partial' | 'wrong'>;
 }
 
 export interface MistakeEntry {

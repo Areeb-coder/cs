@@ -15,6 +15,7 @@ export type NavSection =
   | 'cheatsheets'
   | 'datesheets'
   | 'pyqs'
+  | 'mocks'
   | 'resources'
   | 'tutor'
   | 'revision'
@@ -38,6 +39,7 @@ interface AppContextValue {
   toggleBookmark: (topicId: string) => void;
   addMistake: (mistake: MistakeEntry) => void;
   recordQuizScore: (subjectId: string, score: number, total: number, mode: string) => void;
+  recordMockAttempt: (attempt: any) => void;
   toggleTheme: () => void;
   resetSubjectProgress: (topicIds: string[]) => void;
   exportBackup: () => string;
@@ -143,6 +145,13 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     }));
   };
 
+  const recordMockAttempt = (attempt: any) => {
+    setState((prev) => ({
+      ...prev,
+      mockAttempts: [attempt, ...(prev.mockAttempts || [])],
+    }));
+  };
+
   const toggleTheme = () => {
     setState((prev) => ({ ...prev, theme: prev.theme === 'dark' ? 'light' : 'dark' }));
   };
@@ -186,6 +195,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
         toggleBookmark,
         addMistake,
         recordQuizScore,
+        recordMockAttempt,
         toggleTheme,
         resetSubjectProgress,
         exportBackup,
