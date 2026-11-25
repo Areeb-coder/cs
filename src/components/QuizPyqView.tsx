@@ -68,6 +68,7 @@ export function QuizPyqView() {
             className="rounded-lg border border-slate-200 bg-white px-2.5 py-1.5 text-xs dark:border-slate-700 dark:bg-slate-800"
           >
             <option value="all">All Subjects</option>
+            <option value="asb-301">ASB-301 Engineering Mathematics III</option>
             <option value="lpp">LPP (NPTEL)</option>
             <option value="dsc-301">DSC-301 Discrete Math</option>
             <option value="dsc-302">DSC-302 Data Structures</option>
@@ -98,11 +99,19 @@ export function QuizPyqView() {
               className="rounded-xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900 space-y-3"
             >
               <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-slate-500">
-                <span>
-                  Q{idx + 1} · {q.marks} marks · {q.difficulty}
-                </span>
+                <div className="flex items-center gap-2">
+                  <span className="font-semibold text-slate-700 dark:text-slate-300">
+                    {q.questionNumber ? `${q.questionNumber}` : `Q${idx + 1}`}
+                  </span>
+                  <span>· {q.marks} marks · {q.difficulty}</span>
+                  {q.year && (
+                    <span className="rounded bg-sky-50 px-1.5 py-0.5 text-[10px] font-semibold text-sky-700 dark:bg-sky-950/40 dark:text-sky-300">
+                      {q.year} {q.examSession || ''}
+                    </span>
+                  )}
+                </div>
                 <span className="rounded bg-slate-100 px-2 py-0.5 text-[11px] font-medium text-slate-700 dark:bg-slate-800 dark:text-slate-300">
-                  {q.provenance} · {q.sourceRef}
+                  {q.provenance === 'actual_pyq' ? 'Authentic PYQ' : q.provenance} · {q.sourceRef}
                 </span>
               </div>
 

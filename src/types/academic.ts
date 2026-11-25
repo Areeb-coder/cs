@@ -113,7 +113,7 @@ export interface LppLecture {
   sourceAttribution: string;
 }
 
-export type QuestionType = 'mcq' | 'numerical' | 'short_answer' | 'true_false';
+export type QuestionType = 'mcq' | 'numerical' | 'short_answer' | 'true_false' | 'derivation' | 'proof';
 
 export interface Question {
   id: string;
@@ -131,6 +131,9 @@ export interface Question {
   provenance: ProvenanceStatus;
   sourceRef: string;
   year?: string;
+  examSession?: string; // e.g. Sessional I, Sessional II, End-Semester
+  questionNumber?: string; // e.g. Q1(a), Q3(b)
+  pageNumber?: number;
 }
 
 export interface MistakeEntry {
