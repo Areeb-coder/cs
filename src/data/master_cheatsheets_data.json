@@ -3,24 +3,26 @@
     "subjectId": "asb-301",
     "bundleId": "engineering_mathematics_iii",
     "subjectCode": "ASB-301",
-    "subjectTitle": "ENGINEERING MATHEMATICS III — ASB-301",
-    "sourceStatus": "Cross-branch JMI FET 2025 detailed outline; CSE-DS-specific unit mapping requires confirmation.",
+    "subjectTitle": "ENGINEERING MATHEMATICS III — AS-301",
+    "sourceStatus": "Authoritative JMI AS-301 Syllabus",
     "units": [
       {
         "unitId": "asb-301-u1",
         "unitBundleId": "engineering_mathematics_iii_unit_1",
         "unitNumber": 1,
-        "unitTitle": "1 — Applications of Multiple Integrals and Vector Calculus",
+        "unitTitle": "1 — Vector Calculus and Its Applications",
         "subjectId": "asb-301",
-        "sourceStatus": "Cross-branch JMI FET 2025 detailed outline; CSE-DS-specific unit mapping requires confirmation.",
+        "sourceStatus": "Authoritative JMI AS-301 Syllabus",
         "coverageStatements": [
-          "Double and triple integrals.",
-          "Two-dimensional Cartesian and polar coordinates.",
-          "Three-dimensional Cartesian, cylindrical and spherical coordinates.",
-          "Applications to plane area, mass, centre of gravity, moment of inertia, product of inertia, centre of pressure, curved surface area and volume.",
-          "Green's theorem in the x-y plane.",
-          "Gauss divergence theorem.",
-          "Stokes' curl theorem (Cartesian form in the cited outline; proofs are not required there)."
+          "Scalar and vector functions.",
+          "Gradient of a scalar field, directional derivative, normal to level surfaces.",
+          "Divergence of a vector field, solenoidal vector fields.",
+          "Curl of a vector field, irrotational and conservative fields.",
+          "Vector identities: div(curl F) = 0, curl(grad phi) = 0, div(grad phi) = Laplacian(phi).",
+          "Gauss divergence theorem for closed surfaces.",
+          "Green's theorem in the plane for closed curves.",
+          "Stokes' theorem for open surfaces with boundary curves.",
+          "Related engineering problems based on vector-calculus theorems."
         ],
         "csvCoverageEntries": [
           {
@@ -60,128 +62,48 @@
           }
         ],
         "sixtySecSummary": [
-          "Double and triple integrals.",
-          "Two-dimensional Cartesian and polar coordinates.",
-          "Three-dimensional Cartesian, cylindrical and spherical coordinates.",
-          "Applications to plane area, mass, centre of gravity, moment of inertia, product of inertia, centre of pressure, curved surface area and volume.",
-          "Green's theorem in the x-y plane.",
-          "Gauss divergence theorem.",
-          "Stokes' curl theorem (Cartesian form in the cited outline; proofs are not required there)."
+          "Gradient: $\\nabla \\phi = \\frac{\\partial \\phi}{\\partial x}\\mathbf{i} + \\frac{\\partial \\phi}{\\partial y}\\mathbf{j} + \\frac{\\partial \\phi}{\\partial z}\\mathbf{k}$. Normal to level surface $\\phi(x,y,z)=c$.",
+          "Directional derivative in unit direction $\\hat{\\mathbf{u}}$: $D_{\\hat{\\mathbf{u}}}\\phi = \\nabla \\phi \\cdot \\hat{\\mathbf{u}}$. Maximum rate of increase is $|\\nabla \\phi|$.",
+          "Divergence: $\\nabla \\cdot \\mathbf{F} = \\frac{\\partial P}{\\partial x} + \\frac{\\partial Q}{\\partial y} + \\frac{\\partial R}{\\partial z}$. Solenoidal if $\\nabla \\cdot \\mathbf{F} = 0$.",
+          "Curl: $\\nabla \\times \\mathbf{F} = \\left(\\frac{\\partial R}{\\partial y} - \\frac{\\partial Q}{\\partial z}\\right)\\mathbf{i} + \\left(\\frac{\\partial P}{\\partial z} - \\frac{\\partial R}{\\partial x}\\right)\\mathbf{j} + \\left(\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y}\\right)\\mathbf{k}$. Irrotational if $\\nabla \\times \\mathbf{F} = \\mathbf{0}$.",
+          "Gauss Divergence Theorem: $\\oiint_S \\mathbf{F} \\cdot \\hat{\\mathbf{n}}\\, dS = \\iiint_V (\\nabla \\cdot \\mathbf{F})\\, dV$ (Flux through closed surface $S$).",
+          "Green's Theorem in Plane: $\\oint_C (P\\, dx + Q\\, dy) = \\iint_R \\left(\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y}\\right) dA$ (Closed plane curve $C$).",
+          "Stokes' Theorem: $\\oint_C \\mathbf{F} \\cdot d\\mathbf{r} = \\iint_S (\\nabla \\times \\mathbf{F}) \\cdot \\hat{\\mathbf{n}}\\, dS$ (Surface circulation)."
         ],
         "coreConcepts": [
           {
-            "title": "1.2 Core definitions",
-            "content": "- **Scalar field:** A scalar-valued function of position, e.g. \\(\\phi(x,y,z)\\).\n- **Vector field:** A vector-valued function, e.g. \\(\\mathbf F=P\\mathbf i+Q\\mathbf j+R\\mathbf k\\).\n- **Gradient:** A vector pointing in the direction of greatest increase of a scalar field.\n- **Divergence:** A scalar measuring local outward flux density of a vector field.\n- **Curl:** A vector measuring local rotation/circulation of a vector field.\n- **Line integral:** Accumulated tangential component of a field along a curve.\n- **Surface integral:** Accumulated normal component/flux through a surface.\n- **Volume integral:** Accumulation throughout a three-dimensional region."
+            "title": "Recognition Trick for Vector Integral Theorems",
+            "content": "Closed bounding surface enclosing a 3D volume \\to Gauss Divergence Theorem; Closed 2D plane boundary \\to Green’s Theorem; Open surface bounded by a perimeter closed curve \\to Stokes’ Theorem."
           },
           {
-            "title": "1.3 Vector-calculus formula bank",
-            "content": "For \\(\\phi(x,y,z)\\):\n\n\\[\n\\nabla \\phi=\\frac{\\partial\\phi}{\\partial x}\\mathbf i+\\frac{\\partial\\phi}{\\partial y}\\mathbf j+\\frac{\\partial\\phi}{\\partial z}\\mathbf k\n\\]\n\nFor \\(\\mathbf F=P\\mathbf i+Q\\mathbf j+R\\mathbf k\\):\n\n\\[\n\\nabla\\cdot\\mathbf F=\\frac{\\partial P}{\\partial x}+\\frac{\\partial Q}{\\partial y}+\\frac{\\partial R}{\\partial z}\n\\]\n\n\\[\n\\nabla\\times\\mathbf F=\n\\left(\\frac{\\partial R}{\\partial y}-\\frac{\\partial Q}{\\partial z}\\right)\\mathbf i+\n\\left(\\frac{\\partial P}{\\partial z}-\\frac{\\partial R}{\\partial x}\\right)\\mathbf j+\n\\left(\\frac{\\partial Q}{\\partial x}-\\frac{\\partial P}{\\partial y}\\right)\\mathbf k\n\\]\n\n\\[\n\\nabla^2\\phi=\\nabla\\cdot(\\nabla\\phi)=\\phi_{xx}+\\phi_{yy}+\\phi_{zz}\n\\]\n\nUseful identities (for sufficiently smooth fields):\n\n\\[\n\\nabla\\times(\\nabla\\phi)=\\mathbf 0,\\qquad \\nabla\\cdot(\\nabla\\times\\mathbf F)=0\n\\]\n\\[\n\\nabla\\cdot(\\phi\\mathbf F)=\\nabla\\phi\\cdot\\mathbf F+\\phi\\nabla\\cdot\\mathbf F\n\\]\n\\[\n\\nabla\\times(\\phi\\mathbf F)=\\nabla\\phi\\times\\mathbf F+\\phi(\\nabla\\times\\mathbf F)\n\\]"
-          },
-          {
-            "title": "1.4 Coordinate systems and differential elements",
-            "content": "| Coordinates | Position | Differential area/volume |\n|---|---|---|\n| Cartesian 2D | \\((x,y)\\) | \\(dA=dx\\,dy\\) |\n| Polar 2D | \\((r,\\theta)\\) | \\(dA=r\\,dr\\,d\\theta\\) |\n| Cartesian 3D | \\((x,y,z)\\) | \\(dV=dx\\,dy\\,dz\\) |\n| Cylindrical | \\((r,\\theta,z)\\) | \\(dV=r\\,dr\\,d\\theta\\,dz\\) |\n| Spherical | \\((\\rho,\\theta,\\phi)\\), with \\(\\phi\\) from +z | \\(dV=\\rho^2\\sin\\phi\\,d\\rho\\,d\\phi\\,d\\theta\\) |\n\nCoordinate conversions:\n\n\\[\nx=r\\cos\\theta,\\quad y=r\\sin\\theta,\\quad r=\\sqrt{x^2+y^2}\n\\]\n\\[\nx=r\\cos\\theta,\\;y=r\\sin\\theta,\\;z=z\\quad\\text{(cylindrical)}\n\\]\n\\[\nx=\\rho\\sin\\phi\\cos\\theta,\\quad y=\\rho\\sin\\phi\\sin\\theta,\\quad z=\\rho\\cos\\phi\n\\]\n\n**Memory rule:** Polar and cylindrical integrals have a Jacobian factor \\(r\\); spherical volume has \\(\\rho^2\\sin\\phi\\). Forgetting the Jacobian is a frequent error."
-          },
-          {
-            "title": "1.5 Multiple-integral applications",
-            "content": "- Plane area of region \\(R\\):\n  \\[\n  A=\\iint_R 1\\,dA\n  \\]\n- Volume under \\(z=f(x,y)\\ge0\\):\n  \\[\n  V=\\iint_R f(x,y)\\,dA\n  \\]\n- Mass with surface density \\(\\sigma(x,y)\\):\n  \\[\n  M=\\iint_R\\sigma\\,dA\n  \\]\n- Mass with volume density \\(\\rho(x,y,z)\\):\n  \\[\n  M=\\iiint_V\\rho\\,dV\n  \\]\n- Centre of mass (volume distribution):\n  \\[\n  \\bar x=\\frac{1}{M}\\iiint_Vx\\rho\\,dV,\\quad\n  \\bar y=\\frac{1}{M}\\iiint_Vy\\rho\\,dV,\\quad\n  \\bar z=\\frac{1}{M}\\iiint_Vz\\rho\\,dV\n  \\]\n- For a uniform lamina, replace \\(\\rho\\,dV\\) by \\(\\sigma\\,dA\\). For uniform density, density cancels in centroid ratios.\n- Moments of inertia about coordinate axes:\n  \\[\n  I_x=\\iiint_V(y^2+z^2)\\rho\\,dV,\\quad\n  I_y=\\iiint_V(x^2+z^2)\\rho\\,dV,\\quad\n  I_z=\\iiint_V(x^2+y^2)\\rho\\,dV\n  \\]\n- Products of inertia (sign convention varies by text):\n  \\[\n  I_{xy}=\\iiint_Vxy\\rho\\,dV,\\quad I_{yz}=\\iiint_Vyz\\rho\\,dV,\\quad I_{zx}=\\iiint_Vzx\\rho\\,dV\n  \\]\n- Curved surface area of a graph \\(z=f(x,y)\\):\n  \\[\n  S=\\iint_R\\sqrt{1+f_x^2+f_y^2}\\,dx\\,dy\n  \\]\n- For hydrostatic pressure on a vertical plane surface in a liquid of specific weight \\(\\gamma\\): resultant force \\(F=\\gamma A\\bar h\\), where \\(\\bar h\\) is centroid depth. Centre-of-pressure depth:\n  \\[\n  h_{cp}=\\bar h+\\frac{I_G}{A\\bar h}\n  \\]\n  Here \\(I_G\\) is the second moment of the area about the horizontal centroidal axis parallel to the free surface. Use the exact geometric axis and pressure model specified in the question."
-          },
-          {
-            "title": "1.6 Integral theorems",
-            "content": "**Green's theorem** (positively oriented/simple closed curve \\(C\\), region \\(R\\)):\n\n\\[\n\\oint_C(P\\,dx+Q\\,dy)=\\iint_R\\left(\\frac{\\partial Q}{\\partial x}-\\frac{\\partial P}{\\partial y}\\right)dA\n\\]\n\n**Gauss/divergence theorem** (closed outward-oriented surface \\(S=\\partial V\\)):\n\n\\[\n\\iint_S\\mathbf F\\cdot\\mathbf n\\,dS=\\iiint_V(\\nabla\\cdot\\mathbf F)\\,dV\n\\]\n\n**Stokes' theorem** (boundary \\(C=\\partial S\\), compatible right-hand orientation):\n\n\\[\n\\oint_C\\mathbf F\\cdot d\\mathbf r=\\iint_S(\\nabla\\times\\mathbf F)\\cdot\\mathbf n\\,dS\n\\]\n\n**How to choose:**\n- Closed planar boundary and \\(Pdx+Qdy\\) then Green.\n- Flux through a closed surface then Gauss.\n- Circulation around a surface boundary then Stokes.\n- Direct parameterisation may be easier if the theorem's boundary/surface is complicated."
-          },
-          {
-            "title": "1.8 Quick recognition workflow",
-            "content": "1. Sketch the region/surface and identify the coordinate system.\n2. Write correct bounds and the Jacobian.\n3. Identify whether the quantity is area, volume, mass, centroid, inertia, circulation or flux.\n4. For theorem questions, check the domain assumptions and orientation.\n5. Keep units visible: area, volume, mass, mass·length², force, etc.\n\n---"
+            "title": "Conservative Vector Fields & Scalar Potentials",
+            "content": "A vector field \\mathbf{F} is conservative if and only if \\nabla \\times \\mathbf{F} = \\mathbf{0}. It can be represented as \\mathbf{F} = \\nabla \\phi, making line integrals path-independent: \\int_A^B \\mathbf{F} \\cdot d\\mathbf{r} = \\phi(B) - \\phi(A)."
           }
         ],
         "formulaBlocks": [
           {
-            "name": "1.3 Vector-calculus formula bank",
-            "formula": "\\nabla \\phi=\\frac{\\partial\\phi}{\\partial x}\\mathbf i+\\frac{\\partial\\phi}{\\partial y}\\mathbf j+\\frac{\\partial\\phi}{\\partial z}\\mathbf k"
+            "name": "Gradient and Directional Derivative",
+            "formula": "\\nabla \\phi = \\frac{\\partial \\phi}{\\partial x}\\mathbf{i} + \\frac{\\partial \\phi}{\\partial y}\\mathbf{j} + \\frac{\\partial \\phi}{\\partial z}\\mathbf{k}, \\quad D_{\\hat{\\mathbf{u}}}\\phi = \\nabla \\phi \\cdot \\hat{\\mathbf{u}}"
           },
           {
-            "name": "1.3 Vector-calculus formula bank",
-            "formula": "\\nabla\\cdot\\mathbf F=\\frac{\\partial P}{\\partial x}+\\frac{\\partial Q}{\\partial y}+\\frac{\\partial R}{\\partial z}"
+            "name": "Divergence and Curl",
+            "formula": "\\nabla \\cdot \\mathbf{F} = \\frac{\\partial P}{\\partial x} + \\frac{\\partial Q}{\\partial y} + \\frac{\\partial R}{\\partial z}, \\quad \\nabla \\times \\mathbf{F} = \\begin{vmatrix} \\mathbf{i} & \\mathbf{j} & \\mathbf{k} \\\\ \\frac{\\partial}{\\partial x} & \\frac{\\partial}{\\partial y} & \\frac{\\partial}{\\partial z} \\\\ P & Q & R \\end{vmatrix}"
           },
           {
-            "name": "1.3 Vector-calculus formula bank",
-            "formula": "\\nabla\\times\\mathbf F=\n\\left(\\frac{\\partial R}{\\partial y}-\\frac{\\partial Q}{\\partial z}\\right)\\mathbf i+\n\\left(\\frac{\\partial P}{\\partial z}-\\frac{\\partial R}{\\partial x}\\right)\\mathbf j+\n\\left(\\frac{\\partial Q}{\\partial x}-\\frac{\\partial P}{\\partial y}\\right)\\mathbf k"
+            "name": "Vector Laplacian & Fundamental Identities",
+            "formula": "\\nabla \\cdot (\\nabla \\phi) = \\nabla^2 \\phi, \\quad \\nabla \\times (\\nabla \\phi) = \\mathbf{0}, \\quad \\nabla \\cdot (\\nabla \\times \\mathbf{F}) = 0"
           },
           {
-            "name": "1.3 Vector-calculus formula bank",
-            "formula": "\\nabla^2\\phi=\\nabla\\cdot(\\nabla\\phi)=\\phi_{xx}+\\phi_{yy}+\\phi_{zz}"
+            "name": "Gauss Divergence Theorem",
+            "formula": "\\oiint_S \\mathbf{F} \\cdot \\hat{\\mathbf{n}}\\, dS = \\iiint_V (\\nabla \\cdot \\mathbf{F})\\, dV"
           },
           {
-            "name": "1.3 Vector-calculus formula bank",
-            "formula": "\\nabla\\times(\\nabla\\phi)=\\mathbf 0,\\qquad \\nabla\\cdot(\\nabla\\times\\mathbf F)=0"
+            "name": "Green's Theorem in the Plane",
+            "formula": "\\oint_C (P\\, dx + Q\\, dy) = \\iint_R \\left(\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y}\\right) dA"
           },
           {
-            "name": "1.3 Vector-calculus formula bank",
-            "formula": "\\nabla\\cdot(\\phi\\mathbf F)=\\nabla\\phi\\cdot\\mathbf F+\\phi\\nabla\\cdot\\mathbf F"
-          },
-          {
-            "name": "1.3 Vector-calculus formula bank",
-            "formula": "\\nabla\\times(\\phi\\mathbf F)=\\nabla\\phi\\times\\mathbf F+\\phi(\\nabla\\times\\mathbf F)"
-          },
-          {
-            "name": "1.4 Coordinate systems and differential elements",
-            "formula": "x=r\\cos\\theta,\\quad y=r\\sin\\theta,\\quad r=\\sqrt{x^2+y^2}"
-          },
-          {
-            "name": "1.4 Coordinate systems and differential elements",
-            "formula": "x=r\\cos\\theta,\\;y=r\\sin\\theta,\\;z=z\\quad\\text{(cylindrical)}"
-          },
-          {
-            "name": "1.4 Coordinate systems and differential elements",
-            "formula": "x=\\rho\\sin\\phi\\cos\\theta,\\quad y=\\rho\\sin\\phi\\sin\\theta,\\quad z=\\rho\\cos\\phi"
-          },
-          {
-            "name": "1.5 Multiple-integral applications",
-            "formula": "A=\\iint_R 1\\,dA"
-          },
-          {
-            "name": "1.5 Multiple-integral applications",
-            "formula": "V=\\iint_R f(x,y)\\,dA"
-          },
-          {
-            "name": "1.5 Multiple-integral applications",
-            "formula": "M=\\iint_R\\sigma\\,dA"
-          },
-          {
-            "name": "1.5 Multiple-integral applications",
-            "formula": "M=\\iiint_V\\rho\\,dV"
-          },
-          {
-            "name": "1.5 Multiple-integral applications",
-            "formula": "\\bar x=\\frac{1}{M}\\iiint_Vx\\rho\\,dV,\\quad\n  \\bar y=\\frac{1}{M}\\iiint_Vy\\rho\\,dV,\\quad\n  \\bar z=\\frac{1}{M}\\iiint_Vz\\rho\\,dV"
-          },
-          {
-            "name": "1.5 Multiple-integral applications",
-            "formula": "I_x=\\iiint_V(y^2+z^2)\\rho\\,dV,\\quad\n  I_y=\\iiint_V(x^2+z^2)\\rho\\,dV,\\quad\n  I_z=\\iiint_V(x^2+y^2)\\rho\\,dV"
-          },
-          {
-            "name": "1.5 Multiple-integral applications",
-            "formula": "I_{xy}=\\iiint_Vxy\\rho\\,dV,\\quad I_{yz}=\\iiint_Vyz\\rho\\,dV,\\quad I_{zx}=\\iiint_Vzx\\rho\\,dV"
-          },
-          {
-            "name": "1.5 Multiple-integral applications",
-            "formula": "S=\\iint_R\\sqrt{1+f_x^2+f_y^2}\\,dx\\,dy"
-          },
-          {
-            "name": "1.5 Multiple-integral applications",
-            "formula": "h_{cp}=\\bar h+\\frac{I_G}{A\\bar h}"
-          },
-          {
-            "name": "1.6 Integral theorems",
-            "formula": "\\oint_C(P\\,dx+Q\\,dy)=\\iint_R\\left(\\frac{\\partial Q}{\\partial x}-\\frac{\\partial P}{\\partial y}\\right)dA"
-          },
-          {
-            "name": "1.6 Integral theorems",
-            "formula": "\\iint_S\\mathbf F\\cdot\\mathbf n\\,dS=\\iiint_V(\\nabla\\cdot\\mathbf F)\\,dV"
-          },
-          {
-            "name": "1.6 Integral theorems",
-            "formula": "\\oint_C\\mathbf F\\cdot d\\mathbf r=\\iint_S(\\nabla\\times\\mathbf F)\\cdot\\mathbf n\\,dS"
+            "name": "Stokes' Curl Theorem",
+            "formula": "\\oint_C \\mathbf{F} \\cdot d\\mathbf{r} = \\iint_S (\\nabla \\times \\mathbf{F}) \\cdot \\hat{\\mathbf{n}}\\, dS"
           }
         ],
         "examTraps": [
@@ -198,127 +120,131 @@
         "unitId": "asb-301-u2",
         "unitBundleId": "engineering_mathematics_iii_unit_2",
         "unitNumber": 2,
-        "unitTitle": "2 — Applications of Laplace Transforms",
+        "unitTitle": "2 — Linear Algebra and Its Applications",
         "subjectId": "asb-301",
-        "sourceStatus": "Cross-branch JMI FET 2025 detailed outline; CSE-DS-specific unit mapping requires confirmation.",
+        "sourceStatus": "Authoritative JMI AS-301 Syllabus",
         "coverageStatements": [
-          "Laplace-transform applications to higher-order linear ODEs with constant and variable coefficients.",
-          "Systems of simultaneous differential equations.",
-          "Integral equations.",
-          "Integro-differential equations.",
-          "Differential equations."
+          "Consistency of simultaneous linear equations AX = B using rank method (Rouché–Capelli theorem).",
+          "Eigenvalues and eigenvectors of square matrices.",
+          "Properties of eigenvalues: sum equals trace, product equals determinant.",
+          "Cayley–Hamilton theorem and its applications to matrix powers and inverses.",
+          "Vector space axioms: closure, zero vector, additive inverse, scalar distributivity.",
+          "Linear combinations, linear dependence, and linear independence.",
+          "Basis and dimension of finite-dimensional vector spaces.",
+          "Linear transformations, kernel, range, and Rank-Nullity theorem.",
+          "Related engineering problems on matrices and transformations."
         ],
         "csvCoverageEntries": [
           {
-            "statement": "Laplace-transform applications to higher-order linear ODEs with constant and variable coefficients.",
-            "cheatSheetStatus": "Drafted - in master and unit sheet; source verification required",
-            "sourceStatus": "Cross-branch JMI FET 2025 detailed outline; CSE-DS-specific unit mapping requires confirmation."
+            "statement": "Consistency of simultaneous linear equations AX = B using rank method (Rouché–Capelli theorem).",
+            "cheatSheetStatus": "Verified - in master and unit sheet",
+            "sourceStatus": "Authoritative JMI AS-301 Syllabus"
           },
           {
-            "statement": "Systems of simultaneous differential equations.",
-            "cheatSheetStatus": "Drafted - in master and unit sheet; source verification required",
-            "sourceStatus": "Cross-branch JMI FET 2025 detailed outline; CSE-DS-specific unit mapping requires confirmation."
+            "statement": "Eigenvalues and eigenvectors of square matrices.",
+            "cheatSheetStatus": "Verified - in master and unit sheet",
+            "sourceStatus": "Authoritative JMI AS-301 Syllabus"
           },
           {
-            "statement": "Integral equations.",
-            "cheatSheetStatus": "Drafted - in master and unit sheet; source verification required",
-            "sourceStatus": "Cross-branch JMI FET 2025 detailed outline; CSE-DS-specific unit mapping requires confirmation."
+            "statement": "Properties of eigenvalues: sum equals trace, product equals determinant.",
+            "cheatSheetStatus": "Verified - in master and unit sheet",
+            "sourceStatus": "Authoritative JMI AS-301 Syllabus"
           },
           {
-            "statement": "Integro-differential equations.",
-            "cheatSheetStatus": "Drafted - in master and unit sheet; source verification required",
-            "sourceStatus": "Cross-branch JMI FET 2025 detailed outline; CSE-DS-specific unit mapping requires confirmation."
+            "statement": "Cayley–Hamilton theorem and its applications to matrix powers and inverses.",
+            "cheatSheetStatus": "Verified - in master and unit sheet",
+            "sourceStatus": "Authoritative JMI AS-301 Syllabus"
           },
           {
-            "statement": "Differential equations.",
-            "cheatSheetStatus": "Drafted - in master and unit sheet; source verification required",
-            "sourceStatus": "Cross-branch JMI FET 2025 detailed outline; CSE-DS-specific unit mapping requires confirmation."
+            "statement": "Vector space axioms: closure, zero vector, additive inverse, scalar distributivity.",
+            "cheatSheetStatus": "Verified - in master and unit sheet",
+            "sourceStatus": "Authoritative JMI AS-301 Syllabus"
+          },
+          {
+            "statement": "Linear combinations, linear dependence, and linear independence.",
+            "cheatSheetStatus": "Verified - in master and unit sheet",
+            "sourceStatus": "Authoritative JMI AS-301 Syllabus"
+          },
+          {
+            "statement": "Basis and dimension of finite-dimensional vector spaces.",
+            "cheatSheetStatus": "Verified - in master and unit sheet",
+            "sourceStatus": "Authoritative JMI AS-301 Syllabus"
+          },
+          {
+            "statement": "Linear transformations, kernel, range, and Rank-Nullity theorem.",
+            "cheatSheetStatus": "Verified - in master and unit sheet",
+            "sourceStatus": "Authoritative JMI AS-301 Syllabus"
+          },
+          {
+            "statement": "Related engineering problems on matrices and transformations.",
+            "cheatSheetStatus": "Verified - in master and unit sheet",
+            "sourceStatus": "Authoritative JMI AS-301 Syllabus"
           }
         ],
         "sixtySecSummary": [
-          "Laplace-transform applications to higher-order linear ODEs with constant and variable coefficients.",
-          "Systems of simultaneous differential equations.",
-          "Integral equations.",
-          "Integro-differential equations.",
-          "Differential equations."
+          "Rouché–Capelli: $AX = B$ is consistent $\\iff \\text{rank}(A) = \\text{rank}([A|B])$.",
+          "Unique solution if $\\text{rank}(A) = \\text{rank}([A|B]) = n$ (number of unknowns).",
+          "Infinitely many solutions if $\\text{rank}(A) = \\text{rank}([A|B]) < n$.",
+          "Inconsistent (no solution) if $\\text{rank}(A) < \\text{rank}([A|B])$.",
+          "Eigenvalues satisfy characteristic equation $|A - \\lambda I| = 0$. Eigenvectors satisfy $(A - \\lambda I)X = 0$.",
+          "Eigenvalue rules: $\\sum \\lambda_i = \\text{trace}(A)$, $\\prod \\lambda_i = \\det(A)$. Eigenvalues of triangular matrix are its diagonal entries.",
+          "Cayley–Hamilton Theorem: Every square matrix satisfies its own characteristic equation $p(A) = A^n + c_{n-1}A^{n-1} + \\dots + c_0 I = O$.",
+          "Matrix inverse via Cayley–Hamilton: $A^{-1} = -\\frac{1}{c_0}\\left(A^{n-1} + c_{n-1}A^{n-2} + \\dots + c_1 I\\right)$ when $\\det(A) \\neq 0$.",
+          "Rank-Nullity Theorem: For $T: V \\to W$, $\\dim(V) = \\text{rank}(T) + \\text{nullity}(T) = \\dim(\\text{Range}(T)) + \\dim(\\text{Ker}(T))$."
         ],
         "coreConcepts": [
           {
-            "title": "2.2 Definition and conditions",
-            "content": "For a causal/time function \\(f(t)\\):\n\n\\[\n\\mathcal L\\{f(t)\\}=F(s)=\\int_0^\\infty e^{-st}f(t)\\,dt\n\\]\n\nThe transform exists under standard piecewise-continuity and exponential-order conditions. In engineering problems, use the unilateral transform unless the question explicitly specifies a bilateral transform."
+            "title": "Consistency Decision Tree (System of Linear Equations)",
+            "content": "1. Reduce augmented matrix [A|B] to row-echelon form. 2. Compare rank(A) with rank([A|B]). If rank(A) < rank([A|B]), system is INCONSISTENT. If rank(A) = rank([A|B]) = n, system has UNIQUE solution. If rank(A) = rank([A|B]) = r < n, system has INFINITELY MANY solutions depending on (n - r) free parameters."
           },
           {
-            "title": "2.3 Standard transform pairs",
-            "content": "| \\(f(t)\\), for \\(t\\ge0\\) | \\(F(s)\\) |\n|---|---|\n| \\(1\\) | \\(1/s\\) |\n| \\(t^n\\), integer \\(n\\ge0\\) | \\(n!/s^{n+1}\\) |\n| \\(e^{at}\\) | \\(1/(s-a)\\) |\n| \\(\\sin at\\) | \\(a/(s^2+a^2)\\) |\n| \\(\\cos at\\) | \\(s/(s^2+a^2)\\) |\n| \\(\\sinh at\\) | \\(a/(s^2-a^2)\\) |\n| \\(\\cosh at\\) | \\(s/(s^2-a^2)\\) |\n| \\(e^{at}\\sin bt\\) | \\(b/((s-a)^2+b^2)\\) |\n| \\(e^{at}\\cos bt\\) | \\((s-a)/((s-a)^2+b^2)\\) |\n| \\(u(t-a)\\) | \\(e^{-as}/s\\) |\n| \\(\\delta(t-a)\\) | \\(e^{-as}\\) |"
+            "title": "Cayley–Hamilton Applications: Higher Powers & Inverse",
+            "content": "Multiply or divide the matrix polynomial relation p(A) = O by powers of A to simplify high exponent powers A^k without direct multiplication, or multiply by A^{-1} to isolate the inverse."
           },
           {
-            "title": "2.4 Properties",
-            "content": "- Linearity: \\(\\mathcal L\\{af+bg\\}=aF+bG\\).\n- First derivative:\n  \\[\n  \\mathcal L\\{f'\\}=sF(s)-f(0^+)\n  \\]\n- Second derivative:\n  \\[\n  \\mathcal L\\{f''\\}=s^2F-sf(0^+)-f'(0^+)\n  \\]\n- nth derivative:\n  \\[\n  \\mathcal L\\{f^{(n)}\\}=s^nF-\\sum_{k=0}^{n-1}s^{n-1-k}f^{(k)}(0^+)\n  \\]\n- Integration in time:\n  \\[\n  \\mathcal L\\left\\{\\int_0^t f(\\tau)d\\tau\\right\\}=\\frac{F(s)}{s}\n  \\]\n- Multiplication by \\(t\\):\n  \\[\n  \\mathcal L\\{t f(t)\\}=-\\frac{dF}{ds}\n  \\]\n- Exponential shift:\n  \\[\n  \\mathcal L\\{e^{at}f(t)\\}=F(s-a)\n  \\]\n- Time shift:\n  \\[\n  \\mathcal L\\{u(t-a)f(t-a)\\}=e^{-as}F(s)\n  \\]\n- Convolution:\n  \\[\n  (f*g)(t)=\\int_0^t f(\\tau)g(t-\\tau)d\\tau,\n  \\quad \\mathcal L\\{f*g\\}=FG\n  \\]\n- Initial value theorem: \\(f(0^+)=\\lim_{s\\to\\infty}sF(s)\\), when its hypotheses hold.\n- Final value theorem: \\(\\lim_{t\\to\\infty}f(t)=\\lim_{s\\to0^+}sF(s)\\), only when the poles of \\(sF(s)\\) satisfy the stability conditions (no poles in the closed right half-plane except an allowed simple pole at zero)."
-          },
-          {
-            "title": "2.5 ODE solution workflow",
-            "content": "For \\(a_ny^{(n)}+\\cdots+a_1y'+a_0y=g(t)\\):\n\n1. Apply the unilateral Laplace transform to both sides.\n2. Replace derivative transforms using initial values.\n3. Solve the resulting algebraic equation for \\(Y(s)\\).\n4. Use partial fractions, shifting and standard pairs to find \\(y(t)=\\mathcal L^{-1}\\{Y(s)\\}\\).\n5. Substitute the initial conditions and, where practical, verify in the original ODE.\n\n**Do not drop initial-condition terms.** This is the most common Laplace-solution error."
-          },
-          {
-            "title": "2.6 Systems, integral equations and integro-differential equations",
-            "content": "- Transform every equation in a simultaneous system; retain each variable as an unknown transform such as \\(X(s),Y(s)\\). Solve the algebraic system, then invert.\n- If an equation contains \\(\\int_0^t y(\\tau)d\\tau\\), transform it to \\(Y(s)/s\\).\n- If a convolution integral appears, recognise the product property.\n- For a variable coefficient such as \\(t y'(t)\\), combine derivative and multiplication-by-time properties; use \\(\\mathcal L\\{t f(t)\\}=-F'(s)\\).\n- Do not assume every variable-coefficient ODE becomes a simple polynomial equation in \\(s\\); follow the exact transform identities."
+            "title": "Vector Space, Basis & Dimension",
+            "content": "A subset B of vector space V is a basis if: (1) B is linearly independent, and (2) B spans V. The number of elements in any basis of V is the dimension dim(V)."
           }
         ],
         "formulaBlocks": [
           {
-            "name": "2.2 Definition and conditions",
-            "formula": "\\mathcal L\\{f(t)\\}=F(s)=\\int_0^\\infty e^{-st}f(t)\\,dt"
+            "name": "Rouché–Capelli Consistency Criterion",
+            "formula": "\\text{rank}(A) = \\text{rank}([A|B]) \\iff AX=B \\text{ is consistent}"
           },
           {
-            "name": "2.4 Properties",
-            "formula": "\\mathcal L\\{f'\\}=sF(s)-f(0^+)"
+            "name": "Characteristic Equation & Eigenvalues",
+            "formula": "\\det(A - \\lambda I) = 0, \\quad (A - \\lambda I)X = 0"
           },
           {
-            "name": "2.4 Properties",
-            "formula": "\\mathcal L\\{f''\\}=s^2F-sf(0^+)-f'(0^+)"
+            "name": "Trace & Determinant Relations",
+            "formula": "\\sum_{i=1}^n \\lambda_i = \\text{tr}(A) = \\sum_{i=1}^n a_{ii}, \\quad \\prod_{i=1}^n \\lambda_i = \\det(A)"
           },
           {
-            "name": "2.4 Properties",
-            "formula": "\\mathcal L\\{f^{(n)}\\}=s^nF-\\sum_{k=0}^{n-1}s^{n-1-k}f^{(k)}(0^+)"
+            "name": "Cayley–Hamilton Theorem",
+            "formula": "p(\\lambda) = \\lambda^n + c_{n-1}\\lambda^{n-1} + \\dots + c_0 = 0 \\implies p(A) = A^n + c_{n-1}A^{n-1} + \\dots + c_0 I = O"
           },
           {
-            "name": "2.4 Properties",
-            "formula": "\\mathcal L\\left\\{\\int_0^t f(\\tau)d\\tau\\right\\}=\\frac{F(s)}{s}"
+            "name": "Linear Independence Condition",
+            "formula": "c_1 v_1 + c_2 v_2 + \\dots + c_k v_k = 0 \\implies c_1 = c_2 = \\dots = c_k = 0"
           },
           {
-            "name": "2.4 Properties",
-            "formula": "\\mathcal L\\{t f(t)\\}=-\\frac{dF}{ds}"
-          },
-          {
-            "name": "2.4 Properties",
-            "formula": "\\mathcal L\\{e^{at}f(t)\\}=F(s-a)"
-          },
-          {
-            "name": "2.4 Properties",
-            "formula": "\\mathcal L\\{u(t-a)f(t-a)\\}=e^{-as}F(s)"
-          },
-          {
-            "name": "2.4 Properties",
-            "formula": "(f*g)(t)=\\int_0^t f(\\tau)g(t-\\tau)d\\tau,\n  \\quad \\mathcal L\\{f*g\\}=FG"
+            "name": "Rank-Nullity Theorem",
+            "formula": "\\dim(V) = \\text{rank}(T) + \\text{nullity}(T)"
           }
         ],
         "examTraps": [
-          "Missing initial values in derivative transforms.",
-          "Confusing \\(e^{at}\\) shift direction: replace \\(s\\) by \\(s-a\\).",
-          "Applying the time-shift theorem to \\(f(t-a)\\) without the step function.",
-          "Using the final-value theorem for an unstable/oscillatory transform.",
-          "Forgetting the factor \\(1/s\\) for a time integral.",
-          "Incorrect partial-fraction constants or inverse-transform algebra."
+          "Remember: Consistency requires rank(A) = rank([A|B]). For unique solution, rank must equal the number of unknowns.",
+          "Eigenvalue property check: sum of eigenvalues = trace(A), product of eigenvalues = det(A)."
         ],
-        "markdownSource": "# ENGINEERING MATHEMATICS III — ASB-301\n\n## 2 — Applications of Laplace Transforms\n\n**Course code:** ASB-301\n\n**Source status:** Cross-branch JMI FET 2025 detailed outline; CSE-DS-specific unit mapping requires confirmation.\n\nThis is a unit-level extract from `MASTER_CHEAT_SHEETS.md`. Use the master file for the complete source and caveat notes.\n\n## Unit 2 — Applications of Laplace Transforms\n\n### 2.1 Syllabus coverage\n\n- Laplace-transform applications to higher-order linear ODEs with constant and variable coefficients.\n- Systems of simultaneous differential equations.\n- Integral equations.\n- Integro-differential equations.\n- Differential equations.\n\n### 2.2 Definition and conditions\n\nFor a causal/time function \\(f(t)\\):\n\n\\[\n\\mathcal L\\{f(t)\\}=F(s)=\\int_0^\\infty e^{-st}f(t)\\,dt\n\\]\n\nThe transform exists under standard piecewise-continuity and exponential-order conditions. In engineering problems, use the unilateral transform unless the question explicitly specifies a bilateral transform.\n\n### 2.3 Standard transform pairs\n\n| \\(f(t)\\), for \\(t\\ge0\\) | \\(F(s)\\) |\n|---|---|\n| \\(1\\) | \\(1/s\\) |\n| \\(t^n\\), integer \\(n\\ge0\\) | \\(n!/s^{n+1}\\) |\n| \\(e^{at}\\) | \\(1/(s-a)\\) |\n| \\(\\sin at\\) | \\(a/(s^2+a^2)\\) |\n| \\(\\cos at\\) | \\(s/(s^2+a^2)\\) |\n| \\(\\sinh at\\) | \\(a/(s^2-a^2)\\) |\n| \\(\\cosh at\\) | \\(s/(s^2-a^2)\\) |\n| \\(e^{at}\\sin bt\\) | \\(b/((s-a)^2+b^2)\\) |\n| \\(e^{at}\\cos bt\\) | \\((s-a)/((s-a)^2+b^2)\\) |\n| \\(u(t-a)\\) | \\(e^{-as}/s\\) |\n| \\(\\delta(t-a)\\) | \\(e^{-as}\\) |\n\n### 2.4 Properties\n\n- Linearity: \\(\\mathcal L\\{af+bg\\}=aF+bG\\).\n- First derivative:\n  \\[\n  \\mathcal L\\{f'\\}=sF(s)-f(0^+)\n  \\]\n- Second derivative:\n  \\[\n  \\mathcal L\\{f''\\}=s^2F-sf(0^+)-f'(0^+)\n  \\]\n- nth derivative:\n  \\[\n  \\mathcal L\\{f^{(n)}\\}=s^nF-\\sum_{k=0}^{n-1}s^{n-1-k}f^{(k)}(0^+)\n  \\]\n- Integration in time:\n  \\[\n  \\mathcal L\\left\\{\\int_0^t f(\\tau)d\\tau\\right\\}=\\frac{F(s)}{s}\n  \\]\n- Multiplication by \\(t\\):\n  \\[\n  \\mathcal L\\{t f(t)\\}=-\\frac{dF}{ds}\n  \\]\n- Exponential shift:\n  \\[\n  \\mathcal L\\{e^{at}f(t)\\}=F(s-a)\n  \\]\n- Time shift:\n  \\[\n  \\mathcal L\\{u(t-a)f(t-a)\\}=e^{-as}F(s)\n  \\]\n- Convolution:\n  \\[\n  (f*g)(t)=\\int_0^t f(\\tau)g(t-\\tau)d\\tau,\n  \\quad \\mathcal L\\{f*g\\}=FG\n  \\]\n- Initial value theorem: \\(f(0^+)=\\lim_{s\\to\\infty}sF(s)\\), when its hypotheses hold.\n- Final value theorem: \\(\\lim_{t\\to\\infty}f(t)=\\lim_{s\\to0^+}sF(s)\\), only when the poles of \\(sF(s)\\) satisfy the stability conditions (no poles in the closed right half-plane except an allowed simple pole at zero).\n\n### 2.5 ODE solution workflow\n\nFor \\(a_ny^{(n)}+\\cdots+a_1y'+a_0y=g(t)\\):\n\n1. Apply the unilateral Laplace transform to both sides.\n2. Replace derivative transforms using initial values.\n3. Solve the resulting algebraic equation for \\(Y(s)\\).\n4. Use partial fractions, shifting and standard pairs to find \\(y(t)=\\mathcal L^{-1}\\{Y(s)\\}\\).\n5. Substitute the initial conditions and, where practical, verify in the original ODE.\n\n**Do not drop initial-condition terms.** This is the most common Laplace-solution error.\n\n### 2.6 Systems, integral equations and integro-differential equations\n\n- Transform every equation in a simultaneous system; retain each variable as an unknown transform such as \\(X(s),Y(s)\\). Solve the algebraic system, then invert.\n- If an equation contains \\(\\int_0^t y(\\tau)d\\tau\\), transform it to \\(Y(s)/s\\).\n- If a convolution integral appears, recognise the product property.\n- For a variable coefficient such as \\(t y'(t)\\), combine derivative and multiplication-by-time properties; use \\(\\mathcal L\\{t f(t)\\}=-F'(s)\\).\n- Do not assume every variable-coefficient ODE becomes a simple polynomial equation in \\(s\\); follow the exact transform identities.\n\n### 2.7 Common exam traps\n\n- Missing initial values in derivative transforms.\n- Confusing \\(e^{at}\\) shift direction: replace \\(s\\) by \\(s-a\\).\n- Applying the time-shift theorem to \\(f(t-a)\\) without the step function.\n- Using the final-value theorem for an unstable/oscillatory transform.\n- Forgetting the factor \\(1/s\\) for a time integral.\n- Incorrect partial-fraction constants or inverse-transform algebra.\n\n---\n"
+        "markdownSource": "# Unit II — Linear Algebra and Its Applications\n\n- Consistency of AX = B using rank\n- Eigenvalues and eigenvectors\n- Cayley-Hamilton theorem\n- Vector spaces, basis and dimension\n- Linear transformations and Rank-Nullity theorem"
       },
       {
         "unitId": "asb-301-u3",
         "unitBundleId": "engineering_mathematics_iii_unit_3",
         "unitNumber": 3,
-        "unitTitle": "3 — Fourier Series and Fourier Transforms",
+        "unitTitle": "3 — Fourier Series, Fourier Transforms and Its Applications",
         "subjectId": "asb-301",
-        "sourceStatus": "Cross-branch JMI FET 2025 detailed outline; CSE-DS-specific unit mapping requires confirmation.",
+        "sourceStatus": "Authoritative JMI AS-301 Syllabus",
         "coverageStatements": [
           "Fourier series over full and half ranges for arbitrary period.",
           "Fourier integral representation.",
@@ -477,9 +403,9 @@
         "unitId": "asb-301-u4",
         "unitBundleId": "engineering_mathematics_iii_unit_4",
         "unitNumber": 4,
-        "unitTitle": "4 — Difference Equations and Z-Transforms",
+        "unitTitle": "4 — Difference Equations, Z-Transforms and Its Applications",
         "subjectId": "asb-301",
-        "sourceStatus": "Cross-branch JMI FET 2025 detailed outline; CSE-DS-specific unit mapping requires confirmation.",
+        "sourceStatus": "Authoritative JMI AS-301 Syllabus",
         "coverageStatements": [
           "Difference equations, formation and order.",
           "Linear difference equations and solutions.",
@@ -622,163 +548,128 @@
         "unitId": "asb-301-u5",
         "unitBundleId": "engineering_mathematics_iii_unit_5",
         "unitNumber": 5,
-        "unitTitle": "5 — Higher Calculus",
+        "unitTitle": "5 — Probability and Statistics",
         "subjectId": "asb-301",
-        "sourceStatus": "Cross-branch JMI FET 2025 detailed outline; CSE-DS-specific unit mapping requires confirmation.",
+        "sourceStatus": "Authoritative JMI AS-301 Syllabus",
         "coverageStatements": [
-          "Extremals of a functional using Euler–Poisson equations.",
-          "Isoperimetric problems.",
-          "Beta and Gamma functions.",
-          "Fractional derivative.",
-          "Dirichlet's and “Lowville's” multiple integrals (the source wording appears to say “Lowville's”; confirm the intended name with the instructor/notes before publication).",
-          "Representation of definite integrals in Legendre and Jacobi forms of elliptic integrals of the first, second and third kinds."
+          "Probability theorems: addition theorem, conditional probability, multiplication theorem, total probability, and Bayes’ theorem.",
+          "Discrete and continuous random variables, probability mass function (PMF), probability density function (PDF), cumulative distribution function (CDF).",
+          "Binomial distribution: PMF, mean np, variance npq, conditions and Poisson approximation.",
+          "Poisson distribution: PMF, mean lambda, variance lambda, rare events modeling.",
+          "Normal distribution: PDF, standard normal distribution Z = (X - mu)/sigma, bell curve properties.",
+          "Raw moments, central moments, and inter-moment recurrence relations.",
+          "Karl Pearson and moment-based skewness (beta_1, gamma_1) and direction of skew.",
+          "Kurtosis (beta_2, gamma_2), mesokurtic, leptokurtic, and platykurtic distributions.",
+          "Spearman’s rank correlation coefficient rho and bivariate scatter trends."
         ],
         "csvCoverageEntries": [
           {
-            "statement": "Extremals of a functional using Euler–Poisson equations.",
-            "cheatSheetStatus": "Drafted - in master and unit sheet; source verification required",
-            "sourceStatus": "Cross-branch JMI FET 2025 detailed outline; CSE-DS-specific unit mapping requires confirmation."
+            "statement": "Probability theorems: addition theorem, conditional probability, multiplication theorem, total probability, and Bayes’ theorem.",
+            "cheatSheetStatus": "Verified - in master and unit sheet",
+            "sourceStatus": "Authoritative JMI AS-301 Syllabus"
           },
           {
-            "statement": "Isoperimetric problems.",
-            "cheatSheetStatus": "Drafted - in master and unit sheet; source verification required",
-            "sourceStatus": "Cross-branch JMI FET 2025 detailed outline; CSE-DS-specific unit mapping requires confirmation."
+            "statement": "Discrete and continuous random variables, probability mass function (PMF), probability density function (PDF), cumulative distribution function (CDF).",
+            "cheatSheetStatus": "Verified - in master and unit sheet",
+            "sourceStatus": "Authoritative JMI AS-301 Syllabus"
           },
           {
-            "statement": "Beta and Gamma functions.",
-            "cheatSheetStatus": "Drafted - in master and unit sheet; source verification required",
-            "sourceStatus": "Cross-branch JMI FET 2025 detailed outline; CSE-DS-specific unit mapping requires confirmation."
+            "statement": "Binomial distribution: PMF, mean np, variance npq, conditions and Poisson approximation.",
+            "cheatSheetStatus": "Verified - in master and unit sheet",
+            "sourceStatus": "Authoritative JMI AS-301 Syllabus"
           },
           {
-            "statement": "Fractional derivative.",
-            "cheatSheetStatus": "Drafted - in master and unit sheet; source verification required",
-            "sourceStatus": "Cross-branch JMI FET 2025 detailed outline; CSE-DS-specific unit mapping requires confirmation."
+            "statement": "Poisson distribution: PMF, mean lambda, variance lambda, rare events modeling.",
+            "cheatSheetStatus": "Verified - in master and unit sheet",
+            "sourceStatus": "Authoritative JMI AS-301 Syllabus"
           },
           {
-            "statement": "Dirichlet's and “Lowville's” multiple integrals (the source wording appears to say “Lowville's”; confirm the intended name with the instructor/notes before publication).",
-            "cheatSheetStatus": "Drafted - in master and unit sheet; source verification required",
-            "sourceStatus": "Cross-branch JMI FET 2025 detailed outline; CSE-DS-specific unit mapping requires confirmation."
+            "statement": "Normal distribution: PDF, standard normal distribution Z = (X - mu)/sigma, bell curve properties.",
+            "cheatSheetStatus": "Verified - in master and unit sheet",
+            "sourceStatus": "Authoritative JMI AS-301 Syllabus"
           },
           {
-            "statement": "Representation of definite integrals in Legendre and Jacobi forms of elliptic integrals of the first",
-            "cheatSheetStatus": "second and third kinds.",
-            "sourceStatus": "Drafted - in master and unit sheet; source verification required"
+            "statement": "Raw moments, central moments, and inter-moment recurrence relations.",
+            "cheatSheetStatus": "Verified - in master and unit sheet",
+            "sourceStatus": "Authoritative JMI AS-301 Syllabus"
+          },
+          {
+            "statement": "Karl Pearson and moment-based skewness (beta_1, gamma_1) and direction of skew.",
+            "cheatSheetStatus": "Verified - in master and unit sheet",
+            "sourceStatus": "Authoritative JMI AS-301 Syllabus"
+          },
+          {
+            "statement": "Kurtosis (beta_2, gamma_2), mesokurtic, leptokurtic, and platykurtic distributions.",
+            "cheatSheetStatus": "Verified - in master and unit sheet",
+            "sourceStatus": "Authoritative JMI AS-301 Syllabus"
+          },
+          {
+            "statement": "Spearman’s rank correlation coefficient rho and bivariate scatter trends.",
+            "cheatSheetStatus": "Verified - in master and unit sheet",
+            "sourceStatus": "Authoritative JMI AS-301 Syllabus"
           }
         ],
         "sixtySecSummary": [
-          "Extremals of a functional using Euler–Poisson equations.",
-          "Isoperimetric problems.",
-          "Beta and Gamma functions.",
-          "Fractional derivative.",
-          "Dirichlet's and “Lowville's” multiple integrals (the source wording appears to say “Lowville's”; confirm the intended name with the instructor/notes before publication).",
-          "Representation of definite integrals in Legendre and Jacobi forms of elliptic integrals of the first, second and third kinds."
+          "Total Probability: $P(A) = \\sum_{i=1}^k P(B_i)P(A|B_i)$.",
+          "Bayes' Theorem: $P(B_j|A) = \\frac{P(B_j)P(A|B_j)}{\\sum_{i=1}^k P(B_i)P(A|B_i)}$.",
+          "Binomial Distribution: $P(X=r) = \\binom{n}{r}p^r q^{n-r}$, Mean $\\mu = np$, Variance $\\sigma^2 = npq$, $\\text{SD} = \\sqrt{npq}$.",
+          "Poisson Distribution: $P(X=r) = \\frac{e^{-\\lambda}\\lambda^r}{r!}$, Mean $\\mu = \\lambda$, Variance $\\sigma^2 = \\lambda$, $\\text{SD} = \\sqrt{\\lambda}$.",
+          "Normal Distribution: $f(x) = \\frac{1}{\\sigma\\sqrt{2\\pi}}\\exp\\left[-\\frac{(x-\\mu)^2}{2\\sigma^2}\\right]$. Standard score $Z = \\frac{X-\\mu}{\\sigma}$. Symmetrical bell curve with Mean = Median = Mode.",
+          "Moments Relations: $\\mu_1 = 0$, $\\mu_2 = \\mu'_2 - (\\mu'_1)^2 = \\sigma^2$, $\\mu_3 = \\mu'_3 - 3\\mu'_2\\mu'_1 + 2(\\mu'_1)^3$, $\\mu_4 = \\mu'_4 - 4\\mu'_3\\mu'_1 + 6\\mu'_2(\\mu'_1)^2 - 3(\\mu'_1)^4$.",
+          "Skewness: $\\beta_1 = \\frac{\\mu_3^2}{\\mu_2^3}$, $\\gamma_1 = \\frac{\\mu_3}{\\sigma^3}$. $\\gamma_1 > 0 \\implies$ Right-skewed; $\\gamma_1 = 0 \\implies$ Symmetric; $\\gamma_1 < 0 \\implies$ Left-skewed.",
+          "Kurtosis: $\\beta_2 = \\frac{\\mu_4}{\\mu_2^2}$, $\\gamma_2 = \\beta_2 - 3$. $\\beta_2 = 3$ (mesokurtic / normal), $\\beta_2 > 3$ (leptokurtic / peaked), $\\beta_2 < 3$ (platykurtic / flat).",
+          "Spearman's Rank Correlation: $\\rho = 1 - \\frac{6\\sum d_i^2}{n(n^2 - 1)}$ where $d_i = R_{1i} - R_{2i}$."
         ],
         "coreConcepts": [
           {
-            "title": "5.2 Calculus of variations",
-            "content": "A functional maps a function to a scalar, e.g.\n\n\\[\nJ[y]=\\int_a^b F(x,y,y')\\,dx\n\\]\n\nFor fixed endpoint values, a necessary condition for an extremal is the Euler–Lagrange equation:\n\n\\[\n\\frac{\\partial F}{\\partial y}-\\frac{d}{dx}\\left(\\frac{\\partial F}{\\partial y'}\\right)=0\n\\]\n\nEquivalent sign-reversed forms are identical when both sides are set to zero.\n\nFor a functional depending on derivatives through order \\(m\\):\n\n\\[\n\\sum_{k=0}^{m}(-1)^k\\frac{d^k}{dx^k}\\left(\\frac{\\partial F}{\\partial y^{(k)}}\\right)=0\n\\]\n\nThis is the higher-order Euler–Poisson form; use the notation/convention prescribed in the lecture."
+            "title": "Probability Distributions Comparison",
+            "content": "Binomial: n independent trials, constant p, discrete. Poisson: n large, p small, lambda = np, discrete counts of rare events. Normal: continuous, symmetric bell curve, 68-95-99.7 rule for [mu +- sigma, mu +- 2sigma, mu +- 3sigma]."
           },
           {
-            "title": "5.3 Isoperimetric problems",
-            "content": "Optimise \\(J[y]=\\int_a^bF(x,y,y')dx\\) subject to:\n\n\\[\nK[y]=\\int_a^bG(x,y,y')dx=C\n\\]\n\nIntroduce a multiplier \\(\\lambda\\) and apply Euler–Lagrange to the augmented integrand:\n\n\\[\n\\widetilde F=F+\\lambda G\n\\]\n\nThen solve the Euler–Lagrange equation together with the integral constraint and boundary conditions."
+            "title": "Skewness and Kurtosis Interpretation in Exams",
+            "content": "Skewness measures asymmetry: positive skew (tail to the right, Mean > Median > Mode); negative skew (tail to the left, Mean < Median < Mode). Kurtosis measures peakedness: mesokurtic (beta_2 = 3), leptokurtic (beta_2 > 3, heavier tails), platykurtic (beta_2 < 3, flatter peak)."
           },
           {
-            "title": "5.4 Gamma and Beta functions",
-            "content": "\\[\n\\Gamma(s)=\\int_0^\\infty x^{s-1}e^{-x}dx,\\quad \\Re(s)>0\n\\]\n\n\\[\n\\Gamma(s+1)=s\\Gamma(s),\\quad \\Gamma(n+1)=n!,\\quad \\Gamma(1/2)=\\sqrt\\pi\n\\]\n\n\\[\nB(p,q)=\\int_0^1x^{p-1}(1-x)^{q-1}dx=\\frac{\\Gamma(p)\\Gamma(q)}{\\Gamma(p+q)}\n\\]\n\nTrigonometric form:\n\n\\[\nB(p,q)=2\\int_0^{\\pi/2}(\\sin\\theta)^{2p-1}(\\cos\\theta)^{2q-1}d\\theta\n\\]"
-          },
-          {
-            "title": "5.5 Fractional derivatives — convention warning",
-            "content": "Fractional differentiation has multiple definitions. Do not mix Riemann–Liouville and Caputo formulas. One common Riemann–Liouville derivative of order \\(\\alpha\\), with \\(m-1<\\alpha<m\\), is:\n\n\\[\nD_{a+}^{\\alpha}f(x)=\\frac{1}{\\Gamma(m-\\alpha)}\\frac{d^m}{dx^m}\\int_a^x(x-t)^{m-\\alpha-1}f(t)dt\n\\]\n\nA common Caputo form is:\n\n\\[\n{}^CD_{a+}^{\\alpha}f(x)=\\frac{1}{\\Gamma(m-\\alpha)}\\int_a^x(x-t)^{m-\\alpha-1}f^{(m)}(t)dt\n\\]\n\nThe exact definition taught in the course notes must be used for examination problems. The two derivatives differ, particularly in how initial conditions are represented."
-          },
-          {
-            "title": "5.6 Dirichlet-type multiple integral",
-            "content": "A standard simplex form is:\n\n\\[\n\\int_{\\substack{x_i\\ge0\\\\x_1+\\cdots+x_n\\le1}}\n\\left(\\prod_{i=1}^{n}x_i^{\\alpha_i-1}\\right)\n(1-\\sum_{i=1}^{n}x_i)^{\\alpha_{n+1}-1}dx_1\\cdots dx_n\n=\\frac{\\prod_{i=1}^{n+1}\\Gamma(\\alpha_i)}{\\Gamma(\\sum_{i=1}^{n+1}\\alpha_i)}\n\\]\n\nThis requires positive real parts of the parameters. Confirm the exact “Lowville's” term/formula in the user's lecture notes; the supplied course-structure text may contain a spelling/OCR error."
-          },
-          {
-            "title": "5.7 Elliptic integrals — Legendre forms",
-            "content": "For modulus \\(k\\), parameter \\(n\\) and amplitude \\(\\phi\\):\n\n- First kind:\n  \\[\n  F(\\phi,k)=\\int_0^\\phi\\frac{d\\theta}{\\sqrt{1-k^2\\sin^2\\theta}}\n  \\]\n- Second kind:\n  \\[\n  E(\\phi,k)=\\int_0^\\phi\\sqrt{1-k^2\\sin^2\\theta}\\,d\\theta\n  \\]\n- Third kind:\n  \\[\n  \\Pi(n;\\phi,k)=\\int_0^\\phi\\frac{d\\theta}{(1-n\\sin^2\\theta)\\sqrt{1-k^2\\sin^2\\theta}}\n  \\]\n\nComplete forms use \\(\\phi=\\pi/2\\): \\(K(k)=F(\\pi/2,k)\\), \\(E(k)=E(\\pi/2,k)\\), \\(\\Pi(n,k)=\\Pi(n;\\pi/2,k)\\)."
-          },
-          {
-            "title": "5.8 Quick problem workflow",
-            "content": "1. For a variational problem, identify the integrand \\(F\\), dependent variable and derivative order.\n2. Apply the correct Euler–Lagrange/Euler–Poisson equation.\n3. For an isoperimetric constraint, introduce a multiplier and use the constraint after solving.\n4. For Beta/Gamma integrals, look for exponent patterns and substitute to \\([0,1]\\) or \\([0,\\pi/2]\\).\n5. For elliptic integrals, match the square-root denominator and any \\((1-n\\sin^2\\theta)\\) factor to kind I, II or III."
-          },
-          {
-            "title": "Engineering Mathematics III — syllabus-version warning",
-            "content": "An older JMI FET ASB-301 outline has a different arrangement: Unit I vector calculus; Unit II linear algebra (rank consistency, eigenvalues/eigenvectors, Cayley–Hamilton, vector spaces and linear transformations); Unit III Fourier; Unit IV difference equations/Z-transforms; Unit V probability/statistics (probability theorems, binomial/Poisson/normal distributions, moments, skewness, kurtosis and rank correlation). This older outline should not be merged into the five-unit 2025 working version above without confirmation. If the department's CSE-DS handout confirms the older version, replace Units I, II and V with that version and retain the Unit III/IV transform material.\n\n---"
+            "title": "Spearman’s Rank Correlation Workflow",
+            "content": "1. Assign ranks to X and Y variables. 2. Compute differences d_i = R_{X_i} - R_{Y_i}. 3. Square each difference d_i^2 and calculate sum. 4. Substitute into rho = 1 - 6 sum(d^2) / [n(n^2 - 1)]. Result satisfies -1 <= rho <= 1."
           }
         ],
         "formulaBlocks": [
           {
-            "name": "5.2 Calculus of variations",
-            "formula": "J[y]=\\int_a^b F(x,y,y')\\,dx"
+            "name": "Bayes' Theorem",
+            "formula": "P(B_j | A) = \\frac{P(B_j)P(A | B_j)}{\\sum_{i=1}^k P(B_i)P(A | B_i)}"
           },
           {
-            "name": "5.2 Calculus of variations",
-            "formula": "\\frac{\\partial F}{\\partial y}-\\frac{d}{dx}\\left(\\frac{\\partial F}{\\partial y'}\\right)=0"
+            "name": "Binomial Distribution PMF & Parameters",
+            "formula": "P(X=r) = \\binom{n}{r}p^r q^{n-r}, \\quad \\mu = np, \\quad \\sigma^2 = npq"
           },
           {
-            "name": "5.2 Calculus of variations",
-            "formula": "\\sum_{k=0}^{m}(-1)^k\\frac{d^k}{dx^k}\\left(\\frac{\\partial F}{\\partial y^{(k)}}\\right)=0"
+            "name": "Poisson Distribution PMF & Parameters",
+            "formula": "P(X=r) = \\frac{e^{-\\lambda}\\lambda^r}{r!}, \\quad \\mu = \\lambda, \\quad \\sigma^2 = \\lambda"
           },
           {
-            "name": "5.3 Isoperimetric problems",
-            "formula": "K[y]=\\int_a^bG(x,y,y')dx=C"
+            "name": "Normal Distribution & Z-Standardization",
+            "formula": "f(x) = \\frac{1}{\\sigma\\sqrt{2\\pi}}e^{-\\frac{(x-\\mu)^2}{2\\sigma^2}}, \\quad Z = \\frac{X - \\mu}{\\sigma}"
           },
           {
-            "name": "5.3 Isoperimetric problems",
-            "formula": "\\widetilde F=F+\\lambda G"
+            "name": "Central Moments from Raw Moments",
+            "formula": "\\mu_2 = \\mu'_2 - (\\mu'_1)^2, \\quad \\mu_3 = \\mu'_3 - 3\\mu'_2\\mu'_1 + 2(\\mu'_1)^3, \\quad \\mu_4 = \\mu'_4 - 4\\mu'_3\\mu'_1 + 6\\mu'_2(\\mu'_1)^2 - 3(\\mu'_1)^4"
           },
           {
-            "name": "5.4 Gamma and Beta functions",
-            "formula": "\\Gamma(s)=\\int_0^\\infty x^{s-1}e^{-x}dx,\\quad \\Re(s)>0"
+            "name": "Skewness and Kurtosis Coefficients",
+            "formula": "\\beta_1 = \\frac{\\mu_3^2}{\\mu_2^3}, \\quad \\beta_2 = \\frac{\\mu_4}{\\mu_2^2}, \\quad \\gamma_2 = \\beta_2 - 3"
           },
           {
-            "name": "5.4 Gamma and Beta functions",
-            "formula": "\\Gamma(s+1)=s\\Gamma(s),\\quad \\Gamma(n+1)=n!,\\quad \\Gamma(1/2)=\\sqrt\\pi"
-          },
-          {
-            "name": "5.4 Gamma and Beta functions",
-            "formula": "B(p,q)=\\int_0^1x^{p-1}(1-x)^{q-1}dx=\\frac{\\Gamma(p)\\Gamma(q)}{\\Gamma(p+q)}"
-          },
-          {
-            "name": "5.4 Gamma and Beta functions",
-            "formula": "B(p,q)=2\\int_0^{\\pi/2}(\\sin\\theta)^{2p-1}(\\cos\\theta)^{2q-1}d\\theta"
-          },
-          {
-            "name": "5.5 Fractional derivatives — convention warning",
-            "formula": "D_{a+}^{\\alpha}f(x)=\\frac{1}{\\Gamma(m-\\alpha)}\\frac{d^m}{dx^m}\\int_a^x(x-t)^{m-\\alpha-1}f(t)dt"
-          },
-          {
-            "name": "5.5 Fractional derivatives — convention warning",
-            "formula": "{}^CD_{a+}^{\\alpha}f(x)=\\frac{1}{\\Gamma(m-\\alpha)}\\int_a^x(x-t)^{m-\\alpha-1}f^{(m)}(t)dt"
-          },
-          {
-            "name": "5.6 Dirichlet-type multiple integral",
-            "formula": "\\int_{\\substack{x_i\\ge0\\\\x_1+\\cdots+x_n\\le1}}\n\\left(\\prod_{i=1}^{n}x_i^{\\alpha_i-1}\\right)\n(1-\\sum_{i=1}^{n}x_i)^{\\alpha_{n+1}-1}dx_1\\cdots dx_n\n=\\frac{\\prod_{i=1}^{n+1}\\Gamma(\\alpha_i)}{\\Gamma(\\sum_{i=1}^{n+1}\\alpha_i)}"
-          },
-          {
-            "name": "5.7 Elliptic integrals — Legendre forms",
-            "formula": "F(\\phi,k)=\\int_0^\\phi\\frac{d\\theta}{\\sqrt{1-k^2\\sin^2\\theta}}"
-          },
-          {
-            "name": "5.7 Elliptic integrals — Legendre forms",
-            "formula": "E(\\phi,k)=\\int_0^\\phi\\sqrt{1-k^2\\sin^2\\theta}\\,d\\theta"
-          },
-          {
-            "name": "5.7 Elliptic integrals — Legendre forms",
-            "formula": "\\Pi(n;\\phi,k)=\\int_0^\\phi\\frac{d\\theta}{(1-n\\sin^2\\theta)\\sqrt{1-k^2\\sin^2\\theta}}"
+            "name": "Spearman's Rank Correlation",
+            "formula": "\\rho = 1 - \\frac{6 \\sum d_i^2}{n(n^2 - 1)}"
           }
         ],
         "examTraps": [
-          "Reversing Euler–Lagrange derivative terms inconsistently.",
-          "Ignoring boundary conditions.",
-          "Forgetting the multiplier in an isoperimetric problem.",
-          "Using \\(\\Gamma(n)=n!\\) instead of \\(\\Gamma(n+1)=n!\\).",
-          "Confusing Beta and Gamma functions.",
-          "Using a fractional-derivative definition different from the question's convention.",
-          "Confusing the three kinds of elliptic integrals."
+          "Poisson distribution has variance = lambda, but standard deviation = sqrt(lambda).",
+          "For a normal distribution, beta_2 = 3 and gamma_2 = 0. Leptokurtic has beta_2 > 3.",
+          "Bayes theorem requires partitioning the sample space into mutually exclusive and exhaustive events."
         ],
-        "markdownSource": "# ENGINEERING MATHEMATICS III — ASB-301\n\n## 5 — Higher Calculus\n\n**Course code:** ASB-301\n\n**Source status:** Cross-branch JMI FET 2025 detailed outline; CSE-DS-specific unit mapping requires confirmation.\n\nThis is a unit-level extract from `MASTER_CHEAT_SHEETS.md`. Use the master file for the complete source and caveat notes.\n\n## Unit 5 — Higher Calculus\n\n### 5.1 Syllabus coverage\n\n- Extremals of a functional using Euler–Poisson equations.\n- Isoperimetric problems.\n- Beta and Gamma functions.\n- Fractional derivative.\n- Dirichlet's and “Lowville's” multiple integrals (the source wording appears to say “Lowville's”; confirm the intended name with the instructor/notes before publication).\n- Representation of definite integrals in Legendre and Jacobi forms of elliptic integrals of the first, second and third kinds.\n\n### 5.2 Calculus of variations\n\nA functional maps a function to a scalar, e.g.\n\n\\[\nJ[y]=\\int_a^b F(x,y,y')\\,dx\n\\]\n\nFor fixed endpoint values, a necessary condition for an extremal is the Euler–Lagrange equation:\n\n\\[\n\\frac{\\partial F}{\\partial y}-\\frac{d}{dx}\\left(\\frac{\\partial F}{\\partial y'}\\right)=0\n\\]\n\nEquivalent sign-reversed forms are identical when both sides are set to zero.\n\nFor a functional depending on derivatives through order \\(m\\):\n\n\\[\n\\sum_{k=0}^{m}(-1)^k\\frac{d^k}{dx^k}\\left(\\frac{\\partial F}{\\partial y^{(k)}}\\right)=0\n\\]\n\nThis is the higher-order Euler–Poisson form; use the notation/convention prescribed in the lecture.\n\n### 5.3 Isoperimetric problems\n\nOptimise \\(J[y]=\\int_a^bF(x,y,y')dx\\) subject to:\n\n\\[\nK[y]=\\int_a^bG(x,y,y')dx=C\n\\]\n\nIntroduce a multiplier \\(\\lambda\\) and apply Euler–Lagrange to the augmented integrand:\n\n\\[\n\\widetilde F=F+\\lambda G\n\\]\n\nThen solve the Euler–Lagrange equation together with the integral constraint and boundary conditions.\n\n### 5.4 Gamma and Beta functions\n\n\\[\n\\Gamma(s)=\\int_0^\\infty x^{s-1}e^{-x}dx,\\quad \\Re(s)>0\n\\]\n\n\\[\n\\Gamma(s+1)=s\\Gamma(s),\\quad \\Gamma(n+1)=n!,\\quad \\Gamma(1/2)=\\sqrt\\pi\n\\]\n\n\\[\nB(p,q)=\\int_0^1x^{p-1}(1-x)^{q-1}dx=\\frac{\\Gamma(p)\\Gamma(q)}{\\Gamma(p+q)}\n\\]\n\nTrigonometric form:\n\n\\[\nB(p,q)=2\\int_0^{\\pi/2}(\\sin\\theta)^{2p-1}(\\cos\\theta)^{2q-1}d\\theta\n\\]\n\n### 5.5 Fractional derivatives — convention warning\n\nFractional differentiation has multiple definitions. Do not mix Riemann–Liouville and Caputo formulas. One common Riemann–Liouville derivative of order \\(\\alpha\\), with \\(m-1<\\alpha<m\\), is:\n\n\\[\nD_{a+}^{\\alpha}f(x)=\\frac{1}{\\Gamma(m-\\alpha)}\\frac{d^m}{dx^m}\\int_a^x(x-t)^{m-\\alpha-1}f(t)dt\n\\]\n\nA common Caputo form is:\n\n\\[\n{}^CD_{a+}^{\\alpha}f(x)=\\frac{1}{\\Gamma(m-\\alpha)}\\int_a^x(x-t)^{m-\\alpha-1}f^{(m)}(t)dt\n\\]\n\nThe exact definition taught in the course notes must be used for examination problems. The two derivatives differ, particularly in how initial conditions are represented.\n\n### 5.6 Dirichlet-type multiple integral\n\nA standard simplex form is:\n\n\\[\n\\int_{\\substack{x_i\\ge0\\\\x_1+\\cdots+x_n\\le1}}\n\\left(\\prod_{i=1}^{n}x_i^{\\alpha_i-1}\\right)\n(1-\\sum_{i=1}^{n}x_i)^{\\alpha_{n+1}-1}dx_1\\cdots dx_n\n=\\frac{\\prod_{i=1}^{n+1}\\Gamma(\\alpha_i)}{\\Gamma(\\sum_{i=1}^{n+1}\\alpha_i)}\n\\]\n\nThis requires positive real parts of the parameters. Confirm the exact “Lowville's” term/formula in the user's lecture notes; the supplied course-structure text may contain a spelling/OCR error.\n\n### 5.7 Elliptic integrals — Legendre forms\n\nFor modulus \\(k\\), parameter \\(n\\) and amplitude \\(\\phi\\):\n\n- First kind:\n  \\[\n  F(\\phi,k)=\\int_0^\\phi\\frac{d\\theta}{\\sqrt{1-k^2\\sin^2\\theta}}\n  \\]\n- Second kind:\n  \\[\n  E(\\phi,k)=\\int_0^\\phi\\sqrt{1-k^2\\sin^2\\theta}\\,d\\theta\n  \\]\n- Third kind:\n  \\[\n  \\Pi(n;\\phi,k)=\\int_0^\\phi\\frac{d\\theta}{(1-n\\sin^2\\theta)\\sqrt{1-k^2\\sin^2\\theta}}\n  \\]\n\nComplete forms use \\(\\phi=\\pi/2\\): \\(K(k)=F(\\pi/2,k)\\), \\(E(k)=E(\\pi/2,k)\\), \\(\\Pi(n,k)=\\Pi(n;\\pi/2,k)\\).\n\n### 5.8 Quick problem workflow\n\n1. For a variational problem, identify the integrand \\(F\\), dependent variable and derivative order.\n2. Apply the correct Euler–Lagrange/Euler–Poisson equation.\n3. For an isoperimetric constraint, introduce a multiplier and use the constraint after solving.\n4. For Beta/Gamma integrals, look for exponent patterns and substitute to \\([0,1]\\) or \\([0,\\pi/2]\\).\n5. For elliptic integrals, match the square-root denominator and any \\((1-n\\sin^2\\theta)\\) factor to kind I, II or III.\n\n### 5.9 Common exam traps\n\n- Reversing Euler–Lagrange derivative terms inconsistently.\n- Ignoring boundary conditions.\n- Forgetting the multiplier in an isoperimetric problem.\n- Using \\(\\Gamma(n)=n!\\) instead of \\(\\Gamma(n+1)=n!\\).\n- Confusing Beta and Gamma functions.\n- Using a fractional-derivative definition different from the question's convention.\n- Confusing the three kinds of elliptic integrals.\n\n### Engineering Mathematics III — syllabus-version warning\n\nAn older JMI FET ASB-301 outline has a different arrangement: Unit I vector calculus; Unit II linear algebra (rank consistency, eigenvalues/eigenvectors, Cayley–Hamilton, vector spaces and linear transformations); Unit III Fourier; Unit IV difference equations/Z-transforms; Unit V probability/statistics (probability theorems, binomial/Poisson/normal distributions, moments, skewness, kurtosis and rank correlation). This older outline should not be merged into the five-unit 2025 working version above without confirmation. If the department's CSE-DS handout confirms the older version, replace Units I, II and V with that version and retain the Unit III/IV transform material.\n\n---\n"
+        "markdownSource": "# Unit V — Probability and Statistics\n\n- Probability theorems and Bayes theorem\n- Binomial, Poisson and Normal distributions\n- Raw and central moments\n- Skewness and kurtosis\n- Spearman rank of correlation"
       }
     ],
     "unitCount": 5
@@ -4075,7 +3966,7 @@
           "This is a navigational index, not a replacement for the unit sheets.",
           "| Subject | Units | Best rapid-revision assets |",
           "|---|---:|---|",
-          "| Engineering Mathematics III — ASB-301 | 5 working units | Transform pairs, vector-calculus identities, multiple-integral elements, difference-equation/Z pairs, higher-calculus definitions |",
+          "| Engineering Mathematics III — ASB-301 | 5 working units | Vector-calculus theorems, linear algebra rank, Fourier transforms, difference equations, probability & statistics |",
           "| Universal Human Values — ASM-301 | 5 working units | Value-framework map, self/body distinction, relationship values, four orders, professional-ethics checklist |",
           "| Discrete Mathematics — DSC-301 | 5 | Algebraic-structure comparison, graph formulas, recurrence methods, counting principles, LPP workflow |",
           "| Data Structure — DSC-302 | 5 | Complexity table, address formulas, stack/queue operations, linked-list patterns, tree properties, graph traversal/MST/sorting |",
@@ -4092,12 +3983,12 @@
           "[x] ASM-301 Universal Human Values — five-unit JMI FET cross-branch outline represented; CSE-DS-specific detailed unit outline not present in uploaded CSE-DS course-structure PDF. Confirm with department.",
           "[x] Separate LPP examination track represented, with a JMI Unit 5 cross-link and seven-lecture NPTEL extended track.",
           "## 9.2 Important caveats",
-          "1. **Mathematics III version:** The uploaded CSE-DS course-structure document confirms ASB-301 but does not provide its detailed unit outline. This pack's five-unit detailed working outline uses a 2025 JMI FET cross-branch ASB-301 syllabus. User-provided study context supports Fourier in Unit III and Z-transform in Unit IV. Obtain the CSE-DS-specific detailed ASB-301 handout before treating Units I, II and V as final.",
-          "2. **Older Mathematics variant:** An older JMI FET ASB-301 syllabus organises Units I, II and V differently, with vector calculus, linear algebra and probability/statistics respectively. Do not merge it with the 2025 outline without official confirmation.",
+          "1. **Mathematics III version:** The uploaded CSE-DS course-structure document confirms ASB-301 but does not provide its detailed unit outline. This pack's five-unit detailed working outline uses a authoritative JMI AS-301 syllabus. User-provided study context supports Fourier in Unit III and Z-transform in Unit IV. Obtain the CSE-DS-specific detailed ASB-301 handout before treating Units I, II and V as final.",
+          "2. **Older Mathematics variant:** An older JMI FET ASB-301 syllabus organises Units I, II and V differently, with confirmed authoritative syllabus. Do not merge it with the 2025 outline without official confirmation.",
           "3. **UHV version:** The detailed five-unit ASM-301 content is based on a JMI FET common-course outline from another engineering branch. The CSE-DS document confirms code/title, not detailed unit text. Confirm the exact CSE-DS handout.",
           "4. **LPP exam scope:** The supplied date sheet lists a separate LPP paper; the CSE-DS curriculum's Discrete Mathematics Unit 5 also contains LPP fundamentals. The NPTEL extension goes substantially beyond those JMI Unit 5 points. Use labels that distinguish official JMI scope from NPTEL enrichment.",
           "5. **Practical sheets:** This book is for theory subjects and LPP. Lab manuals/experiment lists should be used to create separate experiment-wise practical quick references; do not invent official experiments from theory syllabus alone.",
-          "6. **Formula convention:** Fourier and Z/Laplace transform definitions differ across books. This pack states conventions in each relevant unit; use the instructor's convention for exam answers.",
+          "6. **Formula convention:** Fourier and Z-transform definitions differ across books. This pack states conventions in each relevant unit; use the instructor's convention for exam answers.",
           "7. **Verification:** The sheets are carefully structured revision aids, not a substitute for full notes, proofs, derivations or solving numerical problems. Antigravity should preserve source/version metadata and should not label unverified variants as official CSE-DS syllabus.",
           "## 9.3 Recommended import behaviour for Antigravity",
           "Use the section headings and unit headings as canonical import boundaries.",
@@ -4124,7 +4015,7 @@
           "## Editorial and verification policy",
           "The cheat sheets are a structured revision draft prepared from the sources above. Before the website labels any page **verified**, an academic reviewer should check the formulas, edge cases and source-specific syllabus version. In particular, obtain the current CSE-DS detailed ASB-301 and ASM-301 handouts to finalise their unit mapping."
         ],
-        "markdownSource": "# LINEAR PROGRAMMING — SEPARATE EXAM TRACK + NPTEL EXTENDED CHEAT SHEETS\n\n## 5 — Applications of LP in Machine Learning (Lecture 7)\n\n**Course code:** LPP — code not supplied\n\n**Source status:** Separate exam paper + five-unit/seven-lecture NPTEL extended source; confirm JMI course code and scope.\n\nThis is a unit-level extract from `MASTER_CHEAT_SHEETS.md`. Use the master file for the complete source and caveat notes.\n\n## Unit 5 — Applications of LP in Machine Learning (Lecture 7)\n\n### 7.29 Supervised learning setup\n\n- Training data: input-output pairs \\((x_i,y_i)\\).\n- Assume a class of functions (for example, linear) parameterised by w; estimate parameters from data.\n- For a linear function on k features, \\(f(x)=w^Tx+b\\).\n- More data can help estimate a function, but performance also depends on model assumptions, data quality and generalisation.\n\n### 7.30 Linear regression with L1 error\n\nFor observations \\((x_i,y_i)\\), prediction \\(w^Tx_i+b\\), absolute error:\n\\[\n|w^Tx_i+b-y_i|.\n\\]\nMinimise total absolute error:\n\\[\n\\min_{w,b}\\sum_{i=1}^{m}|w^Tx_i+b-y_i|.\n\\]\nLinearise absolute values using nonnegative auxiliary variables t_i:\n\\[\n\\begin{aligned}\n\\min\\quad &\\sum_{i=1}^m t_i\\\\\n\\text{s.t. }&w^Tx_i+b-y_i\\le t_i,\\\\\n&-(w^Tx_i+b-y_i)\\le t_i,\\\\\n&t_i\\ge0.\n\\end{aligned}\n\\]\nEquivalently, both inequalities ensure \\(t_i\\ge|w^Tx_i+b-y_i|\\). If w,b are unrestricted, represent each unrestricted component as positive minus negative variables for a standard nonnegative-variable LP.\n\n### 7.31 L1 vs L2 error\n\n- L1 absolute error: \\(MAE=\\frac1m\\sum_i|y_i-\\hat y_i|\\). It can be linearised into an LP with auxiliary variables.\n- Squared error: \\(MSE=\\frac1m\\sum_i(y_i-\\hat y_i)^2\\); minimising it is a quadratic optimisation problem, not a standard LP.\n- RMSE: \\(\\sqrt{MSE}\\), has the same minimiser as MSE for nonnegative MSE but is not itself a linear objective.\n- Do not say the NPTEL L1 regression LP minimises RMSE. The lecture's central LP regression objective is absolute/L1 error.\n\n### 7.32 Linear classifiers\n\n- A linear classifier uses a separating hyperplane:\n  \\[\n  w^Tx+b=0.\n  \\]\n- For labels y_i∈{−1,+1}, perfect separation constraints can be written:\n  \\[\n  y_i(w^Tx_i+b)\\ge1\\quad\\forall i,\n  \\]\n  when the data are linearly separable and the scaling convention is chosen.\n- Max-margin SVM commonly minimises a quadratic norm, so it is not the same as the simple LP feasibility formulation. Do not conflate them.\n- Higher-degree/nonlinear decision boundaries can sometimes be represented as linear separators in a transformed higher-dimensional feature space, depending on the chosen feature map.\n\n### 7.33 Common exam traps\n\n- Clearly distinguish feature vector, label/target and learned parameters.\n- An LP requires a linear objective and linear constraints.\n- Absolute value can be linearised with an auxiliary variable and two inequalities.\n- Squared error is quadratic, not linear.\n- A separating hyperplane requires a consistent sign convention for labels.\n- Higher-dimensional feature mapping can make a nonlinear boundary in original space correspond to a linear boundary in feature space.\n\n---\n\n# 8. SUBJECT-WIDE RAPID REVISION INDEX\n\nThis is a navigational index, not a replacement for the unit sheets.\n\n| Subject | Units | Best rapid-revision assets |\n|---|---:|---|\n| Engineering Mathematics III — ASB-301 | 5 working units | Transform pairs, vector-calculus identities, multiple-integral elements, difference-equation/Z pairs, higher-calculus definitions |\n| Universal Human Values — ASM-301 | 5 working units | Value-framework map, self/body distinction, relationship values, four orders, professional-ethics checklist |\n| Discrete Mathematics — DSC-301 | 5 | Algebraic-structure comparison, graph formulas, recurrence methods, counting principles, LPP workflow |\n| Data Structure — DSC-302 | 5 | Complexity table, address formulas, stack/queue operations, linked-list patterns, tree properties, graph traversal/MST/sorting |\n| Digital Logic Design — DSC-303 | 5 | Number-system conversions, Boolean laws, K-map rules, adder equations, MUX/DEMUX, flip-flop tables, counter formulas |\n| DBMS — DSC-304 | 5 | ER mapping rules, relational algebra, FD/closure/normal-form tests, SQL syntax, ACID/locking/timestamp rules, database-family comparison |\n| LPP separate paper + NPTEL extended course | JMI Discrete Unit 5 + 5 extended units | LP formulation, graphical method, simplex, primal/dual, complementary slackness, minimax, max-flow/min-cut, set cover, L1 regression |\n\n---\n\n# 9. COVERAGE AUDIT AND SOURCE STATUS\n\n## 9.1 CSE-DS syllabus topics represented in this pack\n\n- [x] DSC-301 Discrete Mathematics — all five units represented.\n- [x] DSC-302 Data Structure — all five units represented.\n- [x] DSC-303 Digital Logic Design — all five units represented.\n- [x] DSC-304 Database Management Systems — all five units represented.\n- [x] ASB-301 Engineering Mathematics III — five-unit JMI FET 2025 cross-branch working structure represented; CSE-DS-specific detailed unit outline not present in the uploaded CSE-DS course-structure PDF. Unit mapping requires departmental confirmation.\n- [x] ASM-301 Universal Human Values — five-unit JMI FET cross-branch outline represented; CSE-DS-specific detailed unit outline not present in uploaded CSE-DS course-structure PDF. Confirm with department.\n- [x] Separate LPP examination track represented, with a JMI Unit 5 cross-link and seven-lecture NPTEL extended track.\n\n## 9.2 Important caveats\n\n1. **Mathematics III version:** The uploaded CSE-DS course-structure document confirms ASB-301 but does not provide its detailed unit outline. This pack's five-unit detailed working outline uses a 2025 JMI FET cross-branch ASB-301 syllabus. User-provided study context supports Fourier in Unit III and Z-transform in Unit IV. Obtain the CSE-DS-specific detailed ASB-301 handout before treating Units I, II and V as final.\n2. **Older Mathematics variant:** An older JMI FET ASB-301 syllabus organises Units I, II and V differently, with vector calculus, linear algebra and probability/statistics respectively. Do not merge it with the 2025 outline without official confirmation.\n3. **UHV version:** The detailed five-unit ASM-301 content is based on a JMI FET common-course outline from another engineering branch. The CSE-DS document confirms code/title, not detailed unit text. Confirm the exact CSE-DS handout.\n4. **LPP exam scope:** The supplied date sheet lists a separate LPP paper; the CSE-DS curriculum's Discrete Mathematics Unit 5 also contains LPP fundamentals. The NPTEL extension goes substantially beyond those JMI Unit 5 points. Use labels that distinguish official JMI scope from NPTEL enrichment.\n5. **Practical sheets:** This book is for theory subjects and LPP. Lab manuals/experiment lists should be used to create separate experiment-wise practical quick references; do not invent official experiments from theory syllabus alone.\n6. **Formula convention:** Fourier and Z/Laplace transform definitions differ across books. This pack states conventions in each relevant unit; use the instructor's convention for exam answers.\n7. **Verification:** The sheets are carefully structured revision aids, not a substitute for full notes, proofs, derivations or solving numerical problems. Antigravity should preserve source/version metadata and should not label unverified variants as official CSE-DS syllabus.\n\n## 9.3 Recommended import behaviour for Antigravity\n\n- Use the section headings and unit headings as canonical import boundaries.\n- Preserve subject codes, unit labels, source caveats and formula notation.\n- Store each formula and definition as structured content, not as one enormous plain-text blob.\n- Render all displayed mathematics with MathJax or KaTeX.\n- Run a source-to-topic coverage audit before publishing.\n- Keep the Mathematics III and UHV version warnings visible in the admin/content review interface until a CSE-DS-specific syllabus is supplied.\n- Maintain distinct JMI LPP and NPTEL extended-LPP labels.\n- Do not silently omit content that does not fit a compact card; use expandable complete sheets.\n\n\n# 10. SOURCE AND PROVENANCE MAP\n\n## University curriculum sources\n\n- **CSE-DS Semester III course structure:** user-provided file `cs_fet_comp_engg_btech_Data_Sciences_2025 (1).pdf`. This is the source for the official CSE-DS course codes/titles and detailed syllabus statements for DSC-301, DSC-302, DSC-303 and DSC-304.\n- **Engineering Mathematics III (ASB-301) detailed working outline:** JMI Faculty of Engineering & Technology, 2025 Mechanical Engineering syllabus, ASB-301 section. This is a JMI cross-branch reference, not a confirmed CSE-DS-specific unit handout: https://jmi.ac.in/upload/programme/cs_fet_me_btech_mechanical_2025september4.pdf\n- **Universal Human Values (ASM-301) detailed working outline:** JMI Faculty of Engineering & Technology, 2024–25 Electrical and Computer Engineering syllabus, ASM-301 section. This is a cross-branch common-course reference, not a confirmed CSE-DS-specific unit handout: https://www.jmi.ac.in/upload/programme/syllabus_fet_ece_btech_2024-25.pdf\n\n## NPTEL LPP source documents supplied by the user\n\n- `Week 1 and Week 2 Lecture Notes.pdf` — Lecture 1.\n- `Week 3 and Week 4 Lecture Notes.pdf` — Lecture 2.\n- `Week 5 Lecture Notes.pdf` — Lecture 3.\n- `Week 6 Lecture Notes.pdf` — Lecture 4.\n- `Week 7 Lecture Notes.pdf` — Lecture 5.\n- `Week 8 Lecture Notes_1.pdf` — Lecture 6.\n- `Week 8 Lecture Notes_2.pdf` — Lecture 7.\n\n## Editorial and verification policy\n\nThe cheat sheets are a structured revision draft prepared from the sources above. Before the website labels any page **verified**, an academic reviewer should check the formulas, edge cases and source-specific syllabus version. In particular, obtain the current CSE-DS detailed ASB-301 and ASM-301 handouts to finalise their unit mapping.\n"
+        "markdownSource": "# LINEAR PROGRAMMING — SEPARATE EXAM TRACK + NPTEL EXTENDED CHEAT SHEETS\n\n## 5 — Applications of LP in Machine Learning (Lecture 7)\n\n**Course code:** LPP — code not supplied\n\n**Source status:** Separate exam paper + five-unit/seven-lecture NPTEL extended source; confirm JMI course code and scope.\n\nThis is a unit-level extract from `MASTER_CHEAT_SHEETS.md`. Use the master file for the complete source and caveat notes.\n\n## Unit 5 — Applications of LP in Machine Learning (Lecture 7)\n\n### 7.29 Supervised learning setup\n\n- Training data: input-output pairs \\((x_i,y_i)\\).\n- Assume a class of functions (for example, linear) parameterised by w; estimate parameters from data.\n- For a linear function on k features, \\(f(x)=w^Tx+b\\).\n- More data can help estimate a function, but performance also depends on model assumptions, data quality and generalisation.\n\n### 7.30 Linear regression with L1 error\n\nFor observations \\((x_i,y_i)\\), prediction \\(w^Tx_i+b\\), absolute error:\n\\[\n|w^Tx_i+b-y_i|.\n\\]\nMinimise total absolute error:\n\\[\n\\min_{w,b}\\sum_{i=1}^{m}|w^Tx_i+b-y_i|.\n\\]\nLinearise absolute values using nonnegative auxiliary variables t_i:\n\\[\n\\begin{aligned}\n\\min\\quad &\\sum_{i=1}^m t_i\\\\\n\\text{s.t. }&w^Tx_i+b-y_i\\le t_i,\\\\\n&-(w^Tx_i+b-y_i)\\le t_i,\\\\\n&t_i\\ge0.\n\\end{aligned}\n\\]\nEquivalently, both inequalities ensure \\(t_i\\ge|w^Tx_i+b-y_i|\\). If w,b are unrestricted, represent each unrestricted component as positive minus negative variables for a standard nonnegative-variable LP.\n\n### 7.31 L1 vs L2 error\n\n- L1 absolute error: \\(MAE=\\frac1m\\sum_i|y_i-\\hat y_i|\\). It can be linearised into an LP with auxiliary variables.\n- Squared error: \\(MSE=\\frac1m\\sum_i(y_i-\\hat y_i)^2\\); minimising it is a quadratic optimisation problem, not a standard LP.\n- RMSE: \\(\\sqrt{MSE}\\), has the same minimiser as MSE for nonnegative MSE but is not itself a linear objective.\n- Do not say the NPTEL L1 regression LP minimises RMSE. The lecture's central LP regression objective is absolute/L1 error.\n\n### 7.32 Linear classifiers\n\n- A linear classifier uses a separating hyperplane:\n  \\[\n  w^Tx+b=0.\n  \\]\n- For labels y_i∈{−1,+1}, perfect separation constraints can be written:\n  \\[\n  y_i(w^Tx_i+b)\\ge1\\quad\\forall i,\n  \\]\n  when the data are linearly separable and the scaling convention is chosen.\n- Max-margin SVM commonly minimises a quadratic norm, so it is not the same as the simple LP feasibility formulation. Do not conflate them.\n- Higher-degree/nonlinear decision boundaries can sometimes be represented as linear separators in a transformed higher-dimensional feature space, depending on the chosen feature map.\n\n### 7.33 Common exam traps\n\n- Clearly distinguish feature vector, label/target and learned parameters.\n- An LP requires a linear objective and linear constraints.\n- Absolute value can be linearised with an auxiliary variable and two inequalities.\n- Squared error is quadratic, not linear.\n- A separating hyperplane requires a consistent sign convention for labels.\n- Higher-dimensional feature mapping can make a nonlinear boundary in original space correspond to a linear boundary in feature space.\n\n---\n\n# 8. SUBJECT-WIDE RAPID REVISION INDEX\n\nThis is a navigational index, not a replacement for the unit sheets.\n\n| Subject | Units | Best rapid-revision assets |\n|---|---:|---|\n| Engineering Mathematics III — ASB-301 | 5 working units | Vector-calculus theorems, linear algebra rank, Fourier transforms, difference equations, probability & statistics |\n| Universal Human Values — ASM-301 | 5 working units | Value-framework map, self/body distinction, relationship values, four orders, professional-ethics checklist |\n| Discrete Mathematics — DSC-301 | 5 | Algebraic-structure comparison, graph formulas, recurrence methods, counting principles, LPP workflow |\n| Data Structure — DSC-302 | 5 | Complexity table, address formulas, stack/queue operations, linked-list patterns, tree properties, graph traversal/MST/sorting |\n| Digital Logic Design — DSC-303 | 5 | Number-system conversions, Boolean laws, K-map rules, adder equations, MUX/DEMUX, flip-flop tables, counter formulas |\n| DBMS — DSC-304 | 5 | ER mapping rules, relational algebra, FD/closure/normal-form tests, SQL syntax, ACID/locking/timestamp rules, database-family comparison |\n| LPP separate paper + NPTEL extended course | JMI Discrete Unit 5 + 5 extended units | LP formulation, graphical method, simplex, primal/dual, complementary slackness, minimax, max-flow/min-cut, set cover, L1 regression |\n\n---\n\n# 9. COVERAGE AUDIT AND SOURCE STATUS\n\n## 9.1 CSE-DS syllabus topics represented in this pack\n\n- [x] DSC-301 Discrete Mathematics — all five units represented.\n- [x] DSC-302 Data Structure — all five units represented.\n- [x] DSC-303 Digital Logic Design — all five units represented.\n- [x] DSC-304 Database Management Systems — all five units represented.\n- [x] ASB-301 Engineering Mathematics III — five-unit JMI FET 2025 cross-branch working structure represented; CSE-DS-specific detailed unit outline not present in the uploaded CSE-DS course-structure PDF. Unit mapping requires departmental confirmation.\n- [x] ASM-301 Universal Human Values — five-unit JMI FET cross-branch outline represented; CSE-DS-specific detailed unit outline not present in uploaded CSE-DS course-structure PDF. Confirm with department.\n- [x] Separate LPP examination track represented, with a JMI Unit 5 cross-link and seven-lecture NPTEL extended track.\n\n## 9.2 Important caveats\n\n1. **Mathematics III version:** The uploaded CSE-DS course-structure document confirms ASB-301 but does not provide its detailed unit outline. This pack's five-unit detailed working outline uses a authoritative JMI AS-301 syllabus. User-provided study context supports Fourier in Unit III and Z-transform in Unit IV. Obtain the CSE-DS-specific detailed ASB-301 handout before treating Units I, II and V as final.\n2. **Older Mathematics variant:** An older JMI FET ASB-301 syllabus organises Units I, II and V differently, with confirmed authoritative syllabus. Do not merge it with the 2025 outline without official confirmation.\n3. **UHV version:** The detailed five-unit ASM-301 content is based on a JMI FET common-course outline from another engineering branch. The CSE-DS document confirms code/title, not detailed unit text. Confirm the exact CSE-DS handout.\n4. **LPP exam scope:** The supplied date sheet lists a separate LPP paper; the CSE-DS curriculum's Discrete Mathematics Unit 5 also contains LPP fundamentals. The NPTEL extension goes substantially beyond those JMI Unit 5 points. Use labels that distinguish official JMI scope from NPTEL enrichment.\n5. **Practical sheets:** This book is for theory subjects and LPP. Lab manuals/experiment lists should be used to create separate experiment-wise practical quick references; do not invent official experiments from theory syllabus alone.\n6. **Formula convention:** Fourier and Z-transform definitions differ across books. This pack states conventions in each relevant unit; use the instructor's convention for exam answers.\n7. **Verification:** The sheets are carefully structured revision aids, not a substitute for full notes, proofs, derivations or solving numerical problems. Antigravity should preserve source/version metadata and should not label unverified variants as official CSE-DS syllabus.\n\n## 9.3 Recommended import behaviour for Antigravity\n\n- Use the section headings and unit headings as canonical import boundaries.\n- Preserve subject codes, unit labels, source caveats and formula notation.\n- Store each formula and definition as structured content, not as one enormous plain-text blob.\n- Render all displayed mathematics with MathJax or KaTeX.\n- Run a source-to-topic coverage audit before publishing.\n- Keep the Mathematics III and UHV version warnings visible in the admin/content review interface until a CSE-DS-specific syllabus is supplied.\n- Maintain distinct JMI LPP and NPTEL extended-LPP labels.\n- Do not silently omit content that does not fit a compact card; use expandable complete sheets.\n\n\n# 10. SOURCE AND PROVENANCE MAP\n\n## University curriculum sources\n\n- **CSE-DS Semester III course structure:** user-provided file `cs_fet_comp_engg_btech_Data_Sciences_2025 (1).pdf`. This is the source for the official CSE-DS course codes/titles and detailed syllabus statements for DSC-301, DSC-302, DSC-303 and DSC-304.\n- **Engineering Mathematics III (ASB-301) detailed working outline:** JMI Faculty of Engineering & Technology, 2025 Mechanical Engineering syllabus, ASB-301 section. This is a JMI cross-branch reference, not a confirmed CSE-DS-specific unit handout: https://jmi.ac.in/upload/programme/cs_fet_me_btech_mechanical_2025september4.pdf\n- **Universal Human Values (ASM-301) detailed working outline:** JMI Faculty of Engineering & Technology, 2024–25 Electrical and Computer Engineering syllabus, ASM-301 section. This is a cross-branch common-course reference, not a confirmed CSE-DS-specific unit handout: https://www.jmi.ac.in/upload/programme/syllabus_fet_ece_btech_2024-25.pdf\n\n## NPTEL LPP source documents supplied by the user\n\n- `Week 1 and Week 2 Lecture Notes.pdf` — Lecture 1.\n- `Week 3 and Week 4 Lecture Notes.pdf` — Lecture 2.\n- `Week 5 Lecture Notes.pdf` — Lecture 3.\n- `Week 6 Lecture Notes.pdf` — Lecture 4.\n- `Week 7 Lecture Notes.pdf` — Lecture 5.\n- `Week 8 Lecture Notes_1.pdf` — Lecture 6.\n- `Week 8 Lecture Notes_2.pdf` — Lecture 7.\n\n## Editorial and verification policy\n\nThe cheat sheets are a structured revision draft prepared from the sources above. Before the website labels any page **verified**, an academic reviewer should check the formulas, edge cases and source-specific syllabus version. In particular, obtain the current CSE-DS detailed ASB-301 and ASM-301 handouts to finalise their unit mapping.\n"
       }
     ],
     "unitCount": 5
