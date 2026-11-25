@@ -1,0 +1,630 @@
+{
+  "title": "JMI StudyHub Semester III Master Cheat Sheets",
+  "version": "1.0-draft",
+  "language": "en",
+  "mathRendering": "KaTeX or MathJax; source uses TeX delimiters; never display raw TeX in the student UI",
+  "sourcePolicy": "Use the supplied JMI CSE-DS course structure for DSC-301/302/303/304. Mathematics III and UHV detailed unit versions are cross-branch JMI FET references pending CSE-DS confirmation. NPTEL extended LPP is separate from the JMI Discrete Unit 5 scope.",
+  "masterMarkdown": "MASTER_CHEAT_SHEETS.md",
+  "subjects": [
+    {
+      "id": "engineering_mathematics_iii",
+      "title": "ENGINEERING MATHEMATICS III — ASB-301",
+      "courseCode": "ASB-301",
+      "sourceStatus": "Cross-branch JMI FET 2025 detailed outline; CSE-DS-specific unit mapping requires confirmation.",
+      "subjectSheetPath": "subjects/engineering_mathematics_iii.md",
+      "units": [
+        {
+          "id": "engineering_mathematics_iii_unit_1",
+          "title": "1 — Applications of Multiple Integrals and Vector Calculus",
+          "unitSheetPath": "units/engineering_mathematics_iii_unit_1.md",
+          "coverageStatements": [
+            "Double and triple integrals.",
+            "Two-dimensional Cartesian and polar coordinates.",
+            "Three-dimensional Cartesian, cylindrical and spherical coordinates.",
+            "Applications to plane area, mass, centre of gravity, moment of inertia, product of inertia, centre of pressure, curved surface area and volume.",
+            "Green's theorem in the x-y plane.",
+            "Gauss divergence theorem.",
+            "Stokes' curl theorem (Cartesian form in the cited outline; proofs are not required there)."
+          ],
+          "coverageStatus": "drafted; review against source before marking verified",
+          "sourceStatus": "Cross-branch JMI FET 2025 detailed outline; CSE-DS-specific unit mapping requires confirmation."
+        },
+        {
+          "id": "engineering_mathematics_iii_unit_2",
+          "title": "2 — Applications of Laplace Transforms",
+          "unitSheetPath": "units/engineering_mathematics_iii_unit_2.md",
+          "coverageStatements": [
+            "Laplace-transform applications to higher-order linear ODEs with constant and variable coefficients.",
+            "Systems of simultaneous differential equations.",
+            "Integral equations.",
+            "Integro-differential equations.",
+            "Differential equations."
+          ],
+          "coverageStatus": "drafted; review against source before marking verified",
+          "sourceStatus": "Cross-branch JMI FET 2025 detailed outline; CSE-DS-specific unit mapping requires confirmation."
+        },
+        {
+          "id": "engineering_mathematics_iii_unit_3",
+          "title": "3 — Fourier Series and Fourier Transforms",
+          "unitSheetPath": "units/engineering_mathematics_iii_unit_3.md",
+          "coverageStatements": [
+            "Fourier series over full and half ranges for arbitrary period.",
+            "Fourier integral representation.",
+            "Fourier sine integral and Fourier cosine integral.",
+            "Infinite complex Fourier transform.",
+            "Finite and infinite Fourier sine/cosine transforms and their inverses.",
+            "Properties and associated theorems.",
+            "Applications to integral equations and boundary-value problems."
+          ],
+          "coverageStatus": "drafted; review against source before marking verified",
+          "sourceStatus": "Cross-branch JMI FET 2025 detailed outline; CSE-DS-specific unit mapping requires confirmation."
+        },
+        {
+          "id": "engineering_mathematics_iii_unit_4",
+          "title": "4 — Difference Equations and Z-Transforms",
+          "unitSheetPath": "units/engineering_mathematics_iii_unit_4.md",
+          "coverageStatements": [
+            "Difference equations, formation and order.",
+            "Linear difference equations and solutions.",
+            "Complementary function (CF), particular integral (PI), general solution.",
+            "Constant- and variable-coefficient difference equations.",
+            "Z-transform and properties.",
+            "Elementary Z-transform pairs.",
+            "Inverse Z-transform.",
+            "Convolution theorem.",
+            "Applications to constant-coefficient and simultaneous difference equations."
+          ],
+          "coverageStatus": "drafted; review against source before marking verified",
+          "sourceStatus": "Cross-branch JMI FET 2025 detailed outline; CSE-DS-specific unit mapping requires confirmation."
+        },
+        {
+          "id": "engineering_mathematics_iii_unit_5",
+          "title": "5 — Higher Calculus",
+          "unitSheetPath": "units/engineering_mathematics_iii_unit_5.md",
+          "coverageStatements": [
+            "Extremals of a functional using Euler–Poisson equations.",
+            "Isoperimetric problems.",
+            "Beta and Gamma functions.",
+            "Fractional derivative.",
+            "Dirichlet's and “Lowville's” multiple integrals (the source wording appears to say “Lowville's”; confirm the intended name with the instructor/notes before publication).",
+            "Representation of definite integrals in Legendre and Jacobi forms of elliptic integrals of the first, second and third kinds."
+          ],
+          "coverageStatus": "drafted; review against source before marking verified",
+          "sourceStatus": "Cross-branch JMI FET 2025 detailed outline; CSE-DS-specific unit mapping requires confirmation."
+        }
+      ]
+    },
+    {
+      "id": "universal_human_values",
+      "title": "UNIVERSAL HUMAN VALUES — ASM-301",
+      "courseCode": "ASM-301",
+      "sourceStatus": "Cross-branch JMI FET detailed outline; CSE-DS-specific unit mapping requires confirmation.",
+      "subjectSheetPath": "subjects/universal_human_values.md",
+      "units": [
+        {
+          "id": "universal_human_values_unit_1",
+          "title": "1 — Introduction and Concept of Universal Human Values",
+          "unitSheetPath": "units/universal_human_values_unit_1.md",
+          "coverageStatements": [
+            "Introduction, need and characteristics of UHV.",
+            "Value-based education versus skill-based education.",
+            "Benefits of value education.",
+            "Basic human aspirations and requirements for fulfilment.",
+            "Measures to fulfil aspirations in the current scenario.",
+            "Continuous happiness and prosperity.",
+            "Correct understanding of happiness, prosperity and relationships."
+          ],
+          "coverageStatus": "drafted; review against source before marking verified",
+          "sourceStatus": "Cross-branch JMI FET detailed outline; CSE-DS-specific unit mapping requires confirmation."
+        },
+        {
+          "id": "universal_human_values_unit_2",
+          "title": "2 — Understanding Harmony in the Self",
+          "unitSheetPath": "units/universal_human_values_unit_2.md",
+          "coverageStatements": [
+            "Human existence as conscious and material entities.",
+            "Difference between conscious and material entities.",
+            "Measures to ensure harmony in the self.",
+            "Needs of self and body: happiness and physical facility.",
+            "Body as an instrument; the self as doer, seer and enjoyer."
+          ],
+          "coverageStatus": "drafted; review against source before marking verified",
+          "sourceStatus": "Cross-branch JMI FET detailed outline; CSE-DS-specific unit mapping requires confirmation."
+        },
+        {
+          "id": "universal_human_values_unit_3",
+          "title": "3 — Understanding Harmony in Family and Society",
+          "unitSheetPath": "units/universal_human_values_unit_3.md",
+          "coverageStatements": [
+            "Values/feelings in human-human relationships.",
+            "Measures for harmony in the family.",
+            "Family as the basic unit of human interaction.",
+            "Trust as foundational value.",
+            "Respect as right evaluation; other feelings.",
+            "Justice in human-human relationships.",
+            "Harmony in society and universal human order.",
+            "Conflict: meaning and types.",
+            "Dimensions of human order; justice, democracy, respect and gratitude.",
+            "Values crisis, psychological values, integrated personality, mental health and societal values including justice, democracy, secularism and rule of law."
+          ],
+          "coverageStatus": "drafted; review against source before marking verified",
+          "sourceStatus": "Cross-branch JMI FET detailed outline; CSE-DS-specific unit mapping requires confirmation."
+        },
+        {
+          "id": "universal_human_values_unit_4",
+          "title": "4 — Understanding Harmony in Nature and Existence",
+          "unitSheetPath": "units/universal_human_values_unit_4.md",
+          "coverageStatements": [
+            "Harmony in nature and interconnectedness.",
+            "Self-regulation and mutual fulfilment among four orders of nature.",
+            "Meaning of harmony in nature.",
+            "Causes and implications of disharmony.",
+            "Symbiotic relationships with nature.",
+            "Competence to maintain harmony with nature in professional life."
+          ],
+          "coverageStatus": "drafted; review against source before marking verified",
+          "sourceStatus": "Cross-branch JMI FET detailed outline; CSE-DS-specific unit mapping requires confirmation."
+        },
+        {
+          "id": "universal_human_values_unit_5",
+          "title": "5 — Implications of Harmony on Professional Ethics",
+          "unitSheetPath": "units/universal_human_values_unit_5.md",
+          "coverageStatements": [
+            "Engineering profession and ethical issues in practice.",
+            "Conflicts between business demands and professional ideals.",
+            "Social and ethical responsibilities of technologists.",
+            "Codes of professional ethics.",
+            "Whistle-blowing and beyond.",
+            "Ethics of duty and ethics of responsibility.",
+            "Holistic technologies, production systems and management models.",
+            "Transition towards value-based life and profession."
+          ],
+          "coverageStatus": "drafted; review against source before marking verified",
+          "sourceStatus": "Cross-branch JMI FET detailed outline; CSE-DS-specific unit mapping requires confirmation."
+        }
+      ]
+    },
+    {
+      "id": "discrete_mathematics",
+      "title": "DISCRETE MATHEMATICS — DSC-301",
+      "courseCode": "DSC-301",
+      "sourceStatus": "Detailed syllabus supplied in CSE-DS course structure.",
+      "subjectSheetPath": "subjects/discrete_mathematics.md",
+      "units": [
+        {
+          "id": "discrete_mathematics_unit_1",
+          "title": "1 — Algebraic Structures",
+          "unitSheetPath": "units/discrete_mathematics_unit_1.md",
+          "coverageStatements": [
+            "Relations",
+            "equivalence relations",
+            "partial orders",
+            "lattices",
+            "characteristic functions",
+            "semigroups",
+            "monoids",
+            "groups",
+            "permutation groups",
+            "cyclic groups",
+            "normal subgroups",
+            "group isomorphism",
+            "rings",
+            "fields",
+            "integral domains"
+          ],
+          "coverageStatus": "drafted; review against source before marking verified",
+          "sourceStatus": "Detailed syllabus supplied in CSE-DS course structure."
+        },
+        {
+          "id": "discrete_mathematics_unit_2",
+          "title": "2 — Graph Theory",
+          "unitSheetPath": "units/discrete_mathematics_unit_2.md",
+          "coverageStatements": [
+            "Graph definitions/properties",
+            "directed and undirected graphs",
+            "degree sequence",
+            "cycles and paths",
+            "connectivity",
+            "adjacency and incidence matrices",
+            "complete, regular, bipartite and planar graphs",
+            "graph isomorphism",
+            "Euler and Hamilton circuits",
+            "graph colouring using the Welch–Powell algorithm"
+          ],
+          "coverageStatus": "drafted; review against source before marking verified",
+          "sourceStatus": "Detailed syllabus supplied in CSE-DS course structure."
+        },
+        {
+          "id": "discrete_mathematics_unit_3",
+          "title": "3 — Recurrence Relations",
+          "unitSheetPath": "units/discrete_mathematics_unit_3.md",
+          "coverageStatements": [
+            "Introduction",
+            "generalised linear homogeneous/non-homogeneous recurrences",
+            "common recurrences",
+            "iteration method",
+            "characteristic-equation method",
+            "generating functions",
+            "solving recurrences using generating functions"
+          ],
+          "coverageStatus": "drafted; review against source before marking verified",
+          "sourceStatus": "Detailed syllabus supplied in CSE-DS course structure."
+        },
+        {
+          "id": "discrete_mathematics_unit_4",
+          "title": "4 — Mathematical Techniques",
+          "unitSheetPath": "units/discrete_mathematics_unit_4.md",
+          "coverageStatements": [
+            "Propositional calculus",
+            "principle of inclusion and exclusion",
+            "mathematical induction",
+            "pigeonhole principle",
+            "permutations and combinations",
+            "derangements",
+            "recursive functions"
+          ],
+          "coverageStatus": "drafted; review against source before marking verified",
+          "sourceStatus": "Detailed syllabus supplied in CSE-DS course structure."
+        },
+        {
+          "id": "discrete_mathematics_unit_5",
+          "title": "5 — Linear Programming Problems (JMI Discrete Mathematics Scope)",
+          "unitSheetPath": "units/discrete_mathematics_unit_5.md",
+          "coverageStatements": [
+            "Introduction to LPP",
+            "modelling and formulation",
+            "graphical solution",
+            "simplex algorithm",
+            "duality principle",
+            "finding duals of LPPs"
+          ],
+          "coverageStatus": "drafted; review against source before marking verified",
+          "sourceStatus": "Detailed syllabus supplied in CSE-DS course structure."
+        }
+      ]
+    },
+    {
+      "id": "data_structures",
+      "title": "DATA STRUCTURES — DSC-302",
+      "courseCode": "DSC-302",
+      "sourceStatus": "Detailed syllabus supplied in CSE-DS course structure.",
+      "subjectSheetPath": "subjects/data_structures.md",
+      "units": [
+        {
+          "id": "data_structures_unit_1",
+          "title": "1 — Foundations, Complexity, Arrays and Pointers",
+          "unitSheetPath": "units/data_structures_unit_1.md",
+          "coverageStatements": [
+            "Definition/types/characteristics of data structures",
+            "ADT",
+            "algorithms",
+            "time/space complexity",
+            "arrays",
+            "1D arrays",
+            "row/column-major 2D, 3D and nD array implementation",
+            "advanced pointers in C",
+            "dynamic memory allocation"
+          ],
+          "coverageStatus": "drafted; review against source before marking verified",
+          "sourceStatus": "Detailed syllabus supplied in CSE-DS course structure."
+        },
+        {
+          "id": "data_structures_unit_2",
+          "title": "2 — Stacks, Expressions, Recursion and Queues",
+          "unitSheetPath": "units/data_structures_unit_2.md",
+          "coverageStatements": [
+            "Stack ADT and operations",
+            "array/linked implementation",
+            "Polish and reverse Polish notation",
+            "recursion",
+            "garbage collection",
+            "queue ADT and operations",
+            "linear, circular, priority and double-ended queues",
+            "queue applications"
+          ],
+          "coverageStatus": "drafted; review against source before marking verified",
+          "sourceStatus": "Detailed syllabus supplied in CSE-DS course structure."
+        },
+        {
+          "id": "data_structures_unit_3",
+          "title": "3 — Linked Lists",
+          "unitSheetPath": "units/data_structures_unit_3.md",
+          "coverageStatements": [
+            "Concept of linked list",
+            "linear singly and doubly linked lists",
+            "circular singly and doubly linked lists",
+            "header linked list",
+            "applications"
+          ],
+          "coverageStatus": "drafted; review against source before marking verified",
+          "sourceStatus": "Detailed syllabus supplied in CSE-DS course structure."
+        },
+        {
+          "id": "data_structures_unit_4",
+          "title": "4 — Trees, BST, Traversals, AVL, Heaps, Expression Trees, B/B+ Trees",
+          "unitSheetPath": "units/data_structures_unit_4.md",
+          "coverageStatements": [
+            "Tree and tree ADT",
+            "binary trees and operations",
+            "BST",
+            "traversals",
+            "types of binary tree",
+            "AVL trees",
+            "heap trees",
+            "expression trees",
+            "B-trees and B+ trees"
+          ],
+          "coverageStatus": "drafted; review against source before marking verified",
+          "sourceStatus": "Detailed syllabus supplied in CSE-DS course structure."
+        },
+        {
+          "id": "data_structures_unit_5",
+          "title": "5 — Graphs, Traversals, MST and Sorting Algorithms",
+          "unitSheetPath": "units/data_structures_unit_5.md",
+          "coverageStatements": [
+            "Graph terminology",
+            "directed/undirected, connected/disconnected, cyclic/acyclic graphs",
+            "adjacency matrix, incidence matrix and linked-list representations",
+            "graph traversal",
+            "graph algorithms",
+            "MST",
+            "Prim's and Kruskal's algorithms",
+            "sorting algorithms"
+          ],
+          "coverageStatus": "drafted; review against source before marking verified",
+          "sourceStatus": "Detailed syllabus supplied in CSE-DS course structure."
+        }
+      ]
+    },
+    {
+      "id": "digital_logic_design",
+      "title": "DIGITAL LOGIC DESIGN — DSC-303",
+      "courseCode": "DSC-303",
+      "sourceStatus": "Detailed syllabus supplied in CSE-DS course structure.",
+      "subjectSheetPath": "subjects/digital_logic_design.md",
+      "units": [
+        {
+          "id": "digital_logic_design_unit_1",
+          "title": "1 — Boolean Algebra and Logic Gates",
+          "unitSheetPath": "units/digital_logic_design_unit_1.md",
+          "coverageStatements": [
+            "Introduction",
+            "binary numbers",
+            "base conversion",
+            "octal/hexadecimal",
+            "complements",
+            "binary codes",
+            "fixed/floating-point numbers",
+            "Boolean algebra axioms/theorems",
+            "canonical and standard forms",
+            "SOP/POS",
+            "other logic operations"
+          ],
+          "coverageStatus": "drafted; review against source before marking verified",
+          "sourceStatus": "Detailed syllabus supplied in CSE-DS course structure."
+        },
+        {
+          "id": "digital_logic_design_unit_2",
+          "title": "2 — Function Minimisation",
+          "unitSheetPath": "units/digital_logic_design_unit_2.md",
+          "coverageStatements": [
+            "Logic gates",
+            "Karnaugh maps",
+            "limitations for many variables",
+            "POS simplification",
+            "NAND/NOR implementation",
+            "other two-level implementations",
+            "don't-care conditions",
+            "tabular method"
+          ],
+          "coverageStatus": "drafted; review against source before marking verified",
+          "sourceStatus": "Detailed syllabus supplied in CSE-DS course structure."
+        },
+        {
+          "id": "digital_logic_design_unit_3",
+          "title": "3 — Combinational Systems I: Arithmetic Circuits",
+          "unitSheetPath": "units/digital_logic_design_unit_3.md",
+          "coverageStatements": [
+            "Hardware aspects of arithmetic logic functions",
+            "half adder",
+            "full adder",
+            "binary adder/subtractor",
+            "decimal/BCD adder"
+          ],
+          "coverageStatus": "drafted; review against source before marking verified",
+          "sourceStatus": "Detailed syllabus supplied in CSE-DS course structure."
+        },
+        {
+          "id": "digital_logic_design_unit_4",
+          "title": "4 — Combinational Systems II",
+          "unitSheetPath": "units/digital_logic_design_unit_4.md",
+          "coverageStatements": [
+            "Magnitude comparator",
+            "demultiplexer",
+            "multiplexer",
+            "encoder",
+            "priority encoder",
+            "parity checker/generator"
+          ],
+          "coverageStatus": "drafted; review against source before marking verified",
+          "sourceStatus": "Detailed syllabus supplied in CSE-DS course structure."
+        },
+        {
+          "id": "digital_logic_design_unit_5",
+          "title": "5 — Sequential Systems",
+          "unitSheetPath": "units/digital_logic_design_unit_5.md",
+          "coverageStatements": [
+            "State representation",
+            "flip-flops (RS, D, JK/master-slave)",
+            "working characteristics",
+            "state tables",
+            "excitation tables",
+            "triggering",
+            "asynchronous/synchronous counters",
+            "design and analysis",
+            "counter applications",
+            "shift registers and shift-register counters"
+          ],
+          "coverageStatus": "drafted; review against source before marking verified",
+          "sourceStatus": "Detailed syllabus supplied in CSE-DS course structure."
+        }
+      ]
+    },
+    {
+      "id": "database_management_systems",
+      "title": "DATABASE MANAGEMENT SYSTEM — DSC-304",
+      "courseCode": "DSC-304",
+      "sourceStatus": "Detailed syllabus supplied in CSE-DS course structure.",
+      "subjectSheetPath": "subjects/database_management_systems.md",
+      "units": [
+        {
+          "id": "database_management_systems_unit_1",
+          "title": "1 — Introductory Concepts and Database Design Foundations",
+          "unitSheetPath": "units/database_management_systems_unit_1.md",
+          "coverageStatements": [
+            "DBMS introduction, purpose and applications.",
+            "Data independence.",
+            "Three-schema/database architecture and mappings.",
+            "Database users and database administrator (DBA).",
+            "Entity–Relationship (ER) model.",
+            "Constraints and keys.",
+            "ER design issues and ER diagrams.",
+            "Generalisation, specialisation and aggregation.",
+            "ER-to-relational mapping.",
+            "Tuple relational calculus (TRC), domain relational calculus (DRC) and relational algebra."
+          ],
+          "coverageStatus": "drafted; review against source before marking verified",
+          "sourceStatus": "Detailed syllabus supplied in CSE-DS course structure."
+        },
+        {
+          "id": "database_management_systems_unit_2",
+          "title": "2 — Database Design, Functional Dependencies and Normalisation",
+          "unitSheetPath": "units/database_management_systems_unit_2.md",
+          "coverageStatements": [
+            "Functional dependencies (FDs).",
+            "Armstrong's axioms.",
+            "Attribute closure and FD-set closure.",
+            "Minimal/canonical cover.",
+            "1NF, 2NF, 3NF and BCNF.",
+            "Decomposition and desirable properties.",
+            "3NF synthesis and BCNF decomposition algorithms.",
+            "4NF and 5NF."
+          ],
+          "coverageStatus": "drafted; review against source before marking verified",
+          "sourceStatus": "Detailed syllabus supplied in CSE-DS course structure."
+        },
+        {
+          "id": "database_management_systems_unit_3",
+          "title": "3 — SQL and PL/SQL",
+          "unitSheetPath": "units/database_management_systems_unit_3.md",
+          "coverageStatements": [
+            "SQL statements and clauses: SELECT, FROM, WHERE, GROUP BY, HAVING, ORDER BY.",
+            "INSERT, DELETE, UPDATE, DROP and VIEW.",
+            "Nested queries.",
+            "NOT NULL, UNIQUE, CHECK, PRIMARY KEY and FOREIGN KEY constraints.",
+            "PL/SQL variables, literals and data types.",
+            "Benefits of PL/SQL.",
+            "IF and iterative control: LOOP, WHILE, FOR and GOTO as listed in the syllabus.",
+            "Functions, cursors, triggers and views."
+          ],
+          "coverageStatus": "drafted; review against source before marking verified",
+          "sourceStatus": "Detailed syllabus supplied in CSE-DS course structure."
+        },
+        {
+          "id": "database_management_systems_unit_4",
+          "title": "4 — Transaction Management",
+          "unitSheetPath": "units/database_management_systems_unit_4.md",
+          "coverageStatements": [
+            "Transaction processing.",
+            "ACID properties.",
+            "Concurrency control.",
+            "Locking-based protocols.",
+            "Timestamp-based protocols."
+          ],
+          "coverageStatus": "drafted; review against source before marking verified",
+          "sourceStatus": "Detailed syllabus supplied in CSE-DS course structure."
+        },
+        {
+          "id": "database_management_systems_unit_5",
+          "title": "5 — Advanced Databases",
+          "unitSheetPath": "units/database_management_systems_unit_5.md",
+          "coverageStatements": [
+            "NoSQL databases.",
+            "Cloud-based DBMS.",
+            "Open-source databases.",
+            "Distributed databases.",
+            "Object-oriented databases.",
+            "Mobile databases.",
+            "Multimedia databases.",
+            "Open issues and uncertainties."
+          ],
+          "coverageStatus": "drafted; review against source before marking verified",
+          "sourceStatus": "Detailed syllabus supplied in CSE-DS course structure."
+        }
+      ]
+    },
+    {
+      "id": "linear_programming",
+      "title": "LINEAR PROGRAMMING — SEPARATE EXAM TRACK + NPTEL EXTENDED CHEAT SHEETS",
+      "courseCode": "LPP — code not supplied",
+      "sourceStatus": "Separate exam paper + five-unit/seven-lecture NPTEL extended source; confirm JMI course code and scope.",
+      "subjectSheetPath": "subjects/linear_programming.md",
+      "units": [
+        {
+          "id": "linear_programming_unit_1",
+          "title": "1 — Foundations of Linear Programming and Linear Algebra (Lecture 1)",
+          "unitSheetPath": "units/linear_programming_unit_1.md",
+          "coverageStatements": [
+            "Mathematical optimisation and constrained optimisation.",
+            "Decision variables, objective function, constraints, feasible solution/region, optimal solution.",
+            "Linear programming and resource-allocation formulation.",
+            "Standard form and equivalent transformations.",
+            "Linear algebra foundations: linear systems, vector spaces, linear combinations, span, linear independence, basis, dimension, matrices, kernel, image, rank and solving Ax=b."
+          ],
+          "coverageStatus": "drafted; review against source before marking verified",
+          "sourceStatus": "Separate exam paper + five-unit/seven-lecture NPTEL extended source; confirm JMI course code and scope."
+        },
+        {
+          "id": "linear_programming_unit_2",
+          "title": "2 — Convex Geometry and Simplex Method (Lecture 2)",
+          "unitSheetPath": "units/linear_programming_unit_2.md",
+          "coverageStatements": [],
+          "coverageStatus": "drafted; review against source before marking verified",
+          "sourceStatus": "Separate exam paper + five-unit/seven-lecture NPTEL extended source; confirm JMI course code and scope."
+        },
+        {
+          "id": "linear_programming_unit_3",
+          "title": "3 — Duality Theory and Minimax Theorem (Lectures 3–4)",
+          "unitSheetPath": "units/linear_programming_unit_3.md",
+          "coverageStatements": [],
+          "coverageStatus": "drafted; review against source before marking verified",
+          "sourceStatus": "Separate exam paper + five-unit/seven-lecture NPTEL extended source; confirm JMI course code and scope."
+        },
+        {
+          "id": "linear_programming_unit_4",
+          "title": "4 — Maximum Flow, Minimum Cut, Set Cover and LP Relaxation (Lectures 5–6)",
+          "unitSheetPath": "units/linear_programming_unit_4.md",
+          "coverageStatements": [],
+          "coverageStatus": "drafted; review against source before marking verified",
+          "sourceStatus": "Separate exam paper + five-unit/seven-lecture NPTEL extended source; confirm JMI course code and scope."
+        },
+        {
+          "id": "linear_programming_unit_5",
+          "title": "5 — Applications of LP in Machine Learning (Lecture 7)",
+          "unitSheetPath": "units/linear_programming_unit_5.md",
+          "coverageStatements": [],
+          "coverageStatus": "drafted; review against source before marking verified",
+          "sourceStatus": "Separate exam paper + five-unit/seven-lecture NPTEL extended source; confirm JMI course code and scope."
+        }
+      ]
+    }
+  ],
+  "importRules": [
+    "Reuse canonical subject, unit and topic IDs already in StudyHub. Do not create a duplicate syllabus hierarchy.",
+    "Use subjectSheetPath and unitSheetPath for modular ingestion; MASTER_CHEAT_SHEETS.md is the full source of record.",
+    "Map every coverage statement to one or more existing canonical topic IDs and verify it against the official syllabus.",
+    "Preserve mathematical equations as TeX source and render with KaTeX/MathJax.",
+    "Keep JMI Discrete Unit 5 LPP scope separate from the extended NPTEL LPP content.",
+    "Do not mark Mathematics III or UHV detailed unit versions as confirmed CSE-DS-specific until the current department handout is checked."
+  ]
+}

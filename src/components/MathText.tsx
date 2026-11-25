@@ -14,8 +14,13 @@ interface MathTextProps {
  */
 export function MathText({ text, className = '' }: MathTextProps) {
   const html = useMemo(() => {
+    // Normalize \(...\) and \[...\] delimiters into $...$ and $$...$$
+    const normalized = text
+      .replace(/\\\[([\s\S]+?)\\\]/g, '$$$$$1$$$$')
+      .replace(/\\\(([\s\S]+?)\\\)/g, '$$$1$$');
+
     // Split by display math $$...$$ first, then inline $...$
-    const parts = text.split(/(\$\$[\s\S]+?\$\$|\$[^$\n]+?\$)/g);
+    const parts = normalized.split(/(\$\$[\s\S]+?\$\$|\$[^$\n]+?\$)/g);
     return parts
       .map((part) => {
         if (part.startsWith('$$') && part.endsWith('$$')) {
