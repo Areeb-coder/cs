@@ -10,6 +10,7 @@ import {
   ChevronLeft,
   ChevronRight,
   Cpu,
+  FileSpreadsheet,
   FlaskConical,
   FolderOpen,
   GraduationCap,
@@ -22,10 +23,12 @@ import {
   Sparkles,
   Sun,
   X,
+  Zap,
 } from 'lucide-react';
 import { NavSection, useApp } from '@/context/AppContext';
 import { DashboardView } from '@/components/DashboardView';
 import { SubjectsView } from '@/components/SubjectsView';
+import { CheatSheetsView } from '@/components/CheatSheetsView';
 import { DateSheetsView } from '@/components/DateSheetsView';
 import { LpWorkbenchView } from '@/components/LpWorkbenchView';
 import { QuizPyqView } from '@/components/QuizPyqView';
@@ -50,6 +53,7 @@ const NAV_GROUPS: Array<{
     items: [
       { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
       { id: 'subjects', label: 'My Subjects', icon: BookOpen },
+      { id: 'cheatsheets', label: 'Cheat Sheets', icon: Zap },
       { id: 'datesheets', label: 'Schedule', icon: Calendar },
       { id: 'pyqs', label: 'Question Bank', icon: CheckCircle2 },
     ],
@@ -79,6 +83,7 @@ const NAV_GROUPS: Array<{
 const SECTION_TITLES: Record<NavSection, string> = {
   dashboard: 'Dashboard',
   subjects: 'My Subjects & Syllabus',
+  cheatsheets: 'Cheat Sheets & Formula Sheets',
   datesheets: 'Examination Schedule',
   pyqs: 'Question Bank & Practice',
   resources: 'Notes & Google Drive',
@@ -269,6 +274,7 @@ export function AppShell() {
         <main className="mx-auto w-full max-w-7xl flex-1 p-4 sm:p-6">
           {activeSection === 'dashboard' && <DashboardView />}
           {activeSection === 'subjects' && <SubjectsView />}
+          {activeSection === 'cheatsheets' && <CheatSheetsView />}
           {activeSection === 'datesheets' && <DateSheetsView />}
           {activeSection === 'pyqs' && <QuizPyqView />}
           {activeSection === 'resources' && <ResourcesView />}

@@ -12,6 +12,7 @@ import { MistakeEntry, TopicMasteryState } from '@/types/academic';
 export type NavSection =
   | 'dashboard'
   | 'subjects'
+  | 'cheatsheets'
   | 'datesheets'
   | 'pyqs'
   | 'resources'

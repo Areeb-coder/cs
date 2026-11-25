@@ -1,0 +1,668 @@
+[
+  {
+    "subjectId": "asb-301",
+    "subjectName": "Engineering Mathematics III",
+    "subjectCode": "ASB-301",
+    "units": [
+      {
+        "unitId": "asb-301-u1",
+        "unitNumber": 1,
+        "unitTitle": "Vector Calculus and Its Applications",
+        "topics": [
+          {
+            "id": "asb-301-u1-t1",
+            "title": "Scalar & Vector Functions, Gradient, Divergence & Curl"
+          },
+          {
+            "id": "asb-301-u1-t2",
+            "title": "Gauss Divergence Theorem, Green’s Theorem & Stokes’ Theorem"
+          }
+        ]
+      },
+      {
+        "unitId": "asb-301-u2",
+        "unitNumber": 2,
+        "unitTitle": "Linear Algebra and Its Applications",
+        "topics": [
+          {
+            "id": "asb-301-u2-t1",
+            "title": "Consistency of Linear Systems using Rank, Eigenvalues & Eigenvectors"
+          },
+          {
+            "id": "asb-301-u2-t2",
+            "title": "Cayley–Hamilton Theorem, Vector Space, Basis & Linear Transformations"
+          }
+        ]
+      },
+      {
+        "unitId": "asb-301-u3",
+        "unitNumber": 3,
+        "unitTitle": "Fourier Series, Fourier Transforms and Its Applications",
+        "topics": [
+          {
+            "id": "asb-301-u3-t1",
+            "title": "Fourier Series (Full Range & Half Range) for Arbitrary Period"
+          },
+          {
+            "id": "asb-301-u3-t2",
+            "title": "Fourier Integral, Sine/Cosine Integrals, Inverse & Applications"
+          }
+        ]
+      },
+      {
+        "unitId": "asb-301-u4",
+        "unitNumber": 4,
+        "unitTitle": "Difference Equations, Z-Transforms and Its Applications",
+        "topics": [
+          {
+            "id": "asb-301-u4-t1",
+            "title": "Formation, Order & Solutions of Linear Difference Equations"
+          },
+          {
+            "id": "asb-301-u4-t2",
+            "title": "Z-Transforms, Properties, Inverse, Convolution & Solving Difference Equations"
+          }
+        ]
+      },
+      {
+        "unitId": "asb-301-u5",
+        "unitNumber": 5,
+        "unitTitle": "Probability and Statistics",
+        "topics": [
+          {
+            "id": "asb-301-u5-t1",
+            "title": "Probability Theorems & Distributions (Binomial, Poisson, Normal)"
+          },
+          {
+            "id": "asb-301-u5-t2",
+            "title": "Moments, Skewness, Kurtosis & Rank of Correlation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "subjectId": "asm-301",
+    "subjectName": "Universal Human Values",
+    "subjectCode": "ASM-301",
+    "units": [
+      {
+        "unitId": "asm-301-u1",
+        "unitNumber": 1,
+        "unitTitle": "Introduction to Value Education",
+        "topics": [
+          {
+            "id": "asm-301-u1-t1",
+            "title": "Need, Guidelines, Content & Process for Value Education; Self-Exploration"
+          },
+          {
+            "id": "asm-301-u1-t2",
+            "title": "Continuous Happiness & Prosperity; Right Understanding, Relationship & Physical Facilities"
+          }
+        ]
+      },
+      {
+        "unitId": "asm-301-u2",
+        "unitNumber": 2,
+        "unitTitle": "Harmony in the Human Being",
+        "topics": [
+          {
+            "id": "asm-301-u2-t1",
+            "title": "Co-existence of Sentient \"I\" and Material \"Body\"; Needs of Self & Body"
+          },
+          {
+            "id": "asm-301-u2-t2",
+            "title": "Body as an Instrument of \"I\"; Characteristics & Activities of \"I\""
+          }
+        ]
+      },
+      {
+        "unitId": "asm-301-u3",
+        "unitNumber": 3,
+        "unitTitle": "Harmony in Family & Human-Human Relationship",
+        "topics": [
+          {
+            "id": "asm-301-u3-t1",
+            "title": "Sanyam & Health; Appraisal of Physical Needs & Prosperity"
+          },
+          {
+            "id": "asm-301-u3-t2",
+            "title": "Nine Universal Values in Relationships & Justice for Mutual Happiness"
+          }
+        ]
+      },
+      {
+        "unitId": "asm-301-u4",
+        "unitNumber": 4,
+        "unitTitle": "Harmony in Society",
+        "topics": [
+          {
+            "id": "asm-301-u4-t1",
+            "title": "Trust & Respect (Intention vs Competence; Respect vs Differentiation)"
+          },
+          {
+            "id": "asm-301-u4-t2",
+            "title": "Undivided Society & Universal Order from Family to World Family"
+          }
+        ]
+      },
+      {
+        "unitId": "asm-301-u5",
+        "unitNumber": 5,
+        "unitTitle": "Harmony in Nature & Existence",
+        "topics": [
+          {
+            "id": "asm-301-u5-t1",
+            "title": "Four Orders of Nature: Recyclability, Self-Regulation & Mutual Fulfilment"
+          },
+          {
+            "id": "asm-301-u5-t2",
+            "title": "Existence as Co-existence; Ethical Human Conduct & Humanistic Constitution"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "subjectId": "dsc-301",
+    "subjectName": "Discrete Mathematics",
+    "subjectCode": "DSC-301",
+    "units": [
+      {
+        "unitId": "dsc-301-u1",
+        "unitNumber": 1,
+        "unitTitle": "Algebraic Structures",
+        "topics": [
+          {
+            "id": "dsc-301-u1-t1",
+            "title": "Review of Relations & Equivalence Relations"
+          },
+          {
+            "id": "dsc-301-u1-t2",
+            "title": "Partial Orders, Lattices & Characteristic Function"
+          },
+          {
+            "id": "dsc-301-u1-t3",
+            "title": "Semigroups, Monoids & Groups"
+          },
+          {
+            "id": "dsc-301-u1-t4",
+            "title": "Permutation Groups, Cyclic Groups & Normal Subgroups"
+          },
+          {
+            "id": "dsc-301-u1-t5",
+            "title": "Group Isomorphism, Rings, Fields & Integral Domain"
+          }
+        ]
+      },
+      {
+        "unitId": "dsc-301-u2",
+        "unitNumber": 2,
+        "unitTitle": "Graph Theory",
+        "topics": [
+          {
+            "id": "dsc-301-u2-t1",
+            "title": "Directed & Undirected Graphs, Degree Sequence"
+          },
+          {
+            "id": "dsc-301-u2-t2",
+            "title": "Cycles, Paths, Connectivity, Adjacency & Incidence Matrices"
+          },
+          {
+            "id": "dsc-301-u2-t3",
+            "title": "Complete, Regular, Bipartite & Planar Graphs"
+          },
+          {
+            "id": "dsc-301-u2-t4",
+            "title": "Graph Isomorphism, Euler & Hamiltonian Circuits"
+          },
+          {
+            "id": "dsc-301-u2-t5",
+            "title": "Graph Colouring using Welch–Powell Algorithm"
+          }
+        ]
+      },
+      {
+        "unitId": "dsc-301-u3",
+        "unitNumber": 3,
+        "unitTitle": "Recurrence Relations",
+        "topics": [
+          {
+            "id": "dsc-301-u3-t1",
+            "title": "Generalised Linear Homogeneous & Non-Homogeneous Recurrences"
+          },
+          {
+            "id": "dsc-301-u3-t2",
+            "title": "Iteration Method & Characteristic-Equation Method"
+          },
+          {
+            "id": "dsc-301-u3-t3",
+            "title": "Generating Functions & Solving Recurrences"
+          }
+        ]
+      },
+      {
+        "unitId": "dsc-301-u4",
+        "unitNumber": 4,
+        "unitTitle": "Mathematical Techniques",
+        "topics": [
+          {
+            "id": "dsc-301-u4-t1",
+            "title": "Propositional Calculus"
+          },
+          {
+            "id": "dsc-301-u4-t2",
+            "title": "Principle of Inclusion and Exclusion"
+          },
+          {
+            "id": "dsc-301-u4-t3",
+            "title": "Mathematical Induction & Pigeonhole Principle"
+          },
+          {
+            "id": "dsc-301-u4-t4",
+            "title": "Permutation, Combination, Derangements & Recursive Functions"
+          }
+        ]
+      },
+      {
+        "unitId": "dsc-301-u5",
+        "unitNumber": 5,
+        "unitTitle": "Linear Programming Problems (Cross-linked to LPP Track)",
+        "topics": [
+          {
+            "id": "dsc-301-u5-t1",
+            "title": "Introduction to LPP, Modelling & Formulation"
+          },
+          {
+            "id": "dsc-301-u5-t2",
+            "title": "Graphical Methods for LPP"
+          },
+          {
+            "id": "dsc-301-u5-t3",
+            "title": "Simplex Algorithm"
+          },
+          {
+            "id": "dsc-301-u5-t4",
+            "title": "Duality Principle & Finding Duals of LPPs"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "subjectId": "dsc-304",
+    "subjectName": "Database Management System",
+    "subjectCode": "DSC-304",
+    "units": [
+      {
+        "unitId": "dsc-304-u1",
+        "unitNumber": 1,
+        "unitTitle": "Introductory Concepts",
+        "topics": [
+          {
+            "id": "dsc-304-u1-t1",
+            "title": "DBMS Applications, Data Independence & Architecture Levels"
+          },
+          {
+            "id": "dsc-304-u1-t2",
+            "title": "ER Model, Constraints, Keys & Extended ER (Generalisation/Specialisation/Aggregation)"
+          },
+          {
+            "id": "dsc-304-u1-t3",
+            "title": "ER-to-Relational Mapping"
+          },
+          {
+            "id": "dsc-304-u1-t4",
+            "title": "Relational Algebra, Tuple & Domain Relational Calculus (RA, TRC, DRC)"
+          }
+        ]
+      },
+      {
+        "unitId": "dsc-304-u2",
+        "unitNumber": 2,
+        "unitTitle": "Database Design",
+        "topics": [
+          {
+            "id": "dsc-304-u2-t1",
+            "title": "Functional Dependencies, Armstrong’s Axioms & Attribute Closure"
+          },
+          {
+            "id": "dsc-304-u2-t2",
+            "title": "Minimal Covers & Canonical Cover"
+          },
+          {
+            "id": "dsc-304-u2-t3",
+            "title": "Normal Forms: 1NF, 2NF, 3NF, BCNF, 4NF & 5NF"
+          },
+          {
+            "id": "dsc-304-u2-t4",
+            "title": "Decomposition Properties & 3NF/BCNF Algorithms"
+          }
+        ]
+      },
+      {
+        "unitId": "dsc-304-u3",
+        "unitNumber": 3,
+        "unitTitle": "SQL and PL/SQL",
+        "topics": [
+          {
+            "id": "dsc-304-u3-t1",
+            "title": "SQL Queries: SELECT, FROM, WHERE, GROUP BY, HAVING, ORDER BY"
+          },
+          {
+            "id": "dsc-304-u3-t2",
+            "title": "DML/DDL, Nested Queries & Integrity Constraints"
+          },
+          {
+            "id": "dsc-304-u3-t3",
+            "title": "PL/SQL: Variables, Control Statements, Functions, Cursors, Triggers & Views"
+          }
+        ]
+      },
+      {
+        "unitId": "dsc-304-u4",
+        "unitNumber": 4,
+        "unitTitle": "Transaction Management",
+        "topics": [
+          {
+            "id": "dsc-304-u4-t1",
+            "title": "Transaction Processing & ACID Properties"
+          },
+          {
+            "id": "dsc-304-u4-t2",
+            "title": "Concurrency Control: Locking-Based Protocols"
+          },
+          {
+            "id": "dsc-304-u4-t3",
+            "title": "Timestamp-Based Protocols"
+          }
+        ]
+      },
+      {
+        "unitId": "dsc-304-u5",
+        "unitNumber": 5,
+        "unitTitle": "Advanced Databases",
+        "topics": [
+          {
+            "id": "dsc-304-u5-t1",
+            "title": "NoSQL, Cloud-Based & Open-Source Databases"
+          },
+          {
+            "id": "dsc-304-u5-t2",
+            "title": "Distributed, Object-Oriented, Mobile & Multimedia Databases"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "subjectId": "dsc-302",
+    "subjectName": "Data Structure",
+    "subjectCode": "DSC-302",
+    "units": [
+      {
+        "unitId": "dsc-302-u1",
+        "unitNumber": 1,
+        "unitTitle": "Arrays, Pointers & Complexity",
+        "topics": [
+          {
+            "id": "dsc-302-u1-t1",
+            "title": "ADT, Algorithms, Time & Space Complexity"
+          },
+          {
+            "id": "dsc-302-u1-t2",
+            "title": "1-D, 2-D, 3-D & n-D Arrays (Row-Major & Column-Major)"
+          },
+          {
+            "id": "dsc-302-u1-t3",
+            "title": "Advanced Pointers in C & Dynamic Memory Allocation"
+          }
+        ]
+      },
+      {
+        "unitId": "dsc-302-u2",
+        "unitNumber": 2,
+        "unitTitle": "Stacks & Queues",
+        "topics": [
+          {
+            "id": "dsc-302-u2-t1",
+            "title": "Stack ADT, Array/Linked-List Implementation, Polish & Reverse Polish Notation"
+          },
+          {
+            "id": "dsc-302-u2-t2",
+            "title": "Recursion & Garbage Collection"
+          },
+          {
+            "id": "dsc-302-u2-t3",
+            "title": "Queue ADT: Linear, Circular, Priority & Double-Ended Queues"
+          }
+        ]
+      },
+      {
+        "unitId": "dsc-302-u3",
+        "unitNumber": 3,
+        "unitTitle": "Linked Lists",
+        "topics": [
+          {
+            "id": "dsc-302-u3-t1",
+            "title": "Singly & Doubly Linked Lists"
+          },
+          {
+            "id": "dsc-302-u3-t2",
+            "title": "Circular Singly/Doubly & Header Linked Lists"
+          }
+        ]
+      },
+      {
+        "unitId": "dsc-302-u4",
+        "unitNumber": 4,
+        "unitTitle": "Trees",
+        "topics": [
+          {
+            "id": "dsc-302-u4-t1",
+            "title": "Binary Trees, Traversals & Expression Trees"
+          },
+          {
+            "id": "dsc-302-u4-t2",
+            "title": "Binary Search Trees (BST) & AVL Trees"
+          },
+          {
+            "id": "dsc-302-u4-t3",
+            "title": "Heap Trees, B-Trees & B+ Trees"
+          }
+        ]
+      },
+      {
+        "unitId": "dsc-302-u5",
+        "unitNumber": 5,
+        "unitTitle": "Graphs & Sorting",
+        "topics": [
+          {
+            "id": "dsc-302-u5-t1",
+            "title": "Graph Terminology & Representations (Adjacency, Incidence, Linked List)"
+          },
+          {
+            "id": "dsc-302-u5-t2",
+            "title": "Graph Traversals (BFS/DFS) & Minimum Spanning Trees (Prim’s & Kruskal’s)"
+          },
+          {
+            "id": "dsc-302-u5-t3",
+            "title": "Sorting Algorithms"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "subjectId": "dsc-303",
+    "subjectName": "Digital Logic Design",
+    "subjectCode": "DSC-303",
+    "units": [
+      {
+        "unitId": "dsc-303-u1",
+        "unitNumber": 1,
+        "unitTitle": "Boolean Algebra and Logic Gates",
+        "topics": [
+          {
+            "id": "dsc-303-u1-t1",
+            "title": "Number Systems, Base Conversions, Complements & Binary Codes"
+          },
+          {
+            "id": "dsc-303-u1-t2",
+            "title": "Fixed & Floating-Point Representation"
+          },
+          {
+            "id": "dsc-303-u1-t3",
+            "title": "Boolean Algebra Axioms, Theorems, Canonical & Standard Forms (SOP/POS)"
+          }
+        ]
+      },
+      {
+        "unitId": "dsc-303-u2",
+        "unitNumber": 2,
+        "unitTitle": "Function Minimisation",
+        "topics": [
+          {
+            "id": "dsc-303-u2-t1",
+            "title": "Karnaugh Maps (K-Maps), POS Simplification & Don’t-Care Conditions"
+          },
+          {
+            "id": "dsc-303-u2-t2",
+            "title": "NAND/NOR & Two-Level Implementations"
+          },
+          {
+            "id": "dsc-303-u2-t3",
+            "title": "Tabular (Quine–McCluskey) Method"
+          }
+        ]
+      },
+      {
+        "unitId": "dsc-303-u3",
+        "unitNumber": 3,
+        "unitTitle": "Combinational Systems I",
+        "topics": [
+          {
+            "id": "dsc-303-u3-t1",
+            "title": "Half-Adder, Full-Adder, Binary Adder/Subtractor & Decimal Adder"
+          }
+        ]
+      },
+      {
+        "unitId": "dsc-303-u4",
+        "unitNumber": 4,
+        "unitTitle": "Combinational Systems II",
+        "topics": [
+          {
+            "id": "dsc-303-u4-t1",
+            "title": "Magnitude Comparator, Multiplexer & Demultiplexer"
+          },
+          {
+            "id": "dsc-303-u4-t2",
+            "title": "Encoder, Priority Encoder & Parity Checker/Generator"
+          }
+        ]
+      },
+      {
+        "unitId": "dsc-303-u5",
+        "unitNumber": 5,
+        "unitTitle": "Sequential Systems",
+        "topics": [
+          {
+            "id": "dsc-303-u5-t1",
+            "title": "Flip-Flops (RS, D, JK, Master-Slave), State & Excitation Tables"
+          },
+          {
+            "id": "dsc-303-u5-t2",
+            "title": "Asynchronous & Synchronous Counters"
+          },
+          {
+            "id": "dsc-303-u5-t3",
+            "title": "Shift Registers & Shift-Register Counters"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "subjectId": "lpp",
+    "subjectName": "Linear Programming (JMI Exam + NPTEL Track)",
+    "subjectCode": "LPP — Course code not supplied",
+    "units": [
+      {
+        "unitId": "lpp-u1",
+        "unitNumber": 1,
+        "unitTitle": "Foundations of Linear Programming (Lecture 1)",
+        "topics": [
+          {
+            "id": "lpp-u1-t1",
+            "title": "Mathematical Optimisation, Standard Form & Graphical Method"
+          },
+          {
+            "id": "lpp-u1-t2",
+            "title": "Linear Algebra Foundations: Gaussian Elimination, Vector Spaces, Rank & Ax = b"
+          }
+        ]
+      },
+      {
+        "unitId": "lpp-u2",
+        "unitNumber": 2,
+        "unitTitle": "Convex Sets and Simplex Method (Lecture 2)",
+        "topics": [
+          {
+            "id": "lpp-u2-t1",
+            "title": "Affine, Conic & Convex Combinations, Polytopes & Cones"
+          },
+          {
+            "id": "lpp-u2-t2",
+            "title": "Convex Functions, Local = Global Minimum & Boundary Optimality"
+          },
+          {
+            "id": "lpp-u2-t3",
+            "title": "Simplex Method: BFS, Pivoting, Initial BFS, Degeneracy & Bland’s Rule"
+          }
+        ]
+      },
+      {
+        "unitId": "lpp-u3",
+        "unitNumber": 3,
+        "unitTitle": "Duality Theory and Minimax Theorem (Lectures 3 & 4)",
+        "topics": [
+          {
+            "id": "lpp-u3-t1",
+            "title": "Hyperplane Separation, Farkas’ Lemma, Weak/Strong Duality & Complementary Slackness"
+          },
+          {
+            "id": "lpp-u3-t2",
+            "title": "[NPTEL Extension] Game Theory, Nash Equilibrium & Von Neumann’s Minimax Theorem"
+          }
+        ]
+      },
+      {
+        "unitId": "lpp-u4",
+        "unitNumber": 4,
+        "unitTitle": "Combinatorial Optimisation Applications (Lectures 5 & 6)",
+        "topics": [
+          {
+            "id": "lpp-u4-t1",
+            "title": "[NPTEL Extension] Max Flow, Min Cut, Primal-Dual & Ford–Fulkerson"
+          },
+          {
+            "id": "lpp-u4-t2",
+            "title": "[NPTEL Extension] Set Cover ILP, LP Relaxation & Randomized Rounding"
+          }
+        ]
+      },
+      {
+        "unitId": "lpp-u5",
+        "unitNumber": 5,
+        "unitTitle": "Applications of LP in Machine Learning (Lecture 7)",
+        "topics": [
+          {
+            "id": "lpp-u5-t1",
+            "title": "[NPTEL Extension] L1 Linear Regression, Linear Classifiers & Higher-Degree Feature Maps"
+          }
+        ]
+      }
+    ]
+  }
+]

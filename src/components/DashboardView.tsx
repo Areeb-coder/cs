@@ -150,17 +150,22 @@ export function DashboardView() {
               </div>
               {masteredCount === 0 ? (
                 <div className="mt-4 flex items-center justify-between rounded-xl bg-[#F6F7FB] p-2.5 text-xs dark:bg-slate-800">
-                  <span className="text-[#697386]">Start with your first topic</span>
+                  <span className="text-[#697386]">Quick Formula Revision</span>
                   <button
-                    onClick={() => setActiveSection('subjects')}
+                    onClick={() => setActiveSection('cheatsheets')}
                     className="font-semibold text-[#536DD8] hover:underline"
                   >
-                    Open Syllabus →
+                    Open Cheat Sheets →
                   </button>
                 </div>
               ) : (
                 <div className="mt-4 flex justify-between text-xs text-[#697386]">
-                  <span>{state.quizScores.length} quizzes taken</span>
+                  <button
+                    onClick={() => setActiveSection('cheatsheets')}
+                    className="font-semibold text-[#536DD8] hover:underline"
+                  >
+                    ⚡ Cheat Sheets
+                  </button>
                   <span>{openMistakes} mistakes to review</span>
                 </div>
               )}
