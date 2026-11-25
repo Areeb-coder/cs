@@ -5,6 +5,7 @@ export interface StudentProgressState {
   personalNotes: Record<string, string>;
   bookmarks: string[];
   mistakes: MistakeEntry[];
+  watchedVideos?: Record<string, boolean>;
   quizScores: Array<{
     id: string;
     subjectId: string;
@@ -24,6 +25,7 @@ export const DEFAULT_PROGRESS_STATE: StudentProgressState = {
   personalNotes: {},
   bookmarks: [],
   mistakes: [],
+  watchedVideos: {},
   quizScores: [],
   theme: 'light',
 };

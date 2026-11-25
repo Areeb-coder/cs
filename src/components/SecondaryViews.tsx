@@ -1,22 +1,193 @@
 'use client';
 
 import React, { useState } from 'react';
-import { AlertTriangle, ExternalLink, FlaskConical, FolderOpen, Sparkles } from 'lucide-react';
+import {
+  AlertTriangle,
+  CheckCircle2,
+  ExternalLink,
+  FlaskConical,
+  FolderOpen,
+  Play,
+  Search,
+  ShieldCheck,
+  Sparkles,
+  Video,
+} from 'lucide-react';
 import { DRIVE_RESOURCES } from '@/data/resources';
 import { LAB_COURSES, LPP_LECTURES, SUBJECTS } from '@/data/curriculum';
+import { TOPIC_VIDEOS } from '@/data/videos';
 import { ACADEMIC_DISCREPANCIES } from '@/data/schedule';
 import { useApp } from '@/context/AppContext';
 
 export function ResourcesView() {
+  const { setSelectedSubjectId, setSelectedTopicId, setActiveSection } = useApp();
+  const [videoFilter, setVideoFilter] = useState<'all' | 'verified' | 'search-fallback'>('all');
+  const [videoSearch, setVideoSearch] = useState('');
+
+  const filteredVideos = TOPIC_VIDEOS.filter((v) => {
+    if (videoFilter !== 'all' && v.status !== videoFilter) return false;
+    if (!videoSearch.trim()) return true;
+    const q = videoSearch.toLowerCase();
+    return (
+      v.topicTitle.toLowerCase().includes(q) ||
+      (v.title && v.title.toLowerCase().includes(q)) ||
+      (v.channelName && v.channelName.toLowerCase().includes(q))
+    );
+  });
+
   return (
     <div className="space-y-6">
       <div>
         <h1 className="text-2xl font-bold text-slate-900 dark:text-slate-100">
-          Notes, NPTEL PDFs & Google Drive Index
+          Notes, Video Lectures &amp; Drive Index
         </h1>
         <p className="text-sm text-slate-500 dark:text-slate-400">
-          Authorised Drive links and the 7 NPTEL LPP lecture-note PDFs (78 pages total).
+          Curated YouTube video lectures, authorised Drive links, and 7 NPTEL LPP lecture-note PDFs (78 pages).
         </p>
+      </div>
+
+      {/* Video Lectures Section */}
+      <div className="rounded-2xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900 shadow-sm">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-100 pb-4 dark:border-slate-800">
+          <div className="flex items-center gap-2">
+            <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-red-50 text-red-600 dark:bg-red-950/40 dark:text-red-400">
+              <Video className="h-4 w-4" />
+            </span>
+            <div>
+              <h2 className="text-base font-bold text-slate-900 dark:text-slate-100">
+                Curated YouTube Lecture Map
+              </h2>
+              <p className="text-xs text-slate-500 dark:text-slate-400">
+                Authoritative mapping from JMI_StudyHub_YouTube_Lecture_Map.md
+              </p>
+            </div>
+          </div>
+
+          <div className="flex flex-wrap items-center gap-2">
+            <div className="flex rounded-lg border border-slate-200 bg-slate-50 p-1 dark:border-slate-700 dark:bg-slate-800 text-xs">
+              <button
+                type="button"
+                onClick={() => setVideoFilter('all')}
+                className={`rounded-md px-2.5 py-1 font-medium transition ${
+                  videoFilter === 'all'
+                    ? 'bg-white text-slate-900 shadow-xs dark:bg-slate-700 dark:text-white'
+                    : 'text-slate-600 dark:text-slate-300'
+                }`}
+              >
+                All ({TOPIC_VIDEOS.length})
+              </button>
+              <button
+                type="button"
+                onClick={() => setVideoFilter('verified')}
+                className={`rounded-md px-2.5 py-1 font-medium transition ${
+                  videoFilter === 'verified'
+                    ? 'bg-emerald-600 text-white shadow-xs'
+                    : 'text-slate-600 dark:text-slate-300'
+                }`}
+              >
+                Verified ({TOPIC_VIDEOS.filter((v) => v.status === 'verified').length})
+              </button>
+              <button
+                type="button"
+                onClick={() => setVideoFilter('search-fallback')}
+                className={`rounded-md px-2.5 py-1 font-medium transition ${
+                  videoFilter === 'search-fallback'
+                    ? 'bg-amber-600 text-white shadow-xs'
+                    : 'text-slate-600 dark:text-slate-300'
+                }`}
+              >
+                Review Queue ({TOPIC_VIDEOS.filter((v) => v.status === 'search-fallback').length})
+              </button>
+            </div>
+
+            <div className="relative min-w-[200px]">
+              <Search className="h-3.5 w-3.5 absolute left-2.5 top-1/2 -translate-y-1/2 text-slate-400" />
+              <input
+                type="text"
+                placeholder="Search topic or lecture..."
+                value={videoSearch}
+                onChange={(e) => setVideoSearch(e.target.value)}
+                className="w-full rounded-lg border border-slate-200 bg-white pl-8 pr-3 py-1 text-xs dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200 focus:outline-none focus:ring-1 focus:ring-sky-500"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Video Grid */}
+        <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3 max-h-[440px] overflow-y-auto pr-1">
+          {filteredVideos.map((v) => (
+            <div
+              key={v.id}
+              className="rounded-xl border border-slate-200/80 bg-slate-50/50 p-3.5 dark:border-slate-800 dark:bg-slate-800/40 space-y-2 flex flex-col justify-between"
+            >
+              <div>
+                <div className="flex items-center justify-between gap-1.5">
+                  <span className="text-[10px] font-bold text-sky-700 dark:text-sky-300 uppercase">
+                    {v.subjectId} • Unit {v.unitNumber}
+                  </span>
+                  {v.status === 'verified' ? (
+                    <span className="flex items-center gap-0.5 rounded bg-emerald-50 px-1.5 py-0.5 text-[10px] font-semibold text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-400">
+                      <ShieldCheck className="h-3 w-3" />
+                      Verified
+                    </span>
+                  ) : (
+                    <span className="flex items-center gap-0.5 rounded bg-amber-50 px-1.5 py-0.5 text-[10px] font-semibold text-amber-700 dark:bg-amber-950/40 dark:text-amber-400">
+                      Review
+                    </span>
+                  )}
+                </div>
+
+                <h4 className="mt-1 text-xs font-semibold text-slate-900 dark:text-slate-100 line-clamp-1">
+                  {v.topicTitle}
+                </h4>
+
+                {v.status === 'verified' ? (
+                  <p className="mt-0.5 text-[11px] text-slate-600 dark:text-slate-300 line-clamp-2">
+                    {v.title}
+                  </p>
+                ) : (
+                  <p className="mt-0.5 text-[11px] text-amber-700 dark:text-amber-400 italic">
+                    {v.reviewNotes}
+                  </p>
+                )}
+              </div>
+
+              <div className="flex items-center justify-between pt-1 border-t border-slate-200/50 dark:border-slate-700/50 text-[11px]">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setSelectedSubjectId(v.subjectId);
+                    setSelectedTopicId(v.topicId);
+                    setActiveSection('subjects');
+                  }}
+                  className="font-medium text-sky-600 dark:text-sky-400 hover:underline"
+                >
+                  Open in Workspace →
+                </button>
+
+                {v.youtubeUrl ? (
+                  <a
+                    href={v.youtubeUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1 font-medium text-red-600 hover:underline dark:text-red-400"
+                  >
+                    YouTube <ExternalLink className="h-3 w-3" />
+                  </a>
+                ) : (
+                  <a
+                    href={v.searchUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1 font-medium text-amber-600 hover:underline dark:text-amber-400"
+                  >
+                    Search <ExternalLink className="h-3 w-3" />
+                  </a>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className="grid gap-4 sm:grid-cols-2">

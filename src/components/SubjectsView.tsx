@@ -18,8 +18,10 @@ import {
 } from 'lucide-react';
 import { LPP_LECTURES, SUBJECTS } from '@/data/curriculum';
 import { QUESTION_BANK } from '@/data/questions';
+import { getVideoForTopic } from '@/data/videos';
 import { useApp } from '@/context/AppContext';
 import { MathText } from '@/components/MathText';
+import { TopicVideoSection } from '@/components/TopicVideoSection';
 import { Topic, TopicMasteryState } from '@/types/academic';
 
 const MASTERY_LABELS: Record<TopicMasteryState, string> = {
@@ -34,6 +36,7 @@ const MASTERY_LABELS: Record<TopicMasteryState, string> = {
 export function SubjectsView() {
   const {
     state,
+    setActiveSection,
     selectedSubjectId,
     setSelectedSubjectId,
     toggleTopicComplete,
@@ -412,6 +415,14 @@ export function SubjectsView() {
 
                 {workspaceTab === 'overview' && (
                   <div className="space-y-4">
+                    {/* Integrated Curated Lecture Section */}
+                    <TopicVideoSection
+                      video={getVideoForTopic(activeTopic.id)}
+                      onOpenNotes={() => setWorkspaceTab('overview')}
+                      onOpenPractice={() => setWorkspaceTab('practice')}
+                      onOpenTutor={() => setActiveSection('tutor')}
+                    />
+
                     <div className="text-xs text-slate-500 dark:text-slate-400">
                       Provenance: <span className="font-medium">{activeTopic.provenance}</span>
                     </div>

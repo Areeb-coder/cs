@@ -33,6 +33,7 @@ interface AppContextValue {
   setSelectedTopicId: (id: string | null) => void;
   setTopicState: (topicId: string, mastery: TopicMasteryState) => void;
   toggleTopicComplete: (topicId: string) => void;
+  toggleVideoWatched: (topicId: string) => void;
   setPersonalNote: (topicId: string, note: string) => void;
   toggleBookmark: (topicId: string) => void;
   addMistake: (mistake: MistakeEntry) => void;
@@ -91,6 +92,19 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       ...prev,
       personalNotes: { ...prev.personalNotes, [topicId]: note },
     }));
+  };
+
+  const toggleVideoWatched = (topicId: string) => {
+    setState((prev) => {
+      const watched = prev.watchedVideos ?? {};
+      return {
+        ...prev,
+        watchedVideos: {
+          ...watched,
+          [topicId]: !watched[topicId],
+        },
+      };
+    });
   };
 
   const toggleBookmark = (topicId: string) => {
@@ -167,6 +181,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
         setSelectedTopicId,
         setTopicState,
         toggleTopicComplete,
+        toggleVideoWatched,
         setPersonalNote,
         toggleBookmark,
         addMistake,
