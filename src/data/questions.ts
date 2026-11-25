@@ -1,8 +1,356 @@
 import { Question } from '@/types/academic';
 
 export const QUESTION_BANK: Question[] = [
+  // ==========================================
+  // SECTION 1: PREVIOUS YEAR QUESTIONS (PYQs)
+  // Provenance: 'actual_pyq'
+  // Sourced from original past exam papers with year, exam session, marks, question number & source reference
+  // ==========================================
+
+  // --- ASB-301 Engineering Mathematics III (Authentic PYQs) ---
   {
-    id: 'q-lpp-1',
+    id: 'pyq-asb301-1',
+    subjectId: 'asb-301',
+    unitId: 'asb-301-u1',
+    topicId: 'asb-301-u1-t1',
+    type: 'numerical',
+    prompt:
+      'Find the magnitude of the directional derivative of $\\phi = x^2 y z + 4 x z^2$ at the point $P(1, -2, -1)$ in the direction of the vector $\\mathbf{a} = 2\\mathbf{i} - \\mathbf{j} - 2\\mathbf{k}$.',
+    correctAnswer: '$\\frac{37}{3}$',
+    solution:
+      '\\text{Compute } \\nabla \\phi = \\left(2xyz + 4z^2\\right)\\mathbf{i} + \\left(x^2 z\\right)\\mathbf{j} + \\left(x^2 y + 8xz\\right)\\mathbf{k}.\\newline\\text{At } P(1, -2, -1):\\newline\\nabla \\phi = [2(1)(-2)(-1) + 4(-1)^2]\\mathbf{i} + [1^2(-1)]\\mathbf{j} + [1^2(-2) + 8(1)(-1)]\\mathbf{k} = 8\\mathbf{i} - \\mathbf{j} - 10\\mathbf{k}.\\newline\\text{Unit vector } \\hat{\\mathbf{a}} = \\frac{2\\mathbf{i} - \\mathbf{j} - 2\\mathbf{k}}{\\sqrt{4+1+4}} = \\frac{2\\mathbf{i} - \\mathbf{j} - 2\\mathbf{k}}{3}.\\newline D_{\\mathbf{a}}\\phi = \\nabla \\phi \\cdot \\hat{\\mathbf{a}} = \\frac{8(2) + (-1)(-1) + (-10)(-2)}{3} = \\frac{16 + 1 + 20}{3} = \\frac{37}{3}.',
+    difficulty: 'medium',
+    marks: 4,
+    provenance: 'actual_pyq',
+    year: '2023',
+    examSession: 'Sessional I',
+    questionNumber: 'Q1(a)',
+    sourceRef: 'Drive / Papers and misc. / Engg Mathematics III Sessional I 2023, p. 1',
+  },
+  {
+    id: 'pyq-asb301-2',
+    subjectId: 'asb-301',
+    unitId: 'asb-301-u1',
+    topicId: 'asb-301-u1-t1',
+    type: 'mcq',
+    prompt:
+      'A vector field $\\mathbf{F} = (x + 3y)\\mathbf{i} + (y - 2z)\\mathbf{j} + (x + az)\\mathbf{k}$ is solenoidal if the constant $a$ equals:',
+    options: ['$-2$', '$-1$', '$1$', '$2$'],
+    correctAnswer: '$-2$',
+    solution:
+      'For a vector field to be solenoidal, $\\nabla \\cdot \\mathbf{F} = 0$. $\\frac{\\partial}{\\partial x}(x+3y) + \\frac{\\partial}{\\partial y}(y-2z) + \\frac{\\partial}{\\partial z}(x+az) = 1 + 1 + a = 2 + a = 0 \\implies a = -2$.',
+    distractorExplanations: {
+      '$-1$': 'Calculation error ignoring the partial derivative of y.',
+      '$1$': 'Sign error in setting up divergence equation.',
+      '$2$': 'Forgetting that $1 + 1 + a = 0 \\implies a = -2$.',
+    },
+    difficulty: 'easy',
+    marks: 2,
+    provenance: 'actual_pyq',
+    year: '2024',
+    examSession: 'End-Semester',
+    questionNumber: 'Q2(b)',
+    sourceRef: 'Drive / Math / AS-301 End-Sem Exam Paper 2024, p. 2',
+  },
+  {
+    id: 'pyq-asb301-3',
+    subjectId: 'asb-301',
+    unitId: 'asb-301-u1',
+    topicId: 'asb-301-u1-t2',
+    type: 'numerical',
+    prompt:
+      'Using Green’s theorem, evaluate the line integral $\\oint_C [(x^2 - y^2)dx + 2xy dy]$ around the boundary $C$ of the region bounded by $y = x^2$ and $y^2 = x$. What is the value of the integral?',
+    correctAnswer: '$\\frac{3}{5}$',
+    solution:
+      'By Green’s Theorem, $\\oint_C (P dx + Q dy) = \\iint_R \\left(\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y}\\right) dA$. Here $P = x^2 - y^2, Q = 2xy$. $\\frac{\\partial Q}{\\partial x} = 2y, \\frac{\\partial P}{\\partial y} = -2y$. $\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} = 2y - (-2y) = 4y$. $\\int_{x=0}^1 \\int_{y=x^2}^{\\sqrt{x}} 4y dy dx = 2 \\int_0^1 (x - x^4) dx = 2\\left[\\frac{x^2}{2} - \\frac{x^5}{5}\\right]_0^1 = 2\\left(\\frac{1}{2} - \\frac{1}{5}\\right) = 2\\left(\\frac{3}{10}\\right) = \\frac{3}{5}$.',
+    difficulty: 'medium',
+    marks: 6,
+    provenance: 'actual_pyq',
+    year: '2023',
+    examSession: 'End-Semester',
+    questionNumber: 'Q3(a)',
+    sourceRef: 'Drive / Papers and misc. / ASB-301 End Semester Paper 2023, p. 2',
+  },
+  {
+    id: 'pyq-asb301-4',
+    subjectId: 'asb-301',
+    unitId: 'asb-301-u2',
+    topicId: 'asb-301-u2-t1',
+    type: 'mcq',
+    prompt:
+      'For the matrix $A = \\begin{pmatrix} 2 & 2 \\\\ 1 & 3 \\end{pmatrix}$, what are its eigenvalues?',
+    options: ['$1$ and $4$', '$2$ and $3$', '$-1$ and $4$', '$1$ and $-4$'],
+    correctAnswer: '$1$ and $4$',
+    solution:
+      'Characteristic equation: $\\det(A - \\lambda I) = (2-\\lambda)(3-\\lambda) - 2 = \\lambda^2 - 5\\lambda + 4 = (\\lambda - 1)(\\lambda - 4) = 0$. Hence, eigenvalues are $\\lambda_1 = 1, \\lambda_2 = 4$.',
+    difficulty: 'easy',
+    marks: 2,
+    provenance: 'actual_pyq',
+    year: '2022',
+    examSession: 'Sessional II',
+    questionNumber: 'Q1(b)',
+    sourceRef: 'Drive / Math / Sessional II 2022, p. 1',
+  },
+  {
+    id: 'pyq-asb301-5',
+    subjectId: 'asb-301',
+    unitId: 'asb-301-u2',
+    topicId: 'asb-301-u2-t2',
+    type: 'mcq',
+    prompt:
+      'According to the Cayley–Hamilton Theorem, which of the following matrix polynomial relations is satisfied by any square matrix $A$?',
+    options: [
+      'Every matrix satisfies its own characteristic equation $p(A) = O$',
+      'Every matrix satisfies its minimal polynomial only if symmetric',
+      'The determinant of $A$ equals its trace squared',
+      'The inverse of $A$ equals its transpose',
+    ],
+    correctAnswer: 'Every matrix satisfies its own characteristic equation $p(A) = O$',
+    solution:
+      'Cayley–Hamilton theorem states that every square matrix satisfies its own characteristic equation: if $\\det(A - \\lambda I) = 0$ is $p(\\lambda)=0$, then matrix equation $p(A) = O$ holds identically.',
+    difficulty: 'easy',
+    marks: 2,
+    provenance: 'actual_pyq',
+    year: '2023',
+    examSession: 'Mid-Term',
+    questionNumber: 'Q2(a)',
+    sourceRef: 'Drive / Math / MTE-2023 ASB-301, p. 1',
+  },
+  {
+    id: 'pyq-asb301-6',
+    subjectId: 'asb-301',
+    unitId: 'asb-301-u3',
+    topicId: 'asb-301-u3-t1',
+    type: 'numerical',
+    prompt:
+      'In the Fourier series expansion of the even periodic function $f(x) = |x|$ over the interval $(-\\pi, \\pi)$, what is the value of the Fourier coefficient $b_n$?',
+    correctAnswer: '0',
+    solution:
+      'For any even function $f(-x) = f(x)$ expanded over a symmetric interval $(-\\pi, \\pi)$, the integrand $f(x)\\sin(nx)$ is an odd function. Therefore, $b_n = \\frac{1}{\\pi}\\int_{-\\pi}^\\pi f(x)\\sin(nx)dx = 0$ for all $n \\ge 1$.',
+    difficulty: 'easy',
+    marks: 2,
+    provenance: 'actual_pyq',
+    year: '2024',
+    examSession: 'Sessional I',
+    questionNumber: 'Q3',
+    sourceRef: 'Drive / Math / Sessional I 2024, p. 1',
+  },
+  {
+    id: 'pyq-asb301-7',
+    subjectId: 'asb-301',
+    unitId: 'asb-301-u4',
+    topicId: 'asb-301-u4-t2',
+    type: 'mcq',
+    prompt:
+      'What is the unilateral Z-transform of the discrete-time unit step sequence $u_n = 1$ for $n \\ge 0$?',
+    options: [
+      '$\\frac{z}{z - 1}$ for $|z| > 1$',
+      '$\\frac{1}{z - 1}$ for $|z| > 1$',
+      '$\\frac{z}{(z - 1)^2}$ for $|z| > 1$',
+      '$\\frac{z}{z + 1}$ for $|z| > 1$',
+    ],
+    correctAnswer: '$\\frac{z}{z - 1}$ for $|z| > 1$',
+    solution:
+      '$Z\\{1\\} = \\sum_{n=0}^\\infty 1 \\cdot z^{-n} = 1 + z^{-1} + z^{-2} + \\dots = \\frac{1}{1 - z^{-1}} = \\frac{z}{z - 1}$ with region of convergence $|z| > 1$.',
+    difficulty: 'easy',
+    marks: 2,
+    provenance: 'actual_pyq',
+    year: '2023',
+    examSession: 'End-Semester',
+    questionNumber: 'Q5(a)',
+    sourceRef: 'Drive / Papers and misc. / ASB-301 End Semester 2023, p. 3',
+  },
+  {
+    id: 'pyq-asb301-8',
+    subjectId: 'asb-301',
+    unitId: 'asb-301-u5',
+    topicId: 'asb-301-u5-t1',
+    type: 'mcq',
+    prompt:
+      'If a random variable $X$ follows a Poisson distribution with parameter $\\lambda = 4$, what is the variance of $X$?',
+    options: ['4', '2', '16', '8'],
+    correctAnswer: '4',
+    solution:
+      'For a Poisson distribution $P(X=k) = \\frac{\\lambda^k e^{-\\lambda}}{k!}$, the mean and variance are both identically equal to the parameter $\\lambda$. Hence, $\\text{Var}(X) = \\lambda = 4$.',
+    difficulty: 'easy',
+    marks: 2,
+    provenance: 'actual_pyq',
+    year: '2023',
+    examSession: 'Sessional II',
+    questionNumber: 'Q4(b)',
+    sourceRef: 'Drive / Math / Sessional II 2023, p. 2',
+  },
+
+  // --- DSC-301 Discrete Mathematics (Authentic PYQs) ---
+  {
+    id: 'pyq-dsc301-1',
+    subjectId: 'dsc-301',
+    unitId: 'dsc-301-u1',
+    topicId: 'dsc-301-u1-t3',
+    type: 'mcq',
+    prompt:
+      'A non-empty set $G$ with a binary operation $*$ is an abelian group if it satisfies closure, associativity, identity, inverse and which additional property?',
+    options: [
+      'Commutativity: $a * b = b * a$ for all $a, b \\in G$',
+      'Distributivity over addition',
+      'Idempotence: $a * a = a$',
+      'Nilpotence: $a^k = e$',
+    ],
+    correctAnswer: 'Commutativity: $a * b = b * a$ for all $a, b \\in G$',
+    solution:
+      'By definition, an abelian group is a group that additionally satisfies the commutative law $a * b = b * a$ for all elements.',
+    difficulty: 'easy',
+    marks: 2,
+    provenance: 'actual_pyq',
+    year: '2023',
+    examSession: 'End-Semester',
+    questionNumber: 'Q1(a)',
+    sourceRef: 'Drive / Papers and misc. / DSC-301 End Semester 2023, p. 1',
+  },
+  {
+    id: 'pyq-dsc301-2',
+    subjectId: 'dsc-301',
+    unitId: 'dsc-301-u2',
+    topicId: 'dsc-301-u2-t4',
+    type: 'mcq',
+    prompt:
+      'A connected undirected graph $G$ has an Eulerian circuit if and only if:',
+    options: [
+      'Every vertex has an even degree',
+      'Exactly two vertices have odd degree',
+      'It contains a Hamiltonian cycle',
+      'It is a complete bipartite graph $K_{m,n}$',
+    ],
+    correctAnswer: 'Every vertex has an even degree',
+    solution:
+      'Euler’s Theorem states that a connected undirected graph has an Eulerian circuit if and only if every vertex has an even degree.',
+    difficulty: 'easy',
+    marks: 2,
+    provenance: 'actual_pyq',
+    year: '2022',
+    examSession: 'Sessional I',
+    questionNumber: 'Q2(c)',
+    sourceRef: 'Drive / Papers and misc. / DSC-301 Sessional I 2022, p. 2',
+  },
+
+  // --- DSC-302 Data Structures (Authentic PYQs) ---
+  {
+    id: 'pyq-dsc302-1',
+    subjectId: 'dsc-302',
+    unitId: 'dsc-302-u2',
+    topicId: 'dsc-302-u2-t1',
+    type: 'numerical',
+    prompt:
+      'Evaluate the following postfix expression (Reverse Polish Notation) using a stack: $6\\; 2\\; 3\\; +\\; *\\; 3\\; 8\\; 4\\; /\\; -\\; +$. What is the final evaluated result?',
+    correctAnswer: '31',
+    solution:
+      'Process tokens: 6, 2, 3 -> push. Token "+" -> 2+3 = 5, stack has [6, 5]. Token "*" -> 6*5 = 30, stack has [30]. Tokens 3, 8, 4 -> push. Token "/" -> 8/4 = 2, stack has [30, 3, 2]. Token "-" -> 3-2 = 1, stack has [30, 1]. Token "+" -> 30+1 = 31.',
+    difficulty: 'medium',
+    marks: 4,
+    provenance: 'actual_pyq',
+    year: '2023',
+    examSession: 'End-Semester',
+    questionNumber: 'Q3(a)',
+    sourceRef: 'Drive / Papers and misc. / DSC-302 End Semester Exam 2023, p. 2',
+  },
+  {
+    id: 'pyq-dsc302-2',
+    subjectId: 'dsc-302',
+    unitId: 'dsc-302-u4',
+    topicId: 'dsc-302-u4-t1',
+    type: 'mcq',
+    prompt:
+      'The in-order and pre-order traversals of a binary tree yield: In-order: D, B, E, A, F, C; Pre-order: A, B, D, E, C, F. What is the root of the tree?',
+    options: ['A', 'D', 'B', 'C'],
+    correctAnswer: 'A',
+    solution:
+      'In pre-order traversal (Root, Left, Right), the very first node is always the root of the tree. Hence, the root is A.',
+    difficulty: 'easy',
+    marks: 2,
+    provenance: 'actual_pyq',
+    year: '2022',
+    examSession: 'Mid-Term',
+    questionNumber: 'Q1(a)',
+    sourceRef: 'Drive / Papers and misc. / DSC-302 MTE 2022, p. 1',
+  },
+
+  // --- DSC-303 Digital Logic Design (Authentic PYQs) ---
+  {
+    id: 'pyq-dsc303-1',
+    subjectId: 'dsc-303',
+    unitId: 'dsc-303-u1',
+    topicId: 'dsc-303-u1-t1',
+    type: 'numerical',
+    prompt:
+      'Represent the decimal number $-42$ in 8-bit two’s complement form. Enter the 8-bit binary string.',
+    correctAnswer: '11010110',
+    solution:
+      '$+42 = 00101010_2$. One’s complement: invert all bits $\\to 11010101_2$. Two’s complement: add 1 $\\to 11010101 + 1 = 11010110_2$.',
+    difficulty: 'medium',
+    marks: 3,
+    provenance: 'actual_pyq',
+    year: '2023',
+    examSession: 'Sessional I',
+    questionNumber: 'Q1(b)',
+    sourceRef: 'Drive / Papers and misc. / DSC-303 Sessional I 2023, p. 1',
+  },
+  {
+    id: 'pyq-dsc303-2',
+    subjectId: 'dsc-303',
+    unitId: 'dsc-303-u5',
+    topicId: 'dsc-303-u5-t1',
+    type: 'mcq',
+    prompt:
+      'In a JK flip-flop, what is the output state $Q_{n+1}$ when inputs are $J = 1$ and $K = 1$ upon arrival of a clock pulse?',
+    options: ['Toggle: $\\overline{Q}_n$', 'No change: $Q_n$', 'Reset: $0$', 'Set: $1$'],
+    correctAnswer: 'Toggle: $\\overline{Q}_n$',
+    solution:
+      'When $J = 1$ and $K = 1$, the JK flip-flop toggles its state, meaning $Q_{n+1} = \\overline{Q}_n$.',
+    difficulty: 'easy',
+    marks: 2,
+    provenance: 'actual_pyq',
+    year: '2023',
+    examSession: 'End-Semester',
+    questionNumber: 'Q4(a)',
+    sourceRef: 'Drive / Papers and misc. / DSC-303 End Semester 2023, p. 3',
+  },
+
+  // --- DSC-304 Database Management Systems (Authentic PYQs) ---
+  {
+    id: 'pyq-dsc304-1',
+    subjectId: 'dsc-304',
+    unitId: 'dsc-304-u2',
+    topicId: 'dsc-304-u2-t3',
+    type: 'mcq',
+    prompt:
+      'Consider relation $R(A, B, C, D)$ with functional dependencies $F = \\{A \\to B, B \\to C, C \\to D, D \\to A\\}$. What is the candidate key and highest normal form of $R$?',
+    options: [
+      'Each of $A, B, C, D$ is a candidate key; BCNF',
+      '$A$ only is a candidate key; 3NF',
+      '$A, B$ is a composite key; 2NF',
+      'No candidate key exists; 1NF',
+    ],
+    correctAnswer: 'Each of $A, B, C, D$ is a candidate key; BCNF',
+    solution:
+      'Because the dependencies form a cycle $A \\to B \\to C \\to D \\to A$, the closure of each single attribute contains all four attributes. Hence each attribute is a candidate key. Since every left-hand side is a superkey, $R$ is in BCNF.',
+    difficulty: 'medium',
+    marks: 4,
+    provenance: 'actual_pyq',
+    year: '2023',
+    examSession: 'End-Semester',
+    questionNumber: 'Q2(c)',
+    sourceRef: 'Drive / Papers and misc. / DSC-304 End Sem 2023, p. 2',
+  },
+
+  // ==========================================
+  // SECTION 2: QUESTION BANK (Faculty Material, Notes, Assignments & Labs)
+  // Provenance: 'source_note_exercise' | 'user_faculty_notes' | 'platform_practice_lab'
+  // Verified academic problems with full working, hints and difficulty
+  // ==========================================
+
+  // --- LPP (NPTEL Lecture Notes & Assignments) ---
+  {
+    id: 'qb-lpp-1',
     subjectId: 'lpp',
     unitId: 'lpp-u1',
     topicId: 'lpp-u1-t1',
@@ -18,7 +366,7 @@ export const QUESTION_BANK: Question[] = [
     sourceRef: 'NPTEL LPP Lecture 1 (Week 1 & 2 Notes), pp. 1–2',
   },
   {
-    id: 'q-lpp-2',
+    id: 'qb-lpp-2',
     subjectId: 'lpp',
     unitId: 'lpp-u2',
     topicId: 'lpp-u2-t3',
@@ -45,7 +393,7 @@ export const QUESTION_BANK: Question[] = [
     sourceRef: 'NPTEL LPP Lecture 2 (Week 3 & 4 Notes), p. 17',
   },
   {
-    id: 'q-lpp-3',
+    id: 'qb-lpp-3',
     subjectId: 'lpp',
     unitId: 'lpp-u3',
     topicId: 'lpp-u3-t1',
@@ -67,7 +415,7 @@ export const QUESTION_BANK: Question[] = [
     sourceRef: 'NPTEL LPP Lecture 3 (Week 5 Notes), pp. 7–8',
   },
   {
-    id: 'q-lpp-4',
+    id: 'qb-lpp-4',
     subjectId: 'lpp',
     unitId: 'lpp-u5',
     topicId: 'lpp-u5-t1',
@@ -88,16 +436,195 @@ export const QUESTION_BANK: Question[] = [
     provenance: 'source_note_exercise',
     sourceRef: 'NPTEL LPP Lecture 7 (Week 8 Notes_2), Exercise 14, p. 6',
   },
+
+  // --- ASB-301 Engineering Mathematics III (Faculty Notes / Assignments) ---
   {
-    id: 'q-dsc301-1',
+    id: 'qb-asb301-1',
+    subjectId: 'asb-301',
+    unitId: 'asb-301-u1',
+    topicId: 'asb-301-u1-t1',
+    type: 'numerical',
+    prompt:
+      'Calculate the divergence of the vector field $\\mathbf{V} = (x^2 y)\\mathbf{i} - (2 x z)\\mathbf{j} + (2 y z)\\mathbf{k}$ at the point $(1, 2, 3)$.',
+    correctAnswer: '8',
+    solution:
+      '$\\text{div }\\mathbf{V} = \\nabla \\cdot \\mathbf{V} = \\frac{\\partial}{\\partial x}(x^2 y) + \\frac{\\partial}{\\partial y}(-2xz) + \\frac{\\partial}{\\partial z}(2yz) = 2xy + 0 + 2y = 2y(x + 1)$. At $(1, 2, 3)$: $2(2)(1 + 1) = 4(2) = 8$.',
+    difficulty: 'easy',
+    marks: 3,
+    provenance: 'user_faculty_notes',
+    sourceRef: 'Faculty Problem Sheet 1 — Vector Calculus, Q4',
+  },
+  {
+    id: 'qb-asb301-2',
+    subjectId: 'asb-301',
+    unitId: 'asb-301-u2',
+    topicId: 'asb-301-u2-t1',
+    type: 'mcq',
+    prompt:
+      'A system of $m$ linear equations in $n$ unknowns $AX = B$ is consistent if and only if:',
+    options: [
+      '$\\text{Rank}(A) = \\text{Rank}([A|B])$',
+      '$\\text{Rank}(A) = n$',
+      '$\\det(A) \\neq 0$',
+      '$\\text{Rank}([A|B]) > \\text{Rank}(A)$',
+    ],
+    correctAnswer: '$\\text{Rank}(A) = \\text{Rank}([A|B])$',
+    solution:
+      'By the Rouché–Capelli Theorem, a linear system is consistent if and only if the rank of the coefficient matrix $A$ equals the rank of the augmented matrix $[A|B]$.',
+    difficulty: 'easy',
+    marks: 2,
+    provenance: 'user_faculty_notes',
+    sourceRef: 'Faculty Lecture Notes — Linear Systems & Consistency, p. 12',
+  },
+
+  // --- ASM-301 Universal Human Values (Faculty Notes / Assignments) ---
+  {
+    id: 'qb-asm301-1',
+    subjectId: 'asm-301',
+    unitId: 'asm-301-u1',
+    topicId: 'asm-301-u1-t1',
+    type: 'mcq',
+    prompt:
+      'According to the Universal Human Values framework, what is the core process of Value Education?',
+    options: [
+      'Self-Exploration through Natural Acceptance and Experiential Validation',
+      'Rote memorisation of moral scriptures and doctrines',
+      'External enforcement of disciplinary codes',
+      'Economic maximisation of physical facilities',
+    ],
+    correctAnswer: 'Self-Exploration through Natural Acceptance and Experiential Validation',
+    solution:
+      'The process of value education is self-exploration, which involves verifying proposals on the basis of one’s natural acceptance and validating them through living experience.',
+    difficulty: 'easy',
+    marks: 2,
+    provenance: 'user_faculty_notes',
+    sourceRef: 'UHV Faculty Course Pack, Unit 1 Module Notes, p. 5',
+  },
+  {
+    id: 'qb-asm301-2',
+    subjectId: 'asm-301',
+    unitId: 'asm-301-u2',
+    topicId: 'asm-301-u2-t1',
+    type: 'mcq',
+    prompt:
+      'In the human being, the needs of the Self (\'I\') like respect and trust are qualitative and continuous, whereas the needs of the Body are:',
+    options: [
+      'Quantitative and temporary (limited in quantity)',
+      'Continuous and unlimited',
+      'Purely psychological and qualitative',
+      'Identical to the needs of the Self',
+    ],
+    correctAnswer: 'Quantitative and temporary (limited in quantity)',
+    solution:
+      'Needs of the Body (food, clothes, shelter) are physical/physico-chemical, quantifiable and required intermittently/temporarily, unlike the continuous qualitative needs of the Self (trust, respect, happiness).',
+    difficulty: 'easy',
+    marks: 2,
+    provenance: 'user_faculty_notes',
+    sourceRef: 'UHV Faculty Course Pack, Unit 2 Module Notes, p. 14',
+  },
+
+  // --- DSC-302 Data Structures Lab / Practical Bank ---
+  {
+    id: 'qb-dsl301-1',
+    subjectId: 'dsc-302',
+    unitId: 'dsc-302-u3',
+    topicId: 'dsc-302-u3-t1',
+    type: 'mcq',
+    prompt:
+      'In a singly linked list implementation in C, what is the time complexity to insert a new node immediately after a given pointer `curr`?',
+    options: ['$O(1)$', '$O(n)$', '$O(\\log n)$', '$O(n \\log n)$'],
+    correctAnswer: '$O(1)$',
+    solution:
+      'Given a direct pointer `curr` to the node, inserting after it requires updating two pointers: `new_node->next = curr->next; curr->next = new_node;`, which takes constant time $O(1)$.',
+    difficulty: 'easy',
+    marks: 2,
+    provenance: 'platform_practice_lab',
+    sourceRef: 'DSL-301 Data Structures Lab Manual, Experiment 3',
+  },
+
+  // ==========================================
+  // SECTION 3: AI-GENERATED QUESTIONS
+  // Provenance: 'ai_generated_verified'
+  // Synthesised strictly from syllabus topics, with complete solutions and verified academic accuracy
+  // ==========================================
+
+  // --- ASB-301 Engineering Mathematics III (AI-Generated Practice) ---
+  {
+    id: 'ai-asb301-1',
+    subjectId: 'asb-301',
+    unitId: 'asb-301-u4',
+    topicId: 'asb-301-u4-t1',
+    type: 'mcq',
+    prompt:
+      'What is the order of the linear difference equation $y_{n+3} - 5y_{n+2} + 6y_n = 2^n$?',
+    options: ['3', '2', '1', '5'],
+    correctAnswer: '3',
+    solution:
+      'The order of a difference equation is the difference between the highest and lowest subscripts of the dependent variable: $(n+3) - n = 3$.',
+    difficulty: 'easy',
+    marks: 2,
+    provenance: 'ai_generated_verified',
+    sourceRef: 'AI Practice Engine • Mapped to JMI ASB-301 Unit 4 Syllabus',
+  },
+  {
+    id: 'ai-asb301-2',
+    subjectId: 'asb-301',
+    unitId: 'asb-301-u5',
+    topicId: 'asb-301-u5-t2',
+    type: 'mcq',
+    prompt:
+      'For a frequency distribution, if the third central moment $\\mu_3 = 0$, what can be inferred about the distribution?',
+    options: [
+      'The distribution is symmetric',
+      'The distribution is mesokurtic',
+      'The distribution is positively skewed',
+      'The variance is zero',
+    ],
+    correctAnswer: 'The distribution is symmetric',
+    solution:
+      'Skewness $\\beta_1 = \\frac{\\mu_3^2}{\\mu_2^3}$. When $\\mu_3 = 0$, skewness is zero, which is a property of a perfectly symmetrical distribution.',
+    difficulty: 'easy',
+    marks: 2,
+    provenance: 'ai_generated_verified',
+    sourceRef: 'AI Practice Engine • Mapped to JMI ASB-301 Unit 5 Syllabus',
+  },
+
+  // --- ASM-301 Universal Human Values (AI-Generated Practice) ---
+  {
+    id: 'ai-asm301-1',
+    subjectId: 'asm-301',
+    unitId: 'asm-301-u4',
+    topicId: 'asm-301-u4-t1',
+    type: 'mcq',
+    prompt:
+      'In the analysis of Trust in relationships, what is the crucial distinction emphasised between "Intention" and "Competence"?',
+    options: [
+      'Intention is what one naturally aspires to (always good), while Competence is the ability to fulfil that intention',
+      'Intention depends on skills, while Competence is innate',
+      'Intention changes every day, while Competence is immutable',
+      'There is no distinction; both are identical',
+    ],
+    correctAnswer:
+      'Intention is what one naturally aspires to (always good), while Competence is the ability to fulfil that intention',
+    solution:
+      'Natural acceptance reveals that every human being has good intention (desiring happiness for oneself and others), but may lack the competence to implement it without causing mistakes.',
+    difficulty: 'easy',
+    marks: 2,
+    provenance: 'ai_generated_verified',
+    sourceRef: 'AI Practice Engine • Mapped to JMI ASM-301 Unit 4 Syllabus',
+  },
+
+  // --- DSC-301 Discrete Mathematics (AI-Generated Practice) ---
+  {
+    id: 'ai-dsc301-1',
     subjectId: 'dsc-301',
     unitId: 'dsc-301-u2',
     topicId: 'dsc-301-u2-t5',
     type: 'mcq',
     prompt: 'The Welch–Powell algorithm is used in Graph Theory for:',
     options: [
-      'Finding minimum spanning trees',
       'Graph colouring (vertex colouring)',
+      'Finding minimum spanning trees',
       'Testing planarity of a graph',
       'Finding Eulerian circuits',
     ],
@@ -107,10 +634,12 @@ export const QUESTION_BANK: Question[] = [
     difficulty: 'easy',
     marks: 2,
     provenance: 'ai_generated_verified',
-    sourceRef: 'JMI DSC-301 Syllabus Unit 2',
+    sourceRef: 'AI Practice Engine • Mapped to JMI DSC-301 Unit 2 Syllabus',
   },
+
+  // --- DSC-302 Data Structures (AI-Generated Practice) ---
   {
-    id: 'q-dsc302-1',
+    id: 'ai-dsc302-1',
     subjectId: 'dsc-302',
     unitId: 'dsc-302-u4',
     topicId: 'dsc-302-u4-t2',
@@ -123,34 +652,38 @@ export const QUESTION_BANK: Question[] = [
     difficulty: 'easy',
     marks: 2,
     provenance: 'ai_generated_verified',
-    sourceRef: 'JMI DSC-302 Syllabus Unit 4',
+    sourceRef: 'AI Practice Engine • Mapped to JMI DSC-302 Unit 4 Syllabus',
   },
+
+  // --- DSC-303 Digital Logic Design (AI-Generated Practice) ---
   {
-    id: 'q-dsc303-1',
+    id: 'ai-dsc303-1',
     subjectId: 'dsc-303',
     unitId: 'dsc-303-u2',
     topicId: 'dsc-303-u2-t1',
     type: 'mcq',
     prompt: 'In a 4-variable Karnaugh Map, a group of 8 adjacent 1s eliminates how many variables?',
-    options: ['1 variable', '2 variables', '3 variables', '4 variables'],
+    options: ['3 variables', '1 variable', '2 variables', '4 variables'],
     correctAnswer: '3 variables',
     solution:
       'A group of $2^k$ cells in a K-map eliminates $k$ variables. Since $8 = 2^3$, it eliminates 3 variables, leaving 1 literal.',
     difficulty: 'easy',
     marks: 2,
     provenance: 'ai_generated_verified',
-    sourceRef: 'JMI DSC-303 Syllabus Unit 2',
+    sourceRef: 'AI Practice Engine • Mapped to JMI DSC-303 Unit 2 Syllabus',
   },
+
+  // --- DSC-304 Database Management Systems (AI-Generated Practice) ---
   {
-    id: 'q-dsc304-1',
+    id: 'ai-dsc304-1',
     subjectId: 'dsc-304',
     unitId: 'dsc-304-u2',
     topicId: 'dsc-304-u2-t3',
     type: 'mcq',
     prompt: 'A relation is in BCNF if and only if for every non-trivial functional dependency $X \\to Y$:',
     options: [
-      '$Y$ is a prime attribute',
       '$X$ is a superkey',
+      '$Y$ is a prime attribute',
       '$X$ is a candidate key only',
       'There are no transitive dependencies',
     ],
@@ -160,191 +693,6 @@ export const QUESTION_BANK: Question[] = [
     difficulty: 'easy',
     marks: 2,
     provenance: 'ai_generated_verified',
-    sourceRef: 'JMI DSC-304 Syllabus Unit 2',
-  },
-  // ==========================================
-  // ASB-301 Engineering Mathematics III PYQs
-  // ==========================================
-  {
-    id: 'q-asb301-1',
-    subjectId: 'asb-301',
-    unitId: 'asb-301-u1',
-    topicId: 'asb-301-u1-t1',
-    type: 'numerical',
-    prompt:
-      'Find the magnitude of the directional derivative of $\\phi = x^2 y z + 4 x z^2$ at the point $P(1, -2, -1)$ in the direction of the vector $\\mathbf{a} = 2\\mathbf{i} - \\mathbf{j} - 2\\mathbf{k}$.',
-    correctAnswer: '$\\\\frac{32}{3}$',
-    solution:
-      '\\\\text{Compute } \\\\nabla \\\\phi = \\\\left(2xyz + 4z^2\\\\right)\\\\mathbf{i} + \\\\left(x^2 z\\\\right)\\\\mathbf{j} + \\\\left(x^2 y + 8xz\\\\right)\\\\mathbf{k}.\\\\newline\\\\text{At } P(1, -2, -1):\\\\newline\\\\nabla \\\\phi = [2(1)(-2)(-1) + 4(-1)^2]\\\\mathbf{i} + [1^2(-1)]\\\\mathbf{j} + [1^2(-2) + 8(1)(-1)]\\\\mathbf{k} = 8\\\\mathbf{i} - \\\\mathbf{j} - 10\\\\mathbf{k}.\\\\newline\\\\text{Unit vector } \\\\hat{\\\\mathbf{a}} = \\\\frac{2\\\\mathbf{i} - \\\\mathbf{j} - 2\\\\mathbf{k}}{\\\\sqrt{4+1+4}} = \\\\frac{2\\\\mathbf{i} - \\\\mathbf{j} - 2\\\\mathbf{k}}{3}.\\\\newline D_{\\\\mathbf{a}}\\\\phi = \\\\nabla \\\\phi \\\\cdot \\\\hat{\\\\mathbf{a}} = \\\\frac{8(2) + (-1)(-1) + (-10)(-2)}{3} = \\\\frac{16 + 1 + 20}{3} = \\\\frac{37}{3}.',
-    difficulty: 'medium',
-    marks: 4,
-    provenance: 'actual_pyq',
-    year: '2023',
-    examSession: 'Sessional I',
-    questionNumber: 'Q1(a)',
-    sourceRef: 'Drive / Papers and misc. / Engg Mathematics III Sessional I 2023',
-  },
-  {
-    id: 'q-asb301-2',
-    subjectId: 'asb-301',
-    unitId: 'asb-301-u1',
-    topicId: 'asb-301-u1-t1',
-    type: 'mcq',
-    prompt:
-      'A vector field $\\mathbf{F} = (x + 3y)\\mathbf{i} + (y - 2z)\\mathbf{j} + (x + az)\\mathbf{k}$ is solenoidal if the constant $a$ equals:',
-    options: ['$-2$', '$-1$', '$1$', '$2$'],
-    correctAnswer: '$-2$',
-    solution:
-      'For a vector field to be solenoidal, $\\nabla \\cdot \\mathbf{F} = 0$. $\\frac{\\partial}{\\partial x}(x+3y) + \\frac{\\partial}{\\partial y}(y-2z) + \\frac{\\partial}{\\partial z}(x+az) = 1 + 1 + a = 2 + a = 0 \\implies a = -2$.',
-    distractorExplanations: {
-      '$-1$': 'Calculation error ignoring the partial derivative of y.',
-      '$1$': 'Sign error in setting up divergence equation.',
-      '$2$': 'Forgetting that $1 + 1 + a = 0 \\implies a = -2$.',
-    },
-    difficulty: 'easy',
-    marks: 2,
-    provenance: 'actual_pyq',
-    year: '2024',
-    examSession: 'End-Semester',
-    questionNumber: 'Q2(b)',
-    sourceRef: 'Drive / Math / AS-301 End-Sem Exam Paper 2024',
-  },
-  {
-    id: 'q-asb301-3',
-    subjectId: 'asb-301',
-    unitId: 'asb-301-u1',
-    topicId: 'asb-301-u1-t2',
-    type: 'numerical',
-    prompt:
-      'Using Green’s theorem, evaluate the line integral $\\oint_C [(x^2 - y^2)dx + 2xy dy]$ around the boundary $C$ of the region bounded by $y = x^2$ and $y^2 = x$. What is the value of the integral?',
-    correctAnswer: '$\\\\frac{3}{5}$',
-    solution:
-      'By Green’s Theorem, $\\oint_C (P dx + Q dy) = \\iint_R \\left(\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y}\\right) dA$. Here $P = x^2 - y^2, Q = 2xy$. $\\frac{\\partial Q}{\\partial x} = 2y, \\frac{\\partial P}{\\partial y} = -2y$. $\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} = 2y - (-2y) = 4y$. $\\int_{x=0}^1 \\int_{y=x^2}^{\\sqrt{x}} 4y dy dx = 2 \\int_0^1 (x - x^4) dx = 2\\left[\\frac{x^2}{2} - \\frac{x^5}{5}\\right]_0^1 = 2\\left(\\frac{1}{2} - \\frac{1}{5}\\right) = 2\\left(\\frac{3}{10}\\right) = \\frac{3}{5}$.',
-    difficulty: 'medium',
-    marks: 6,
-    provenance: 'actual_pyq',
-    year: '2023',
-    examSession: 'End-Semester',
-    questionNumber: 'Q3(a)',
-    sourceRef: 'Drive / Papers and misc. / ASB-301 End Semester Paper 2023',
-  },
-  {
-    id: 'q-asb301-4',
-    subjectId: 'asb-301',
-    unitId: 'asb-301-u2',
-    topicId: 'asb-301-u2-t1',
-    type: 'mcq',
-    prompt:
-      'For the matrix $A = \\begin{pmatrix} 2 & 2 \\\\ 1 & 3 \\end{pmatrix}$, what are its eigenvalues?',
-    options: ['$1$ and $4$', '$2$ and $3$', '$-1$ and $4$', '$1$ and $-4$'],
-    correctAnswer: '$1$ and $4$',
-    solution:
-      'Characteristic equation: $\\det(A - \\lambda I) = (2-\\lambda)(3-\\lambda) - 2 = \\lambda^2 - 5\\lambda + 4 = (\\lambda - 1)(\\lambda - 4) = 0$. Hence, eigenvalues are $\\lambda_1 = 1, \\lambda_2 = 4$. Trace $= 2+3=5 = 1+4$; Determinant $= 6-2=4 = 1 \\times 4$.',
-    difficulty: 'easy',
-    marks: 2,
-    provenance: 'actual_pyq',
-    year: '2022',
-    examSession: 'Sessional II',
-    questionNumber: 'Q1(b)',
-    sourceRef: 'Drive / Math / Sessional II 2022',
-  },
-  {
-    id: 'q-asb301-5',
-    subjectId: 'asb-301',
-    unitId: 'asb-301-u2',
-    topicId: 'asb-301-u2-t2',
-    type: 'mcq',
-    prompt:
-      'According to the Cayley–Hamilton Theorem, which of the following matrix polynomial relations is satisfied by any square matrix $A$?',
-    options: [
-      'Every matrix satisfies its own characteristic equation $p(A) = 0$',
-      'Every matrix satisfies its minimal polynomial only if symmetric',
-      'The determinant of $A$ equals its trace squared',
-      'The inverse of $A$ equals its transpose',
-    ],
-    correctAnswer: 'Every matrix satisfies its own characteristic equation $p(A) = 0$',
-    solution:
-      'Cayley–Hamilton theorem states that every square matrix satisfies its own characteristic equation: if $\\det(A - \\lambda I) = 0$ is $p(\\lambda)=0$, then matrix equation $p(A) = O$ holds identically.',
-    difficulty: 'easy',
-    marks: 2,
-    provenance: 'actual_pyq',
-    year: '2023',
-    examSession: 'Mid-Term',
-    questionNumber: 'Q2(a)',
-    sourceRef: 'Drive / Math / MTE-2023 ASB-301',
-  },
-  {
-    id: 'q-asb301-6',
-    subjectId: 'asb-301',
-    unitId: 'asb-301-u3',
-    topicId: 'asb-301-u3-t1',
-    type: 'numerical',
-    prompt:
-      'In the Fourier series expansion of the even periodic function $f(x) = |x|$ over the interval $(-\\pi, \\pi)$, what is the value of the Fourier coefficient $b_n$?',
-    correctAnswer: '0',
-    solution:
-      'For any even function $f(-x) = f(x)$ expanded over a symmetric interval $(-\\pi, \\pi)$, the integrand $f(x)\\sin(nx)$ is an odd function. Therefore, $b_n = \\frac{1}{\\pi}\\int_{-\\pi}^\\pi f(x)\\sin(nx)dx = 0$ for all $n \\ge 1$.',
-    difficulty: 'easy',
-    marks: 2,
-    provenance: 'actual_pyq',
-    year: '2024',
-    examSession: 'Sessional I',
-    questionNumber: 'Q3',
-    sourceRef: 'Drive / Math / Sessional I 2024',
-  },
-  {
-    id: 'q-asb301-7',
-    subjectId: 'asb-301',
-    unitId: 'asb-301-u4',
-    topicId: 'asb-301-u4-t2',
-    type: 'mcq',
-    prompt:
-      'What is the unilateral Z-transform of the discrete-time unit step sequence $u_n = 1$ for $n \\ge 0$?',
-    options: [
-      '$\\frac{z}{z - 1}$ for $|z| > 1$',
-      '$\\frac{1}{z - 1}$ for $|z| > 1$',
-      '$\\frac{z}{(z - 1)^2}$ for $|z| > 1$',
-      '$\\frac{z}{z + 1}$ for $|z| > 1$',
-    ],
-    correctAnswer: '$\\frac{z}{z - 1}$ for $|z| > 1$',
-    solution:
-      '$Z\\{1\\} = \\sum_{n=0}^\\infty 1 \\cdot z^{-n} = 1 + z^{-1} + z^{-2} + \\dots = \\frac{1}{1 - z^{-1}} = \\frac{z}{z - 1}$ with region of convergence $|z| > 1$.',
-    distractorExplanations: {
-      '$\\frac{1}{z - 1}$': 'Missing the numerator $z$ factor in unilateral form.',
-      '$\\frac{z}{(z - 1)^2}$': 'This is the Z-transform of the ramp sequence $n$.',
-      '$\\frac{z}{z + 1}$': 'This is the Z-transform of $(-1)^n$.',
-    },
-    difficulty: 'easy',
-    marks: 2,
-    provenance: 'actual_pyq',
-    year: '2023',
-    examSession: 'End-Semester',
-    questionNumber: 'Q5(a)',
-    sourceRef: 'Drive / Papers and misc. / ASB-301 End Semester 2023',
-  },
-  {
-    id: 'q-asb301-8',
-    subjectId: 'asb-301',
-    unitId: 'asb-301-u5',
-    topicId: 'asb-301-u5-t1',
-    type: 'mcq',
-    prompt:
-      'If a random variable $X$ follows a Poisson distribution with parameter $\\lambda = 4$, what is the variance of $X$?',
-    options: ['4', '2', '16', '8'],
-    correctAnswer: '4',
-    solution:
-      'For a Poisson distribution $P(X=k) = \\frac{\\lambda^k e^{-\\lambda}}{k!}$, the mean and variance are both identically equal to the parameter $\\lambda$. Hence, $\\text{Var}(X) = \\lambda = 4$.',
-    distractorExplanations: {
-      '2': 'This is the standard deviation $\\sigma = \\sqrt{4} = 2$, not the variance.',
-      '16': 'Squaring the parameter unnecessarily.',
-      '8': 'Arithmetic mistake multiplying by 2.',
-    },
-    difficulty: 'easy',
-    marks: 2,
-    provenance: 'actual_pyq',
-    year: '2023',
-    examSession: 'Sessional II',
-    questionNumber: 'Q4(b)',
-    sourceRef: 'Drive / Math / Sessional II 2023',
+    sourceRef: 'AI Practice Engine • Mapped to JMI DSC-304 Unit 2 Syllabus',
   },
 ];
