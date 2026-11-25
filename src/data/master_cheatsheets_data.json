@@ -679,23 +679,23 @@
     "bundleId": "universal_human_values",
     "subjectCode": "ASM-301",
     "subjectTitle": "UNIVERSAL HUMAN VALUES — ASM-301",
-    "sourceStatus": "Cross-branch JMI FET detailed outline; CSE-DS-specific unit mapping requires confirmation.",
+    "sourceStatus": "Authoritative JMI ASM-301 Syllabus",
     "units": [
       {
         "unitId": "asm-301-u1",
         "unitBundleId": "universal_human_values_unit_1",
         "unitNumber": 1,
-        "unitTitle": "1 — Introduction and Concept of Universal Human Values",
+        "unitTitle": "1 — Need, Basic Guidelines, Content and Process for Value Education",
         "subjectId": "asm-301",
         "sourceStatus": "Cross-branch JMI FET detailed outline; CSE-DS-specific unit mapping requires confirmation.",
         "coverageStatements": [
-          "Introduction, need and characteristics of UHV.",
-          "Value-based education versus skill-based education.",
-          "Benefits of value education.",
-          "Basic human aspirations and requirements for fulfilment.",
-          "Measures to fulfil aspirations in the current scenario.",
-          "Continuous happiness and prosperity.",
-          "Correct understanding of happiness, prosperity and relationships."
+          "Need, basic guidelines, content and process for Value Education.",
+          "Self-Exploration as the process: natural acceptance and experiential validation.",
+          "Continuous Happiness and Prosperity as basic human aspirations.",
+          "Right understanding, relationship and physical facilities: priority and role.",
+          "Understanding happiness vs temporary sensory pleasure; prosperity vs accumulation.",
+          "Harmony at various levels: Individual, Family, Society and Nature/Existence.",
+          "Myers-Briggs Type Indicator (MBTI) personality framework."
         ],
         "csvCoverageEntries": [
           {
@@ -735,37 +735,41 @@
           }
         ],
         "sixtySecSummary": [
-          "Introduction, need and characteristics of UHV.",
-          "Value-based education versus skill-based education.",
-          "Benefits of value education.",
-          "Basic human aspirations and requirements for fulfilment.",
-          "Measures to fulfil aspirations in the current scenario.",
-          "Continuous happiness and prosperity.",
-          "Correct understanding of happiness, prosperity and relationships."
+          "Value Education: Develops right understanding and humane conduct. Answers \"Why and what to do?\", while skill education answers \"How to do?\".",
+          "Self-Exploration Process: Proposal \\to Natural Acceptance \\to Experiment in living \\to Experiential Validation \\to Right Understanding.",
+          "Basic Human Aspirations: Continuous Happiness (state of internal harmony) + Prosperity (feeling of having more than required physical facilities).",
+          "Correct Priority: 1. Right Understanding \\to 2. Relationship \\to 3. Physical Facilities. Physical facilities are necessary but insufficient for complete happiness.",
+          "Prosperity vs Accumulation: Prosperity is a qualitative feeling of sufficiency; accumulation is the endless physical hoard beyond need.",
+          "MBTI Framework: Classifies personality preferences across 4 dimensions: E/I (Extraversion/Introversion), S/N (Sensing/Intuition), T/F (Thinking/Feeling), J/P (Judging/Perceiving)."
         ],
         "coreConcepts": [
           {
-            "title": "Must remember",
-            "content": "- **Value education:** develops right understanding, humane conduct and the ability to live in harmony; it complements technical/occupational skills.\n- **Skill education:** develops competence to perform a task. Skill without right understanding can be used without concern for human or ecological consequences.\n- **Basic human aspiration:** a lasting state of happiness and prosperity, not merely short-lived sensory pleasure or accumulation.\n- **Happiness:** a state of harmony/inner fulfilment; distinguish it from temporary excitement or comfort.\n- **Prosperity:** the feeling of having/being able to arrange more than the required physical facilities; distinguish it from unlimited accumulation.\n- **Physical facility:** material means required by the body. It is necessary, but by itself does not fulfil needs of the self.\n- **Relationship:** human-human interaction where values/feelings and mutual fulfilment matter."
+            "title": "Value Education vs Skill Education",
+            "content": "### Concept\n**Value Education**\nEducation that enables a human being to understand \"what to do\" (purpose, values, ethical direction) and live in harmony with oneself, family, society, and nature.\n\n### Remember\n- Develops right understanding and responsible conduct.\n- Complements technical and occupational skills.\n- Skill without value education leads to technological misuse, corruption, and environmental destruction.\n\n### Difference\n| Feature | Value Education | Skill Education |\n|---|---|---|\n| Core Question | **Why and what should I do?** | **How to perform a task?** |\n| Focus | Purpose, ethics, relationships, harmony | Technique, capability, efficiency |\n| Nature | Universal and invariant for all humans | Domain-specific (e.g., coding, circuit design) |\n| Outcome | Wisdom and responsible living | Professional competence |\n\n### Example\nAn engineer designing a building uses **skill education** to calculate structural load, and **value education** to ensure safety, eco-friendly materials, and non-exploitative labour practices."
           },
           {
-            "title": "Revision framework",
-            "content": "| Dimension | What to ask | Revision point |\n|---|---|---|\n| Need | Why is UHV needed? | Technical skill alone does not ensure responsible decisions or harmonious living. |\n| Content | What does it study? | Human aspirations, self, relationships, nature and professional conduct. |\n| Process | How is it understood? | Self-exploration, reflection, validation in living and practice. |\n| Outcome | What should change? | Better understanding, relationships, responsible use of skills and harmony. |"
+            "title": "The Process of Self-Exploration: Natural Acceptance & Experiential Validation",
+            "content": "### Concept\n**Self-Exploration**\nObserving and verifying propositions within oneself rather than accepting dogma, authority, or scriptures blindly.\n\n### The Two Complementary Checks\n1. **Natural Acceptance (Sahaj Svikriti):**\n   - The innate, uncorrupted sense of what is naturally acceptable to me as a human being.\n   - It is invariant, unconditional, and universal across all times, places, and individuals.\n2. **Experiential Validation (Anubhavik Pramanikaran):**\n   - Testing the proposal in day-to-day living.\n   - Behavior with humans leads to **Mutual Happiness (Ubhay-Tripti)**.\n   - Work with rest of nature leads to **Mutual Prosperity (Ubhay-Samriddhi)**.\n\n### Visual Architecture\n```text\n  [ Proposal ] \n       │\n       ▼\n[ Self-Exploration ] ───▶ [ Natural Acceptance ] (Does it feel inherently right?)\n       │\n       ▼\n[ Living Accordingly ] ─┬─▶ Behavior with Humans  ──▶ Mutual Happiness\n                        └─▶ Work with Nature       ──▶ Mutual Prosperity\n```\n\n### Exam Point\nNever describe self-exploration as intellectual debate or psychological conditioning; it is direct experiential verification."
           },
           {
-            "title": "Self-exploration sequence",
-            "content": "1. Present a proposal/value for examination.\n2. Check it against natural acceptance (inner, unconditional acceptance rather than momentary preference).\n3. Validate through experience and living.\n4. Observe whether it leads to harmony and mutual fulfilment.\n5. Correct understanding and behaviour where mismatch remains."
+            "title": "Continuous Happiness & Prosperity vs Sensual Pleasure & Accumulation",
+            "content": "### Concept\n**Continuous Happiness (Sukh)**\nTo be in a state of internal harmony, free from contradiction and stress.\n\n**Prosperity (Samriddhi)**\nThe feeling of having or being able to produce more than sufficient physical facilities.\n\n### Differences\n| Concept | Happiness (Sukh) | Temporary Pleasure (Bhog) |\n|---|---|---|\n| Source | Right understanding and harmony | Sensory stimulation (taste, touch, sight) |\n| Duration | Continuous and stable | Temporary; leads to boredom or addiction |\n| Dependency | Internal (within the self) | External (dependent on things and others) |\n\n| Concept | Prosperity (Samriddhi) | Unlimited Accumulation (Sangrah) |\n|---|---|---|\n| Nature | A qualitative feeling of sufficiency | A quantitative obsession with hoarding |\n| Assessment | Correct appraisal of physical needs | Blind maximization without defined limit |\n| Mindset | Sharing, nurturing, mutual prosperity | Depriving others, fear, insecurity |\n\n### Diagram: Three-Level Priority\n```text\n         ▲\n        / \\     Level 1: RIGHT UNDERSTANDING (Resolves Self)\n       /───\\\n      /     \\   Level 2: RELATIONSHIP (Resolves Family & Society)\n     /───────\\\n    /         \\ Level 3: PHYSICAL FACILITY (Resolves Body Needs)\n   /───────────\\\n```"
           },
           {
-            "title": "Exam-ready contrasts",
-            "content": "- **Happiness vs excitement:** enduring harmony/fulfilment vs temporary stimulation.\n- **Prosperity vs hoarding:** feeling of adequate physical facilities vs endless accumulation.\n- **Value education vs skill education:** right understanding/conduct vs task competence; both are needed.\n- **Need vs want:** actual requirement for fulfilment vs an acquired/desire-driven demand; explain with a concrete example."
-          },
-          {
-            "title": "Common answer structure",
-            "content": "Define UHV then state the human aspiration then explain the role of understanding, relationship and physical facility then give a daily/professional example then conclude with harmony and responsibility."
+            "title": "MBTI (Myers-Briggs Type Indicator) Personality Framework",
+            "content": "### Concept\nA psychological assessment framework classifying human personality preferences across four fundamental dichotomies:\n\n### The 4 Dimensions\n1. **Extraversion (E) vs Introversion (I):** Focus of energy (outer world of people vs inner world of ideas).\n2. **Sensing (S) vs Intuition (N):** Information intake (concrete five-sense facts vs abstract patterns & possibilities).\n3. **Thinking (T) vs Feeling (F):** Decision making (logical cause-and-effect vs values and personal impact).\n4. **Judging (J) vs Perceiving (P):** Outer lifestyle (structured, planned closure vs flexible, spontaneous adaptation).\n\n### Exam Point\nIn UHV, MBTI is studied to foster empathy and appreciate diverse behavioral styles in collaborative teamwork."
           }
         ],
-        "formulaBlocks": [],
+        "formulaBlocks": [
+          {
+            "name": "Process of Self-Exploration",
+            "formula": "\\text{Proposal} \\longrightarrow \\text{Natural Acceptance} \\longrightarrow \\text{Living in Relationship/Nature} \\longrightarrow \\text{Experiential Validation}"
+          },
+          {
+            "name": "Universal Priority Hierarchy",
+            "formula": "\\mathbf{1.\\; Right\\; Understanding} \\;(\\text{in Self}) \\;\\longrightarrow\\; \\mathbf{2.\\; Relationship} \\;(\\text{with Humans}) \\;\\longrightarrow\\; \\mathbf{3.\\; Physical\\; Facility} \\;(\\text{with Rest of Nature})"
+          }
+        ],
         "examTraps": [],
         "markdownSource": "# UNIVERSAL HUMAN VALUES — ASM-301\n\n## 1 — Introduction and Concept of Universal Human Values\n\n**Course code:** ASM-301\n\n**Source status:** Cross-branch JMI FET detailed outline; CSE-DS-specific unit mapping requires confirmation.\n\nThis is a unit-level extract from `MASTER_CHEAT_SHEETS.md`. Use the master file for the complete source and caveat notes.\n\n## Unit 1 — Introduction and Concept of Universal Human Values\n\n### Syllabus coverage\n\n- Introduction, need and characteristics of UHV.\n- Value-based education versus skill-based education.\n- Benefits of value education.\n- Basic human aspirations and requirements for fulfilment.\n- Measures to fulfil aspirations in the current scenario.\n- Continuous happiness and prosperity.\n- Correct understanding of happiness, prosperity and relationships.\n\n### Must remember\n\n- **Value education:** develops right understanding, humane conduct and the ability to live in harmony; it complements technical/occupational skills.\n- **Skill education:** develops competence to perform a task. Skill without right understanding can be used without concern for human or ecological consequences.\n- **Basic human aspiration:** a lasting state of happiness and prosperity, not merely short-lived sensory pleasure or accumulation.\n- **Happiness:** a state of harmony/inner fulfilment; distinguish it from temporary excitement or comfort.\n- **Prosperity:** the feeling of having/being able to arrange more than the required physical facilities; distinguish it from unlimited accumulation.\n- **Physical facility:** material means required by the body. It is necessary, but by itself does not fulfil needs of the self.\n- **Relationship:** human-human interaction where values/feelings and mutual fulfilment matter.\n\n### Revision framework\n\n| Dimension | What to ask | Revision point |\n|---|---|---|\n| Need | Why is UHV needed? | Technical skill alone does not ensure responsible decisions or harmonious living. |\n| Content | What does it study? | Human aspirations, self, relationships, nature and professional conduct. |\n| Process | How is it understood? | Self-exploration, reflection, validation in living and practice. |\n| Outcome | What should change? | Better understanding, relationships, responsible use of skills and harmony. |\n\n### Self-exploration sequence\n\n1. Present a proposal/value for examination.\n2. Check it against natural acceptance (inner, unconditional acceptance rather than momentary preference).\n3. Validate through experience and living.\n4. Observe whether it leads to harmony and mutual fulfilment.\n5. Correct understanding and behaviour where mismatch remains.\n\n### Exam-ready contrasts\n\n- **Happiness vs excitement:** enduring harmony/fulfilment vs temporary stimulation.\n- **Prosperity vs hoarding:** feeling of adequate physical facilities vs endless accumulation.\n- **Value education vs skill education:** right understanding/conduct vs task competence; both are needed.\n- **Need vs want:** actual requirement for fulfilment vs an acquired/desire-driven demand; explain with a concrete example.\n\n### Common answer structure\n\nDefine UHV then state the human aspiration then explain the role of understanding, relationship and physical facility then give a daily/professional example then conclude with harmony and responsibility.\n"
       },
@@ -773,15 +777,18 @@
         "unitId": "asm-301-u2",
         "unitBundleId": "universal_human_values_unit_2",
         "unitNumber": 2,
-        "unitTitle": "2 — Understanding Harmony in the Self",
+        "unitTitle": "2 — Understanding Harmony in the Human Being — Harmony in Myself",
         "subjectId": "asm-301",
         "sourceStatus": "Cross-branch JMI FET detailed outline; CSE-DS-specific unit mapping requires confirmation.",
         "coverageStatements": [
-          "Human existence as conscious and material entities.",
-          "Difference between conscious and material entities.",
-          "Measures to ensure harmony in the self.",
-          "Needs of self and body: happiness and physical facility.",
-          "Body as an instrument; the self as doer, seer and enjoyer."
+          "Human being as co-existence of Sentient \"I\" (Self) and Material \"Body\".",
+          "Needs of \"I\" (qualitative, continuous) vs Needs of Body (quantitative, temporary).",
+          "Body as an instrument of \"I\": I as Doer, Seer, and Enjoyer.",
+          "Habits and hobbies: role in personal development.",
+          "SWOT Analysis: Strengths, Weaknesses, Opportunities, Threats.",
+          "Activities of \"I\": Desire, Thought, Expectation, Imagination.",
+          "Sanyam (Self-regulation) and Svasthya (Health).",
+          "Epidemiology, preventive medicine, hygiene, stress management, WHO health standards."
         ],
         "csvCoverageEntries": [
           {
@@ -811,31 +818,41 @@
           }
         ],
         "sixtySecSummary": [
-          "Human existence as conscious and material entities.",
-          "Difference between conscious and material entities.",
-          "Measures to ensure harmony in the self.",
-          "Needs of self and body: happiness and physical facility.",
-          "Body as an instrument; the self as doer, seer and enjoyer."
+          "Human Being = Co-existence of Sentient \"I\" (Conscious) and Material \"Body\" (Physico-chemical).",
+          "Needs Comparison: Need of \"I\" is Sukh (Happiness, Trust, Respect) - Qualitative & Continuous. Need of Body is Suvidha (Food, Clothing, Shelter) - Quantitative & Temporary.",
+          "Body as Instrument: \"I\" is the Seer (Drashta), Doer (Karta), and Enjoyer (Bhokta). The Body is merely an obedient instrument.",
+          "Sanyam & Health: Sanyam is the feeling of responsibility in \"I\" to nurture, protect and rightly utilize the Body. Svasthya (Health) is the state where every body part functions smoothly.",
+          "SWOT Matrix: Internal factors (Strengths, Weaknesses) + External environment (Opportunities, Threats).",
+          "Health Programs: Regular routine, balanced nutrition, physical labor/exercise (Pranayama/Asanas), adequate rest, and mental equanimity."
         ],
         "coreConcepts": [
           {
-            "title": "Must remember",
-            "content": "- **Self (“I”):** conscious entity; understands, desires, thinks, evaluates and experiences happiness/unhappiness.\n- **Body:** material/physical entity; needs physical facility such as food, clothing, shelter, rest and protection.\n- **Self and body are related but not identical:** their needs are different, so confusing their requirements produces imbalance.\n- **Body as an instrument:** the self uses the body to express/execute decisions in the physical world.\n- **Seer:** the self that observes/perceives.\n- **Doer:** the self that decides/intends and acts through the body.\n- **Enjoyer:** the self that experiences the result/feeling."
+            "title": "Human Being = Co-existence of \"I\" and \"Body\"",
+            "content": "### Concept\nA human being is not just the physical body, nor just consciousness, but a synergistic co-existence of the sentient Self (\"I\") and the material Body.\n\n### Core Distinctions\n| Dimension | The Self (\"I\") | The Body |\n|---|---|---|\n| Nature | **Conscious / Sentient (Chetana)** | **Material / Physico-chemical (Jada)** |\n| Needs | Happiness, respect, trust, affection | Food, clothing, shelter, medicine |\n| In time | **Continuous** (we always want respect) | **Temporary** (food is needed periodically) |\n| In quantity | **Qualitative** (cannot measure trust in kg) | **Quantitative** (limited quantity needed) |\n| Fulfilment | Right Understanding & Right Feelings | Physico-chemical production |\n| Activities | Knowing, assuming, recognizing, fulfilling | Only recognizing and fulfilling |\n\n### Diagram: I + Body Synergy\n```text\n+-----------------------+              +-----------------------+\n|      SELF (\"I\")       |              |         BODY          |\n|  - Conscious          |  Information |  - Material           |\n|  - Needs: Happiness   | <=========>  |  - Needs: Facilities  |\n|  - Seer, Doer, Enjoyer|              |  - Instrument         |\n+-----------------------+              +-----------------------+\n```"
           },
           {
-            "title": "Self versus body",
-            "content": "| Aspect | Self (“I”) | Body |\n|---|---|---|\n| Nature | Conscious | Material |\n| Need | Happiness/right understanding/relationship | Physical facility |\n| Activity | Desiring, thinking, selecting, understanding | Physiological and sensory activity |\n| Fulfilment | Harmony in understanding and feelings | Adequate nutrition, health, protection and care |\n| Duration/quantity | Qualitative and continuous aspiration | Quantifiable physical requirements |"
+            "title": "I as Doer, Seer, and Enjoyer",
+            "content": "### Concept\n1. **I as Seer (Drashta):**\n   - The eyes do not see; \"I\" sees *through* the eyes. The camera takes photos, but the human consciousness interprets meaning.\n2. **I as Doer (Karta):**\n   - \"I\" decides, plans, and takes decisions. The hands and legs merely execute the command.\n3. **I as Enjoyer (Bhokta):**\n   - The tongue tastes the sweet, but it is \"I\" that experiences pleasure or satisfaction.\n\n### Exam Point\nWhen driving a car, the steering wheel turns the wheels, but the driver is the seer, doer, and enjoyer. Similarly, the Body is the vehicle, and \"I\" is the driver."
           },
           {
-            "title": "Harmony checklist",
-            "content": "- Is the desire based on right understanding or a passing impulse?\n- Is the thought aligned with the desire and values?\n- Is the selection/decision consistent with the understanding?\n- Are body requirements being met in a balanced way?\n- Does the person's programme support health, restraint/self-regulation and responsible living?"
+            "title": "SWOT Analysis Matrix for Engineering Students",
+            "content": "### Concept\nA structured framework for strategic self-evaluation and situational analysis.\n\n### 2x2 SWOT Grid\n| Category | Internal Factors (Under My Control) | External Factors (Environment) |\n|---|---|---|\n| **Helpful** | **Strengths (S):** High analytical skills, discipline, coding proficiency, emotional calm. | **Opportunities (O):** Campus placements, emerging tech domains (AI/Data Science), mentorship. |\n| **Harmful** | **Weaknesses (W):** Procrastination, fear of public speaking, irregular sleep cycles. | **Threats (T):** High competition, automated job displacement, economic downturns. |\n\n### Exam Tip\nAlways state action strategies: Use Strengths to capitalize on Opportunities; overcome Weaknesses to defend against Threats."
           },
           {
-            "title": "Important distinctions",
-            "content": "- **Happiness is not identical to bodily comfort.** Comfort may support the body; happiness is a need of the self.\n- **Prosperity is not accumulation without limit.** It relates to assurance of adequate physical facility.\n- **Self-regulation/restraint:** responsible regulation of the use and care of the body and resources; avoid equating it with suppression of every desire.\n- **Health:** a state supported by right understanding, balanced physical needs and an appropriate programme for the body."
+            "title": "Sanyam and Svasthya (Self-Regulation and Health)",
+            "content": "### Concept\n- **Sanyam (Self-Regulation):** The feeling of responsibility in the Self (\"I\") for nurturing (Poshan), protecting (Sanrakshan), and rightly utilizing (Sadviniyog) the physical Body.\n- **Svasthya (Health):** \n  1. The body acts according to the instructions of \"I\".\n  2. The parts of the body are in mutual harmony and disease-free.\n\n### Program for Sanyam & Health\n1. **Nurturing the Body:** Wholesome, seasonal food, clean water, fresh air.\n2. **Protecting the Body:** Appropriate clothing, shelter, hygienic living, immunization.\n3. **Right Utilization:** Using the body to learn, serve society, and protect nature—not for animalistic exploitation.\n4. **Preventive Medicine & Hygiene:** Daily physical labor (Shram), Yogic asanas, Pranayama, sleep schedule."
           }
         ],
-        "formulaBlocks": [],
+        "formulaBlocks": [
+          {
+            "name": "Human Co-existence Equation",
+            "formula": "\\text{Human Being} = \\text{Sentient \\\"I\\\" (Conscious Entity)} \\;\\oplus\\; \\text{Material Body (Physico-Chemical Instrument)}"
+          },
+          {
+            "name": "Sanyam and Health Interrelation",
+            "formula": "\\text{Sanyam (Self-Regulation in \\\"I\\\")} \\;\\implies\\; \\text{Svasthya (Harmonious Functioning of Body)}"
+          }
+        ],
         "examTraps": [
           "Writing “I = body” without explaining the difference between conscious and material entities.",
           "Treating every desire as a body need.",
@@ -848,20 +865,17 @@
         "unitId": "asm-301-u3",
         "unitBundleId": "universal_human_values_unit_3",
         "unitNumber": 3,
-        "unitTitle": "3 — Understanding Harmony in Family and Society",
+        "unitTitle": "3 — Understanding Harmony in Family and Society — Harmony in Human-Human Relationship",
         "subjectId": "asm-301",
         "sourceStatus": "Cross-branch JMI FET detailed outline; CSE-DS-specific unit mapping requires confirmation.",
         "coverageStatements": [
-          "Values/feelings in human-human relationships.",
-          "Measures for harmony in the family.",
-          "Family as the basic unit of human interaction.",
-          "Trust as foundational value.",
-          "Respect as right evaluation; other feelings.",
-          "Justice in human-human relationships.",
-          "Harmony in society and universal human order.",
-          "Conflict: meaning and types.",
-          "Dimensions of human order; justice, democracy, respect and gratitude.",
-          "Values crisis, psychological values, integrated personality, mental health and societal values including justice, democracy, secularism and rule of law."
+          "Harmony in family as the basic unit of human interaction.",
+          "Justice (Nyaya) in relationship: recognition, fulfilment, evaluation, mutual happiness.",
+          "Nine universal values in relationships: Trust, Respect, Affection, Care, Guidance, Reverence, Glory, Gratitude, Love.",
+          "Trust (Vishwas) as foundational value: Intention vs Competence.",
+          "Respect (Samman) as right evaluation vs Differentiation (body, physical facility, beliefs).",
+          "Comprehensive human goals: Samadhan (Resolution), Samriddhi (Prosperity), Abhay (Fearlessness), Sah-Astitva (Co-existence).",
+          "Undivided Society (Akhand Samaj) to Universal Human Order (Sarvabhauma Vyavastha)."
         ],
         "csvCoverageEntries": [
           {
@@ -916,44 +930,41 @@
           }
         ],
         "sixtySecSummary": [
-          "Values/feelings in human-human relationships.",
-          "Measures for harmony in the family.",
-          "Family as the basic unit of human interaction.",
-          "Trust as foundational value.",
-          "Respect as right evaluation; other feelings.",
-          "Justice in human-human relationships.",
-          "Harmony in society and universal human order.",
-          "Conflict: meaning and types.",
-          "Dimensions of human order; justice, democracy, respect and gratitude.",
-          "Values crisis, psychological values, integrated personality, mental health and societal values including justice, democracy, secularism and rule of law."
+          "Foundational Values: Trust (Vishwas) is the foundation of relationship; Love (Prem) is the complete value.",
+          "Justice in Relationship: 1. Recognition of relationship \\to 2. Fulfilment of values \\to 3. Right evaluation \\to 4. Mutual Happiness (Ubhay-Tripti).",
+          "Intention vs Competence: Intention is what one naturally aspires to (always good in all humans). Competence is the ability to actualize that intention. Never doubt intention when competence is lacking.",
+          "Respect vs Differentiation: Respect is evaluating the other as human like me. Differentiation divides people based on Body (gender, race, age), Physical Facilities (wealth, status), or Beliefs (sect, ideology).",
+          "Comprehensive Human Goals: 1. Resolution (Samadhan) in Individual, 2. Prosperity (Samriddhi) in Family, 3. Fearlessness/Trust (Abhay) in Society, 4. Co-existence (Sah-Astitva) with Nature.",
+          "Universal Human Order: Progression from Family \\to Family Cluster \\to Village \\to Nation \\to World Family (Sarvabhauma Vyavastha)."
         ],
         "coreConcepts": [
           {
-            "title": "Core definitions",
-            "content": "- **Trust:** assurance that the other intends my happiness/prosperity and mutual fulfilment; distinguish intention from competence when analysing a relationship.\n- **Respect:** right evaluation of another human being; not based solely on wealth, status, age, gender, role or appearance.\n- **Justice:** recognition, fulfilment and evaluation of values in human relationships leading to mutual happiness.\n- **Gratitude:** recognition and appreciation of contribution received from others.\n- **Empathy:** understanding another person's experience/condition and responding with sensitivity.\n- **Family:** basic unit of human interaction and learning of relationship values.\n- **Universal human order:** harmonious social organisation extending from family to wider society/world family."
+            "title": "Trust (Vishwas): Intention vs Competence",
+            "content": "### Concept\n**Trust** is the assurance that the other person wants my happiness and prosperity. It is the foundational value (Aadhaar Mulya) in human relationships.\n\n### Intention vs Competence\n- **Intention (Niyat):** What a person naturally aspires to do (inherently pure and positive in all beings).\n- **Competence (Yogyata):** The ability and skill to actualize that intention without error.\n\n### Critical Comparison\n| Situation | When I Make a Mistake | When the Other Person Makes a Mistake |\n|---|---|---|\n| My Assessment | \"My intention was good, but I lacked time or competence.\" | \"Their intention was bad; they wanted to hurt me.\" |\n| Correct UHV Approach | Strive to improve my competence. | Trust their intention; help them improve their competence with affection. |\n\n### Visual: Intention x Competence Quadrant\n```text\n                High Competence\n                      ▲\n       Misdirected    │    TRUSTED ALLY\n       Knowledge      │    (Ideal Leader)\n  ◄───────────────────┼───────────────────► Good Intention\n       Hostile Actor  │    Well-Meaning but\n                      │    Erratic (Needs Guidance)\n                      ▼\n                Low Competence\n```"
           },
           {
-            "title": "Relationship-value map",
-            "content": "| Foundational/important value | Revision meaning |\n|---|---|\n| Trust | Assurance about the other's intention. |\n| Respect | Right evaluation; no unjust differentiation. |\n| Affection | Feeling of relatedness with the other. |\n| Care | Concern for the other's body/physical well-being. |\n| Guidance | Helping another move towards right understanding. |\n| Reverence | Acceptance of excellence in understanding/conduct. |\n| Glory | Appreciation for excellence/contribution. |\n| Gratitude | Acknowledging help/contribution received. |\n| Love | Comprehensive feeling of relatedness and mutual fulfilment. |"
+            "title": "Respect (Samman) vs Differentiation (Bhed-Bhav)",
+            "content": "### Concept\n**Respect (Samman)** means **Right Evaluation (Samyak Mulyankan)**. Over-evaluation, under-evaluation, or otherwise-evaluation are all forms of disrespect.\n\n### Difference Table\n| Basis of Evaluation | Respect (Right Evaluation) | Differentiation (Disrespect) |\n|---|---|---|\n| Understanding | \"The other is like me; their purpose is same as mine.\" | \"The other is different/inferior/superior to me.\" |\n| Body Level | Sees body as instrument of human being | Discriminates on Gender, Race, Age, Appearance |\n| Physical Facilities | Evaluates facilities as mere tools | Discriminates on Wealth, Brand, Post, Rank |\n| Beliefs (Isms) | Evaluates alignment with natural acceptance | Discriminates on Sect, Religion, Political Creed |\n\n### Exam Line\nRespect leads to complementary relationship and mutual ease; differentiation breeds jealousy, ego, inferiority complexes, and social stratification."
           },
           {
-            "title": "Trust vs competence",
-            "content": "- **Intention:** what a person wants/means to do.\n- **Competence:** the ability/skill to do it.\n- A person may have good intention but insufficient competence; the response should be support/learning, not automatic mistrust.\n- Do not confuse an honest mistake with harmful intention."
+            "title": "The Nine Universal Values in Human Relationships",
+            "content": "### Core Sequence\n1. **Trust (Vishwas):** Foundational value; clarity on intention.\n2. **Respect (Samman):** Right evaluation of the other as oneself.\n3. **Affection (Sneha):** Feeling of being related to the other; absence of opposition.\n4. **Care (Vatsalya):** Responsibility for nurturing and protecting the body of the related.\n5. **Guidance (Marghdarshan):** Responsibility of ensuring right understanding in the other.\n6. **Reverence (Shraddha):** Acceptance of excellence in another who has achieved harmony.\n7. **Glory (Gaurav):** Feeling of honor for those who have made noble efforts for human order.\n8. **Gratitude (Kritagyata):** Acknowledging and feeling thankful for benefits received from others.\n9. **Love (Prem):** The complete value (Purna Mulya); feeling of unconditional relatedness to all beings."
           },
           {
-            "title": "Harmony in society",
-            "content": "A useful holistic-goal summary is:\n- **Resolution/right understanding:** clarity in individuals.\n- **Prosperity:** adequate physical facility and assurance for families.\n- **Fearlessness/trust:** mutually assured relationships and society.\n- **Co-existence:** harmony with nature and the wider existence."
-          },
-          {
-            "title": "Conflict analysis framework",
-            "content": "1. Identify the parties and issue.\n2. Separate facts from assumptions/emotional reactions.\n3. Identify needs, expectations and values involved.\n4. Check whether the problem is a misunderstanding, unmet need, capability gap or structural injustice.\n5. Seek a solution consistent with respect, trust, fairness and mutual fulfilment."
-          },
-          {
-            "title": "Societal values quick list",
-            "content": "Justice • democracy • secularism • rule of law • respect • gratitude • inclusion • responsibility • mental health • integrated personality."
+            "title": "Family to Universal Human Order (Akhand Samaj to Sarvabhauma Vyavastha)",
+            "content": "### Expanding Circles of Social Harmony\n```text\n[ Individual ] ──▶ [ Family ] ──▶ [ Society / Village ] ──▶ [ Nation ] ──▶ [ World Family ]\n    Harmony         Harmony in       Mutual Trust &           Peace &       Universal Order\n   in Myself       Relationship       Fearlessness          Harmony        (Sarvabhauma)\n```\n\n### Comprehensive Human Goals\n1. **Resolution (Samadhan):** Every individual living with right understanding and clarity.\n2. **Prosperity (Samriddhi):** Every family producing more than its physical requirements.\n3. **Fearlessness / Trust (Abhay):** Society living in mutual trust without fear of exploitation.\n4. **Co-existence (Sah-Astitva):** Mutually fulfilling co-existence with all orders of nature."
           }
         ],
-        "formulaBlocks": [],
+        "formulaBlocks": [
+          {
+            "name": "Justice (Nyaya) in Relationship",
+            "formula": "\\text{Recognition of Values} \\;\\longrightarrow\\; \\text{Fulfilment} \\;\\longrightarrow\\; \\text{Right Evaluation} \\;\\longrightarrow\\; \\text{Mutual Happiness (Ubhay-Tripti)}"
+          },
+          {
+            "name": "Four Comprehensive Human Goals",
+            "formula": "\\text{Samadhan (Individual)} \\;+\\; \\text{Samriddhi (Family)} \\;+\\; \\text{Abhay (Society)} \\;+\\; \\text{Sah-Astitva (Nature)}"
+          }
+        ],
         "examTraps": [
           "Equating respect with obedience or fear.",
           "Treating trust as blind acceptance of every claim.",
@@ -966,16 +977,17 @@
         "unitId": "asm-301-u4",
         "unitBundleId": "universal_human_values_unit_4",
         "unitNumber": 4,
-        "unitTitle": "4 — Understanding Harmony in Nature and Existence",
+        "unitTitle": "4 — Understanding Harmony in Nature and Existence — Whole Existence as Coexistence",
         "subjectId": "asm-301",
         "sourceStatus": "Cross-branch JMI FET detailed outline; CSE-DS-specific unit mapping requires confirmation.",
         "coverageStatements": [
-          "Harmony in nature and interconnectedness.",
-          "Self-regulation and mutual fulfilment among four orders of nature.",
-          "Meaning of harmony in nature.",
-          "Causes and implications of disharmony.",
-          "Symbiotic relationships with nature.",
-          "Competence to maintain harmony with nature in professional life."
+          "Nature as a collection of four orders: Material, Plant/Bio, Animal, Human.",
+          "Interconnectedness and Mutual Fulfilment (Parasparta aur Paraspar Poorakta).",
+          "Cyclic processes and Recyclability (Avartansheelata).",
+          "Self-Regulation (Sva-Niyantran) in natural ecosystems.",
+          "Whole existence as Co-existence (Sah-Astitva): Units submerged in all-pervasive Space.",
+          "Human-caused ecological imbalance: pollution, resource depletion, global warming.",
+          "Holistic perception of nature: Nature as Teacher."
         ],
         "csvCoverageEntries": [
           {
@@ -1010,32 +1022,36 @@
           }
         ],
         "sixtySecSummary": [
-          "Harmony in nature and interconnectedness.",
-          "Self-regulation and mutual fulfilment among four orders of nature.",
-          "Meaning of harmony in nature.",
-          "Causes and implications of disharmony.",
-          "Symbiotic relationships with nature.",
-          "Competence to maintain harmony with nature in professional life."
+          "Four Orders of Nature: 1. Material Order (Padarth Avastha), 2. Plant/Bio Order (Pran Avastha), 3. Animal Order (Jeev Avastha), 4. Human Order (Gyan Avastha).",
+          "Mutual Fulfilment: The first three orders are mutually enriching and self-regulating. Human beings are currently unfulfilling to the other three orders due to lack of right understanding.",
+          "Recyclability & Self-Regulation: Natural processes are cyclic (water cycle, carbon cycle, food webs). No waste exists in pristine nature until human non-biodegradable pollution intervenes.",
+          "Existence as Co-existence: Existence = Units (Gathansheel / Kriyasheel) submerged in Space (Shoonya / All-pervasive). Units are active, finite, and energized; Space is inactive, infinite, and transparent.",
+          "Root Cause of Ecological Crisis: Treating nature as an infinite resource for limitless sensory consumption rather than living in mutual fulfilment."
         ],
         "coreConcepts": [
           {
-            "title": "Four orders of nature",
-            "content": "1. **Material order:** soil, water, air, metals and other physical/material entities.\n2. **Plant/bio order:** plants and vegetation; material plus life processes.\n3. **Animal order:** animals with body and conscious activities.\n4. **Human order:** human beings with body and the conscious self; responsibility for understanding and conduct."
+            "title": "The Four Orders of Nature: Interconnectedness & Fulfilment",
+            "content": "### Concept\nNature is the aggregate of all physical, biological, and conscious entities categorized into four interconnected orders:\n\n### Comparison Matrix of the Four Orders\n| Order | Hindi Name | Constituents | Fundamental Attribute | Activity (Kriya) |\n|---|---|---|---|---|\n| **1. Material** | Padarth Avastha | Soil, water, air, metals, minerals | Composition / Decomposition | Recognition & Fulfilment |\n| **2. Plant / Bio** | Pran Avastha | Grass, plants, trees, shrubs | Growth, respiration, seed propagation | Recognition & Fulfilment |\n| **3. Animal** | Jeev Avastha | Birds, beasts, fish, insects | Will to live in the Self (\"I\") | Recognition & Fulfilment + Selection in \"I\" |\n| **4. Human** | Gyan Avastha | Human beings | Will to live with happiness & right understanding | Knowing, Assuming, Recognizing, Fulfilling |\n\n### Mutual Fulfilment Status\n- **Material \\to Plant:** Soil and water nurture trees.\n- **Plant \\to Animal:** Trees provide oxygen, fruits, and fodder.\n- **Animal \\to Material:** Excreta and decay enrich the soil.\n- **Human \\to Other 3 Orders:** Currently exploitative (deforestation, toxic dumping). With Right Understanding, humans become mutually fulfilling."
           },
           {
-            "title": "Key ideas",
-            "content": "- **Interconnectedness:** orders depend on and interact with one another.\n- **Mutual fulfilment:** natural processes can support the continuation and well-being of other orders.\n- **Self-regulation:** natural systems maintain cycles/balances through internal processes.\n- **Recyclability:** materials circulate through natural cycles; waste from one process can become an input to another when systems are balanced.\n- **Symbiosis:** mutually beneficial association between organisms/systems.\n- **Disharmony:** disturbance caused by exploitation, pollution, overconsumption, resource depletion or technologies/production systems that ignore ecological limits."
+            "title": "Cyclic Processes (Recyclability) and Self-Regulation",
+            "content": "### Concept\n- **Recyclability (Avartansheelata):** Every product in natural ecology returns to its source through cyclic transformation without generating toxic permanent dead-ends.\n- **Self-Regulation (Sva-Niyantran):** Natural population balances, predator-prey equilibria, and climatic cycles self-correct without external centralized commands.\n\n### Diagram: Eco-Cycle vs Industrial Pollution\n```text\nNATURAL RECYCLABILITY:\nSoil ──▶ Seed ──▶ Plant ──▶ Fruit/Foliage ──▶ Organic Compost ──▶ Soil\n\nLINEAR INDUSTRIAL EXPLOITATION:\nVirgin Ore ──▶ Energy Exhaustion ──▶ Toxic Byproduct ──▶ Plastic Landfill (Non-Cyclic)\n```\n\n### Exam Point\nSustainable technology must copy nature's cyclic model (circular economy, biodegradable materials, zero-waste manufacturing)."
           },
           {
-            "title": "Cause then effect then response",
-            "content": "| Cause | Possible effect | Responsible response |\n|---|---|---|\n| Excessive extraction | Resource depletion | Efficient use, restoration and circular material flows. |\n| Pollution | Health/ecosystem damage | Prevention, cleaner processes and treatment. |\n| Habitat destruction | Loss of biodiversity | Conservation and responsible land use. |\n| Wasteful production | Unnecessary material/energy demand | Eco-friendly design and production. |\n| Unsustainable consumption | Ecological imbalance | Need-based, responsible consumption. |"
-          },
-          {
-            "title": "Professional application",
-            "content": "For any engineering case study, discuss: lifecycle impact, resource/energy efficiency, human safety, waste, recyclability, ecological effects, stakeholders and long-term sustainability."
+            "title": "Existence as Co-existence: Units Submerged in Space",
+            "content": "### Concept\nEverything in existence can be understood as physical/conscious **Units** co-existing in **All-Pervasive Space**.\n\n### Contrast: Units vs Space\n| Dimension | Units (Ekai) | Space (Shoonya) |\n|---|---|---|\n| Nature | Active, dynamic, changing | Inactive, unchanging, constant |\n| Extent | Finite, bounded | Infinite, all-pervasive |\n| Energy | Energized in space | Reflects equilibrium; no separate momentum |\n| Relationship | Mutual interaction | Transmitting presence; transparent medium |\n\n### Human Implication\nHuman beings are not meant to struggle for Darwinian \"survival of the fittest\" against nature; nature is fundamentally built on co-existence, synergy, and symbiosis."
           }
         ],
-        "formulaBlocks": [],
+        "formulaBlocks": [
+          {
+            "name": "Four Orders of Nature",
+            "formula": "\\text{Material Order} \\;\\subset\\; \\text{Plant/Bio Order} \\;\\subset\\; \\text{Animal Order} \\;\\subset\\; \\text{Human Order}"
+          },
+          {
+            "name": "Existence Equation",
+            "formula": "\\text{Existence (Astitva)} = \\text{Units (Kriya/Nature)} \\;\\text{submerged in}\\; \\text{Space (Shoonya/All-pervasive)}"
+          }
+        ],
         "examTraps": [
           "Listing the four orders without explaining their interdependence.",
           "Equating harmony with “humans should not use nature”; the focus is responsible, mutually fulfilling use.",
@@ -1047,18 +1063,17 @@
         "unitId": "asm-301-u5",
         "unitBundleId": "universal_human_values_unit_5",
         "unitNumber": 5,
-        "unitTitle": "5 — Implications of Harmony on Professional Ethics",
+        "unitTitle": "5 — Implications of Holistic Understanding of Harmony on Professional Ethics",
         "subjectId": "asm-301",
         "sourceStatus": "Cross-branch JMI FET detailed outline; CSE-DS-specific unit mapping requires confirmation.",
         "coverageStatements": [
-          "Engineering profession and ethical issues in practice.",
-          "Conflicts between business demands and professional ideals.",
-          "Social and ethical responsibilities of technologists.",
-          "Codes of professional ethics.",
-          "Whistle-blowing and beyond.",
-          "Ethics of duty and ethics of responsibility.",
-          "Holistic technologies, production systems and management models.",
-          "Transition towards value-based life and profession."
+          "Natural acceptance of human values and definitiveness of ethical human conduct.",
+          "Humanistic Education, Humanistic Constitution, and Universal Human Order.",
+          "Competence in professional ethics: augmenting universal human order.",
+          "People-friendly and eco-friendly production systems.",
+          "Appropriate Technology: evaluation criteria and sustainable management patterns.",
+          "Case studies of ethical dilemmas in engineering, computing, and corporate management.",
+          "Social and ethical responsibilities of technologists, engineers, and scientists."
         ],
         "csvCoverageEntries": [
           {
@@ -1103,30 +1118,37 @@
           }
         ],
         "sixtySecSummary": [
-          "Engineering profession and ethical issues in practice.",
-          "Conflicts between business demands and professional ideals.",
-          "Social and ethical responsibilities of technologists.",
-          "Codes of professional ethics.",
-          "Whistle-blowing and beyond.",
-          "Ethics of duty and ethics of responsibility.",
-          "Holistic technologies, production systems and management models.",
-          "Transition towards value-based life and profession."
+          "Definitiveness of Ethical Conduct: Ethical behavior based on natural acceptance is definitive, universal, and unvarying (in contrast to opportunistic codes driven by fear or greed).",
+          "Three Core Professional Competencies: 1. Clarity on comprehensive human goals, 2. Ability to develop people-friendly and eco-friendly technologies, 3. Ability to formulate sustainable management models.",
+          "Appropriate Technology: Technologies evaluated on safety, renewability, recyclability, and human dignity—not solely short-term profit.",
+          "People-Friendly Production: Non-exploitative, safe, empowering, and respectful of worker well-being.",
+          "Eco-Friendly Production: Minimizes non-renewable depletion, zero toxic emissions, cradle-to-cradle lifecycle.",
+          "Dilemma Framework: Situation \\to Stakeholders \\to Core Value Conflict \\to Ecological/Human Impact \\to Ethical Decision based on Mutual Fulfilment."
         ],
         "coreConcepts": [
           {
-            "title": "Core definitions and contrasts",
-            "content": "- **Professional ethics:** principles and standards guiding professional decisions, conduct, competence, honesty, safety and responsibility.\n- **Duty ethics:** focuses on obligations, rules, commitments and what one ought to do.\n- **Responsibility ethics:** focuses on foreseeable consequences, accountability and effects on people/society/environment.\n- **Whistle-blowing:** reporting serious wrongdoing or danger through appropriate channels when ordinary correction fails; protect evidence, safety, confidentiality and due process.\n- **Holistic technology:** technology assessed not only for technical/economic performance but also human, social and ecological impact.\n- **Holistic production system:** people-friendly, eco-friendly and sustainable production that meets real needs."
+            "title": "Definitiveness of Ethical Human Conduct",
+            "content": "### Concept\nEthical conduct is the expression of right understanding in human-to-human behavior and human-to-nature work.\n\n### The Three Hallmarks\n1. **Values (Mulya):** Clarity in relationship leading to mutual happiness.\n2. **Policy (Niti):** Protection and enrichment of human, economic, and natural resources.\n3. **Character (Charitra):** Sva-Nari/Sva-Purush (faithfulness in relationship), Sva-Dhan (wealth earned through honest labor), and Dayapurna Vyavahar (compassionate behavior with all).\n\n### Exam Point\nWhen conduct is rooted in natural acceptance, it is stable and predictable. When rooted in fear (Bhay) or greed (Lobha), it fluctuates with market incentives."
           },
           {
-            "title": "Ethical decision checklist for an engineer",
-            "content": "1. Is the design safe and fit for purpose?\n2. Are data, results and limitations represented honestly?\n3. Are users, workers and affected communities considered?\n4. Is the solution lawful and consistent with professional codes?\n5. Are environmental and lifecycle impacts assessed?\n6. Is there a conflict of interest or pressure to misrepresent?\n7. Have concerns been documented and escalated responsibly?\n8. Does the decision support long-term public welfare?"
+            "title": "People-Friendly vs Eco-Friendly Production Systems",
+            "content": "### Key Distinctions\n| Dimension | People-Friendly Production | Eco-Friendly Production |\n|---|---|---|\n| Primary Target | Worker dignity, safety, social benefit | Preservation of ecosystems, biodiversity |\n| Core Requirement | Fair wages, non-hazardous labor, inclusive governance | Cyclic materials, renewable energy, zero effluent |\n| Metrics | Physical health, work satisfaction, community uplift | Carbon footprint, life-cycle impact, recyclability |\n\n### Joint Ideal\nThe ultimate engineering goal is **holistic production** that is simultaneously people-friendly and eco-friendly (e.g. community-run solar microgrids, green software optimization)."
           },
           {
-            "title": "Common case-study structure",
-            "content": "Facts then stakeholders then ethical issue/conflict then relevant duty/code/value then options then foreseeable consequences then justified decision then safeguards/communication then reflection."
+            "title": "Ethical Dilemma Resolution Framework for Engineers",
+            "content": "### 6-Step Decision Protocol\n1. **Identify the Core Ethical Dilemma:** Define the conflict between immediate economic gain and long-term societal/ecological harm.\n2. **Identify All Affected Stakeholders:** Workers, local villagers, consumers, future generations, ecological organisms.\n3. **Assess Consequences:** Short-term profits vs long-term public health hazards, legal liabilities, environmental collapse.\n4. **Apply Natural Acceptance & UHV Check:** Does this action support mutual happiness and mutual prosperity?\n5. **Evaluate Technological Alternatives:** Can green redesign or appropriate technology bridge the gap?\n6. **Justify Decision on Universal Human Order:** Select the option that upholds human dignity and sustainability."
           }
         ],
-        "formulaBlocks": [],
+        "formulaBlocks": [
+          {
+            "name": "Criteria for Appropriate Technology",
+            "formula": "\\text{Appropriate Technology} = \\text{Technically Sound} \\;\\wedge\\; \\text{People-Friendly (Human Dignity)} \\;\\wedge\\; \\text{Eco-Friendly (Cyclic)}"
+          },
+          {
+            "name": "Professional Ethics Goal",
+            "formula": "\\text{Professional Competence} \\;\\times\\; \\text{Right Understanding} \\;\\implies\\; \\text{Universal Human Order}"
+          }
+        ],
         "examTraps": [
           "Saying “follow the manager's order” without discussing professional duty and public safety.",
           "Treating whistle-blowing as the first response in every disagreement; discuss evidence and appropriate escalation.",
