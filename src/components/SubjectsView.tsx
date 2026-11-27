@@ -15,8 +15,16 @@ import {
   RotateCcw,
   Square,
   XCircle,
+  Award,
+  Zap,
+  Play,
+  Check,
+  Flame,
+  FileCheck,
+  Target
 } from 'lucide-react';
 import { LPP_LECTURES, SUBJECTS } from '@/data/curriculum';
+import { LPP_ASSIGNMENTS } from '@/data/lpp_assignments';
 import { QUESTION_BANK } from '@/data/questions';
 import { getVideoForTopic } from '@/data/videos';
 import { useApp } from '@/context/AppContext';
@@ -57,6 +65,30 @@ export function SubjectsView() {
   const [workspaceTab, setWorkspaceTab] = useState<'overview' | 'practice' | 'analytics'>('overview');
   const [topicAnswers, setTopicAnswers] = useState<Record<string, string>>({});
   const [topicSubmitted, setTopicSubmitted] = useState(false);
+  const [expandedAssignments, setExpandedAssignments] = useState<Record<number, boolean>>({});
+  const [assignmentCompleted, setAssignmentCompleted] = useState<Record<number, boolean>>(() => {
+    if (typeof window === 'undefined') return {};
+    try {
+      const stored = localStorage.getItem('lpp_assignments_completed');
+      return stored ? JSON.parse(stored) : {};
+    } catch {
+      return {};
+    }
+  });
+
+  const toggleAssignmentCompleted = (asgnNum: number) => {
+    setAssignmentCompleted(prev => {
+      const next = { ...prev, [asgnNum]: !prev[asgnNum] };
+      try {
+        localStorage.setItem('lpp_assignments_completed', JSON.stringify(next));
+      } catch {}
+      return next;
+    });
+  };
+
+  const toggleAssignmentExpanded = (asgnNum: number) => {
+    setExpandedAssignments(prev => ({ ...prev, [asgnNum]: !prev[asgnNum] }));
+  };
 
   const toggleUnit = (unitId: string) => {
     setExpandedUnits((prev) => ({ ...prev, [unitId]: !(prev[unitId] ?? true) }));
@@ -182,6 +214,189 @@ export function SubjectsView() {
           </div>
         </div>
       </div>
+
+      {/* LPP EXAM PRIORITY & 8-ASSIGNMENT HUB */}
+      {activeSubject.id === 'lpp' && (
+        <div className="space-y-4">
+          {/* Main Exam Priority Alert Box */}
+          <div className="relative overflow-hidden rounded-2xl border-2 border-amber-500/80 bg-gradient-to-br from-amber-500/10 via-amber-500/5 to-transparent p-6 shadow-md dark:border-amber-500/60 dark:from-amber-950/40 dark:via-amber-950/20">
+            <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+              <div className="space-y-1.5">
+                <div className="flex items-center gap-2">
+                  <span className="flex h-6 items-center gap-1.5 rounded-full bg-amber-500 px-3 text-xs font-black uppercase tracking-wider text-slate-950 shadow-sm">
+                    <Flame className="h-3.5 w-3.5 fill-slate-950" />
+                    Highest Exam Priority
+                  </span>
+                  <span className="rounded-md bg-amber-100 px-2.5 py-0.5 text-xs font-bold text-amber-900 dark:bg-amber-900/60 dark:text-amber-200">
+                    Official Teacher Guidance
+                  </span>
+                </div>
+                <h2 className="text-xl font-extrabold tracking-tight text-slate-950 dark:text-amber-100 sm:text-2xl">
+                  LPP Examination Strategy — Master All 8 Assignments First
+                </h2>
+                <p className="max-w-3xl text-sm leading-relaxed text-slate-700 dark:text-slate-300">
+                  Per official examination guidance: <em>“You need to prepare all 8 assignments thoroughly. Almost all the questions in the examination will be from assignments. The examination will be MCQ-based, consisting of <strong>45 questions</strong>; <strong>43 will be direct from assignments</strong>.”</em>
+                </p>
+              </div>
+
+              {/* Action Buttons */}
+              <div className="flex flex-wrap items-center gap-2.5 md:flex-col md:items-end">
+                <button
+                  onClick={() => setActiveSection('pyqs')}
+                  className="inline-flex items-center gap-2 rounded-xl bg-amber-500 px-4 py-2.5 text-xs font-bold text-slate-950 shadow transition hover:bg-amber-400 active:scale-95"
+                >
+                  <Play className="h-4 w-4 fill-slate-950" />
+                  Practice All 8 Assignments (80 Qs)
+                </button>
+                <button
+                  onClick={() => setActiveSection('mocks')}
+                  className="inline-flex items-center gap-2 rounded-xl border border-amber-600/30 bg-white/80 px-4 py-2.5 text-xs font-bold text-amber-900 shadow-sm transition hover:bg-amber-50 dark:border-amber-500/40 dark:bg-slate-900 dark:text-amber-300 dark:hover:bg-amber-950/40 active:scale-95"
+                >
+                  <Target className="h-4 w-4" />
+                  Attempt 45-MCQ Mock Exam
+                </button>
+              </div>
+            </div>
+
+            {/* Quick Metrics Bar */}
+            <div className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-4 pt-4 border-t border-amber-200/60 dark:border-amber-900/40">
+              <div className="rounded-xl bg-white/80 p-3 text-center dark:bg-slate-900/80 border border-amber-200/50 dark:border-amber-900/30">
+                <div className="text-[11px] font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Total Assignments</div>
+                <div className="mt-0.5 text-lg font-black text-amber-600 dark:text-amber-400">8 Assignments</div>
+              </div>
+              <div className="rounded-xl bg-white/80 p-3 text-center dark:bg-slate-900/80 border border-amber-200/50 dark:border-amber-900/30">
+                <div className="text-[11px] font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Verified Questions</div>
+                <div className="mt-0.5 text-lg font-black text-slate-900 dark:text-slate-100">80 High-Yield MCQs</div>
+              </div>
+              <div className="rounded-xl bg-white/80 p-3 text-center dark:bg-slate-900/80 border border-amber-200/50 dark:border-amber-900/30">
+                <div className="text-[11px] font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Exam Question Pattern</div>
+                <div className="mt-0.5 text-lg font-black text-slate-900 dark:text-slate-100">45 Objective MCQs</div>
+              </div>
+              <div className="rounded-xl bg-white/80 p-3 text-center dark:bg-slate-900/80 border border-amber-200/50 dark:border-amber-900/30">
+                <div className="text-[11px] font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Completed By You</div>
+                <div className="mt-0.5 text-lg font-black text-emerald-600 dark:text-emerald-400">
+                  {Object.values(assignmentCompleted).filter(Boolean).length} / 8 Done
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Interactive 8 Assignments Preparation Grid */}
+          <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+            <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
+              <div>
+                <h3 className="text-base font-bold text-slate-900 dark:text-slate-100 flex items-center gap-2">
+                  <Award className="h-5 w-5 text-amber-500" />
+                  NPTEL Linear Programming — 8 Assignment Modules
+                </h3>
+                <p className="text-xs text-slate-500 dark:text-slate-400">
+                  Expand each assignment card to preview topics, formulas involved, and start targeted practice.
+                </p>
+              </div>
+              <div className="text-xs font-semibold text-slate-600 dark:text-slate-300">
+                Mastery: <span className="text-amber-600 dark:text-amber-400 font-bold">{Math.round((Object.values(assignmentCompleted).filter(Boolean).length / 8) * 100)}%</span>
+              </div>
+            </div>
+
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+              {LPP_ASSIGNMENTS.map((asgn) => {
+                const isDone = assignmentCompleted[asgn.assignmentNumber] ?? false;
+                const isExpanded = expandedAssignments[asgn.assignmentNumber] ?? false;
+
+                return (
+                  <div
+                    key={asgn.assignmentNumber}
+                    className={`rounded-xl border transition-all ${
+                      isDone
+                        ? 'border-emerald-300 bg-emerald-50/50 dark:border-emerald-900/60 dark:bg-emerald-950/20'
+                        : 'border-slate-200 bg-slate-50/70 hover:border-amber-300 dark:border-slate-800 dark:bg-slate-950/50'
+                    }`}
+                  >
+                    <div className="p-4">
+                      <div className="flex items-center justify-between">
+                        <span className="rounded bg-amber-100 px-2 py-0.5 text-[11px] font-bold text-amber-800 dark:bg-amber-950/80 dark:text-amber-300">
+                          Assignment {asgn.assignmentNumber}
+                        </span>
+                        <button
+                          onClick={() => toggleAssignmentCompleted(asgn.assignmentNumber)}
+                          title={isDone ? 'Mark as Incomplete' : 'Mark as Completed'}
+                          className={`flex items-center gap-1 rounded-md px-2 py-0.5 text-[10px] font-bold transition ${
+                            isDone
+                              ? 'bg-emerald-600 text-white shadow-sm'
+                              : 'bg-slate-200 text-slate-700 hover:bg-slate-300 dark:bg-slate-800 dark:text-slate-300'
+                          }`}
+                        >
+                          {isDone ? (
+                            <>
+                              <Check className="h-3 w-3" />
+                              Mastered
+                            </>
+                          ) : (
+                            'Mark Done'
+                          )}
+                        </button>
+                      </div>
+
+                      <h4 className="mt-2 text-xs font-bold text-slate-900 dark:text-slate-100 line-clamp-2">
+                        {asgn.title}
+                      </h4>
+
+                      <div className="mt-2 flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400">
+                        <span>Lecture {asgn.nptelLecture}</span>
+                        <span className="font-semibold text-slate-700 dark:text-slate-300">10 MCQs (20 Marks)</span>
+                      </div>
+
+                      <p className="mt-2 text-[11px] text-slate-600 dark:text-slate-400 line-clamp-2">
+                        {asgn.frequencyNote}
+                      </p>
+
+                      <div className="mt-3.5 flex items-center gap-2 border-t border-slate-200/60 pt-3 dark:border-slate-800">
+                        <button
+                          onClick={() => setActiveSection('pyqs')}
+                          className="flex-1 rounded-lg bg-slate-900 px-2.5 py-1.5 text-center text-xs font-semibold text-white transition hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-200"
+                        >
+                          Practice 10 Qs
+                        </button>
+                        <button
+                          onClick={() => toggleAssignmentExpanded(asgn.assignmentNumber)}
+                          className="rounded-lg border border-slate-200 p-1.5 text-slate-600 hover:bg-slate-100 dark:border-slate-700 dark:text-slate-300 dark:hover:bg-slate-800"
+                          title="Toggle Assignment Details"
+                        >
+                          <ChevronDown className={`h-4 w-4 transition-transform ${isExpanded ? 'rotate-180' : ''}`} />
+                        </button>
+                      </div>
+                    </div>
+
+                    {/* Expandable Preview */}
+                    {isExpanded && (
+                      <div className="border-t border-slate-200 bg-white p-3.5 text-xs dark:border-slate-800 dark:bg-slate-900/90 rounded-b-xl space-y-2">
+                        <div className="font-bold text-slate-800 dark:text-slate-200 text-[11px] uppercase tracking-wider">
+                          Key Questions Preview:
+                        </div>
+                        <ul className="space-y-1.5 text-[11px] text-slate-600 dark:text-slate-400">
+                          {asgn.questions.slice(0, 3).map((q, idx) => (
+                            <li key={q.id} className="line-clamp-2">
+                              <strong>Q{idx + 1}.</strong> {q.prompt.split('\n')[0]}
+                            </li>
+                          ))}
+                        </ul>
+                        <div className="pt-2 text-right">
+                          <button
+                            onClick={() => setActiveSection('pyqs')}
+                            className="text-[11px] font-bold text-sky-600 dark:text-sky-400 hover:underline"
+                          >
+                            Open full assignment in Question Bank →
+                          </button>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* LPP 7-Lecture Mapping Banner */}
       {activeSubject.id === 'lpp' && (

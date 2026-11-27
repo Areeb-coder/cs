@@ -4242,6 +4242,7 @@
             "subjectId": "lpp",
             "provenance": "official_jmi_syllabus",
             "sixtySecBullets": [
+              "🔥 Exam Priority: Master Assignment 1 (Q1-Q10) on LP modeling, 2D geometry, unbounded feasible regions, and brewery standard forms.",
               "Linear Program: Optimize linear objective under linear equality/inequality constraints.",
               "Standard Form: $\\min c^T x$ subject to $Ax = b, x \\ge 0$. Any LP can be transformed into standard form.",
               "Converting $\\le$ inequality: Add non-negative slack variable ($a_i^T x + s_i = b_i, s_i \\ge 0$).",
@@ -4278,6 +4279,7 @@
             "subjectId": "lpp",
             "provenance": "official_jmi_syllabus",
             "sixtySecBullets": [
+              "🔥 Exam Priority: Master Assignment 2 (Q1-Q10) on Gaussian elimination, column spaces, matrix invertibility, and homogeneous systems.",
               "Linear Program: Optimize linear objective under linear equality/inequality constraints.",
               "Standard Form: $\\min c^T x$ subject to $Ax = b, x \\ge 0$. Any LP can be transformed into standard form.",
               "Converting $\\le$ inequality: Add non-negative slack variable ($a_i^T x + s_i = b_i, s_i \\ge 0$).",
@@ -4342,6 +4344,7 @@
             "subjectId": "lpp",
             "provenance": "official_jmi_syllabus",
             "sixtySecBullets": [
+              "🔥 Exam Priority: Master Assignment 3 (Q1-Q10) on affine/conic/convex combinations, convex hulls, and polyhedral extreme points.",
               "Convex Combination: $x = \\sum \\alpha_i x_i$ with $\\alpha_i \\ge 0$ and $\\sum \\alpha_i = 1$.",
               "Polytope: Bounded intersection of finite closed half-spaces ($Ax \\le b$).",
               "Extreme Point (Vertex) $\\iff$ Basic Feasible Solution (BFS): Columns of $A$ corresponding to positive variables are linearly independent.",
@@ -4378,6 +4381,7 @@
             "subjectId": "lpp",
             "provenance": "official_jmi_syllabus",
             "sixtySecBullets": [
+              "🔥 Exam Priority: Master Assignment 3 & 4 on convex function epigraphs, supporting hyperplanes, and boundary optima.",
               "Convex Combination: $x = \\sum \\alpha_i x_i$ with $\\alpha_i \\ge 0$ and $\\sum \\alpha_i = 1$.",
               "Polytope: Bounded intersection of finite closed half-spaces ($Ax \\le b$).",
               "Extreme Point (Vertex) $\\iff$ Basic Feasible Solution (BFS): Columns of $A$ corresponding to positive variables are linearly independent.",
@@ -4414,6 +4418,7 @@
             "subjectId": "lpp",
             "provenance": "official_jmi_syllabus",
             "sixtySecBullets": [
+              "🔥 Exam Priority: Master Assignment 4 (Q1-Q10) on Simplex tableaux, entering/leaving variable selection, degenerate pivots, and Bland’s rule.",
               "Convex Combination: $x = \\sum \\alpha_i x_i$ with $\\alpha_i \\ge 0$ and $\\sum \\alpha_i = 1$.",
               "Polytope: Bounded intersection of finite closed half-spaces ($Ax \\le b$).",
               "Extreme Point (Vertex) $\\iff$ Basic Feasible Solution (BFS): Columns of $A$ corresponding to positive variables are linearly independent.",
@@ -4476,6 +4481,7 @@
             "subjectId": "lpp",
             "provenance": "official_jmi_syllabus",
             "sixtySecBullets": [
+              "🔥 Exam Priority: Master Assignment 5 (Q1-Q10) on Duality conversions, complementary slackness conditions, and Farkas’ Lemma certificates.",
               "Separating Hyperplane Theorem: Disjoint closed convex sets can be separated by a hyperplane.",
               "Farkas' Lemma: Exactly one of $Ax = b, x \\ge 0$ OR $A^T y \\le 0, y^T b > 0$ has a solution.",
               "Weak Duality: Dual objective provides a bound on primal ($c^T x \\le b^T y$).",
@@ -4512,6 +4518,7 @@
             "subjectId": "lpp",
             "provenance": "official_jmi_syllabus",
             "sixtySecBullets": [
+              "🔥 Exam Priority: Master Assignment 6 (Q1-Q10) on zero-sum games, minimax theorem, payoff matrix linear programs, and mixed strategy Nash equilibria.",
               "Separating Hyperplane Theorem: Disjoint closed convex sets can be separated by a hyperplane.",
               "Farkas' Lemma: Exactly one of $Ax = b, x \\ge 0$ OR $A^T y \\le 0, y^T b > 0$ has a solution.",
               "Weak Duality: Dual objective provides a bound on primal ($c^T x \\le b^T y$).",
@@ -4574,6 +4581,7 @@
             "subjectId": "lpp",
             "provenance": "official_jmi_syllabus",
             "sixtySecBullets": [
+              "🔥 Exam Priority: Master Assignment 7 (Q1-Q10) on Max Flow - Min Cut formulations, Ford-Fulkerson augmentations, and bottleneck capacities.",
               "Max Flow Min Cut: Maximum flow in a network equals the capacity of the minimum cut.",
               "Ford-Fulkerson: Greedily pushes flow along augmenting paths in residual graph; runs in $O(E \\cdot f^*)$.",
               "Set Cover ILP: Minimize cost of selected subsets covering all elements; NP-hard.",
@@ -4610,6 +4618,7 @@
             "subjectId": "lpp",
             "provenance": "official_jmi_syllabus",
             "sixtySecBullets": [
+              "🔥 Exam Priority: Master Assignment 7 & 8 on ILP formulations, fractional relaxations, and integrality gaps.",
               "Max Flow Min Cut: Maximum flow in a network equals the capacity of the minimum cut.",
               "Ford-Fulkerson: Greedily pushes flow along augmenting paths in residual graph; runs in $O(E \\cdot f^*)$.",
               "Set Cover ILP: Minimize cost of selected subsets covering all elements; NP-hard.",
@@ -4670,6 +4679,7 @@
             "subjectId": "lpp",
             "provenance": "official_jmi_syllabus",
             "sixtySecBullets": [
+              "🔥 Exam Priority: Master Assignment 8 (Q1-Q10) on L1 norm minimization as LP, support vector margin maximization, and piecewise linear costs.",
               "Linear Regression with L1 Loss: Minimize $\\sum_{i=1}^n |y_i - w^T x_i|$. More robust to outliers than L2 (MSE).",
               "L1 LP formulation: Introduce auxiliary slack variables $e_i \\ge 0$ with $e_i \\ge y_i - w^T x_i$ and $e_i \\ge -(y_i - w^T x_i)$; minimize $\\sum e_i$.",
               "Support Vector / Linear Classifiers: Find hyperplane $w^T x + b = 0$ separating classes with maximum margin.",

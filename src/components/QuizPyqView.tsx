@@ -26,7 +26,7 @@ import { MathText } from '@/components/MathText';
 import { useApp } from '@/context/AppContext';
 import { Question } from '@/types/academic';
 
-type QuestionCategoryTab = 'pyqs' | 'question_bank' | 'ai_generated';
+type QuestionCategoryTab = 'pyqs' | 'question_bank' | 'ai_generated' | 'lpp_assignments';
 
 export function QuizPyqView() {
   const { addMistake, recordQuizScore, state, toggleBookmark } = useApp();
@@ -45,12 +45,15 @@ export function QuizPyqView() {
 
   // Categorize questions by strict provenance rules
   const categorizedQuestions = useMemo(() => {
+    const lppAssignments = QUESTION_BANK.filter(
+      (q) => q.provenance === 'nptel_lecture_notes' && q.subjectId === 'lpp'
+    );
     const pyqs = QUESTION_BANK.filter((q) => q.provenance === 'actual_pyq');
     const questionBank = QUESTION_BANK.filter(
       (q) =>
-        q.provenance === 'source_note_exercise' ||
+        (q.provenance === 'source_note_exercise' ||
         q.provenance === 'user_faculty_notes' ||
-        q.provenance === 'platform_practice_lab'
+        q.provenance === 'platform_practice_lab')
     );
     const aiGenerated = QUESTION_BANK.filter(
       (q) =>
@@ -62,6 +65,7 @@ export function QuizPyqView() {
       pyqs,
       question_bank: questionBank,
       ai_generated: aiGenerated,
+      lpp_assignments: lppAssignments,
     };
   }, []);
 
@@ -238,8 +242,39 @@ export function QuizPyqView() {
         </div>
       </div>
 
-      {/* 1. Primary 3 Distinct Tabs */}
-      <div className="grid grid-cols-1 gap-2 sm:grid-cols-3">
+      {/* 1. Primary Distinct Tabs */}
+      <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-4">
+        {/* Tab 0: LPP Exam Priority Assignments */}
+        <button
+          onClick={() => {
+            setActiveTab('lpp_assignments');
+            setSelectedSubject('lpp');
+            handleReset();
+          }}
+          className={`flex items-start gap-3 rounded-xl border p-4 text-left transition-all ${
+            activeTab === 'lpp_assignments'
+              ? 'border-amber-500 bg-amber-50/80 ring-2 ring-amber-500/20 dark:border-amber-500 dark:bg-amber-950/40'
+              : 'border-slate-200 bg-white hover:border-slate-300 dark:border-slate-800 dark:bg-slate-900 dark:hover:border-slate-700'
+          }`}
+        >
+          <div className="rounded-lg bg-amber-100 p-2 text-amber-700 dark:bg-amber-900/60 dark:text-amber-300">
+            <Award className="h-5 w-5" />
+          </div>
+          <div className="flex-1">
+            <div className="flex items-center justify-between">
+              <span className="font-semibold text-slate-900 dark:text-slate-100 flex items-center gap-1.5">
+                <span>🔥 LPP Assignments</span>
+              </span>
+              <span className="rounded bg-amber-200/70 px-2 py-0.5 text-xs font-bold text-amber-900 dark:bg-amber-900 dark:text-amber-200">
+                {categorizedQuestions.lpp_assignments.length} Qs
+              </span>
+            </div>
+            <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">
+              <strong className="text-amber-700 dark:text-amber-400">Top Exam Priority:</strong> All 8 authentic NPTEL assignments (43/45 questions expected).
+            </p>
+          </div>
+        </button>
+
         {/* Tab 1: PYQs */}
         <button
           onClick={() => {
@@ -258,14 +293,14 @@ export function QuizPyqView() {
           <div className="flex-1">
             <div className="flex items-center justify-between">
               <span className="font-semibold text-slate-900 dark:text-slate-100">
-                1. Previous Year Questions (PYQs)
+                1. PYQs
               </span>
               <span className="rounded bg-sky-200/70 px-2 py-0.5 text-xs font-bold text-sky-800 dark:bg-sky-900 dark:text-sky-200">
                 {categorizedQuestions.pyqs.length} Available
               </span>
             </div>
             <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">
-              Only authentic questions from original university papers with printed paper numbers, year, exam session and marks.
+              Authentic university papers with verified paper numbers, year, session and marks.
             </p>
           </div>
         </button>
@@ -295,7 +330,7 @@ export function QuizPyqView() {
               </span>
             </div>
             <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">
-              Verified non-PYQ practice problems from faculty notes, NPTEL modules, assignments and lab manuals.
+              Verified non-PYQ practice problems from faculty notes and textbook exercises.
             </p>
           </div>
         </button>
@@ -318,14 +353,14 @@ export function QuizPyqView() {
           <div className="flex-1">
             <div className="flex items-center justify-between">
               <span className="font-semibold text-slate-900 dark:text-slate-100">
-                3. AI-Generated Practice
+                3. AI Practice
               </span>
               <span className="rounded bg-purple-200/70 px-2 py-0.5 text-xs font-bold text-purple-800 dark:bg-purple-900 dark:text-purple-200">
                 {categorizedQuestions.ai_generated.length} Available
               </span>
             </div>
             <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">
-              Syllabus-aligned scenario questions, edge case MCQs, and viva drills with step-by-step solutions.
+              Syllabus-aligned scenario questions and drills with step-by-step solutions.
             </p>
           </div>
         </button>
@@ -489,6 +524,11 @@ export function QuizPyqView() {
                     {q.year === '2025' && (
                       <span className="rounded bg-rose-600 px-2 py-0.5 text-xs font-extrabold text-white animate-pulse">
                         2025 • LATEST PYQ
+                      </span>
+                    )}
+                    {q.sourceRef?.includes('Assignment') && (
+                      <span className="rounded bg-amber-500 px-2 py-0.5 text-xs font-extrabold text-slate-950 flex items-center gap-1 shadow-sm">
+                        🔥 EXAM PRIORITY ASSIGNMENT
                       </span>
                     )}
                     <span className="rounded bg-sky-50 px-2 py-0.5 text-xs font-semibold text-sky-700 dark:bg-sky-950/60 dark:text-sky-300 uppercase">

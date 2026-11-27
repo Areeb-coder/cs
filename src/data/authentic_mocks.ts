@@ -1,4 +1,5 @@
 import { MockExamPaper } from '@/types/academic';
+import { ALL_LPP_ASSIGNMENT_QUESTIONS } from './lpp_assignments';
 
 /**
  * AUTHENTIC JMI UNIVERSITY EXAMINATION PAPERS & BLUEPRINTS
@@ -1214,6 +1215,51 @@ export const AUTHENTIC_MOCK_PAPERS: MockExamPaper[] = [
             isSubjective: true
           }
         ]
+      }
+    ]
+  }
+,
+  // 7. LPP: Linear Programming & Applications (Exam Priority 45-MCQ Blueprint - 45 Questions / 90 Marks)
+  {
+    id: 'mock-lpp-assignment-45q',
+    subjectId: 'lpp',
+    title: 'Linear Programming & Applications — Official 45-MCQ Examination (8 Assignments Pattern)',
+    code: 'LPP-301',
+    academicYear: '2024-2025',
+    sessionType: 'End-Semester',
+    durationMinutes: 120,
+    totalMarks: 45,
+    instructions: [
+      'This paper strictly adheres to the official teacher guidance: 45 MCQs with 43 direct from the 8 NPTEL assignments.',
+      'Attempt all 45 questions. Each question carries 1 Mark (scaled to 45 Marks total).',
+      'No negative marking. Select the single best answer for each question.',
+      'Use of non-programmable scientific calculator and rough calculation sheets is permitted.'
+    ],
+    sections: [
+      {
+        id: 'lpp-sec-all-45',
+        title: 'Section A — Comprehensive 45-MCQ Examination (Covering Assignments 1 to 8)',
+        instructions: 'Select the most appropriate option for each question.',
+        compulsory: true,
+        totalQuestionsToAttempt: 45,
+        questions: [
+          // 6 questions from Assignment 1
+          ...ALL_LPP_ASSIGNMENT_QUESTIONS.slice(0, 6),
+          // 6 questions from Assignment 2
+          ...ALL_LPP_ASSIGNMENT_QUESTIONS.slice(10, 16),
+          // 6 questions from Assignment 3
+          ...ALL_LPP_ASSIGNMENT_QUESTIONS.slice(20, 26),
+          // 6 questions from Assignment 4
+          ...ALL_LPP_ASSIGNMENT_QUESTIONS.slice(30, 36),
+          // 6 questions from Assignment 5
+          ...ALL_LPP_ASSIGNMENT_QUESTIONS.slice(40, 46),
+          // 5 questions from Assignment 6
+          ...ALL_LPP_ASSIGNMENT_QUESTIONS.slice(50, 55),
+          // 5 questions from Assignment 7
+          ...ALL_LPP_ASSIGNMENT_QUESTIONS.slice(60, 65),
+          // 5 questions from Assignment 8
+          ...ALL_LPP_ASSIGNMENT_QUESTIONS.slice(70, 75)
+        ].map((q, idx) => ({ ...q, marks: 1, questionNumber: `Q${idx + 1}` }))
       }
     ]
   }
