@@ -486,6 +486,11 @@ export function QuizPyqView() {
                     <span className="rounded bg-slate-100 px-2 py-0.5 text-xs font-bold text-slate-700 dark:bg-slate-800 dark:text-slate-300">
                       #{idx + 1}
                     </span>
+                    {q.year === '2025' && (
+                      <span className="rounded bg-rose-600 px-2 py-0.5 text-xs font-extrabold text-white animate-pulse">
+                        2025 • LATEST PYQ
+                      </span>
+                    )}
                     <span className="rounded bg-sky-50 px-2 py-0.5 text-xs font-semibold text-sky-700 dark:bg-sky-950/60 dark:text-sky-300 uppercase">
                       {q.subjectId}
                     </span>

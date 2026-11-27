@@ -15,13 +15,13 @@ import { MockExamPaper } from '@/types/academic';
  */
 
 export const AUTHENTIC_MOCK_PAPERS: MockExamPaper[] = [
-  // 1. ASB-301: Engineering Mathematics III (End-Sem 2024-25 Pattern - 45 Marks)
+  // 1. ASB-301: Engineering Mathematics III (End-Sem 2025-26 Pattern - 45 Marks)
   {
-    id: 'mock-asb-301-2024-25',
+    id: 'mock-asb-301-2025-26',
     subjectId: 'asb-301',
-    title: 'B.Tech. III Semester Examination 2024-25 — Engineering Mathematics III',
+    title: 'B.Tech. III Semester Examination 2025-26 — Engineering Mathematics III',
     code: 'ASB-301',
-    academicYear: '2024-2025',
+    academicYear: '2025-2026',
     sessionType: 'End-Semester',
     durationMinutes: 180,
     totalMarks: 45,
