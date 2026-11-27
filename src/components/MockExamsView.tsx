@@ -641,7 +641,9 @@ export function MockExamsView() {
                         <strong className="text-slate-900 dark:text-slate-100">Official Marking Scheme Rubric:</strong>
                         <ul className="list-disc pl-4 mt-1 space-y-1 text-slate-600 dark:text-slate-400">
                           {q.keyMarkingPoints.map((pt, pIdx) => (
-                            <li key={pIdx}>{pt}</li>
+                            <li key={pIdx}>
+                              <MathText text={pt} />
+                            </li>
                           ))}
                         </ul>
                       </div>

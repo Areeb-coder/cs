@@ -644,7 +644,9 @@ export function QuizPyqView() {
                             <span className="font-bold text-slate-900 dark:text-slate-100">Key Marking Rubric:</span>
                             <ul className="mt-1 list-disc pl-4 space-y-0.5 text-slate-700 dark:text-slate-300">
                               {q.keyMarkingPoints.map((point, pIdx) => (
-                                <li key={pIdx}>{point}</li>
+                                <li key={pIdx}>
+                                  <MathText text={point} />
+                                </li>
                               ))}
                             </ul>
                           </div>
